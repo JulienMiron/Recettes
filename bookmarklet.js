@@ -7,7 +7,7 @@
  * de recettes incluent, puis ouvre la page ajouter.html du site avec la recette.
  */
 (function () {
-  var SITE = "https://julienmiron.github.io/recettes/ajouter.html";
+  var SITE = "https://julienmiron.github.io/Recettes/ajouter.html";
   function isRecipe(o) {
     var t = o && o["@type"];
     return t === "Recipe" || (Array.isArray(t) && t.indexOf("Recipe") >= 0);

@@ -2,7 +2,7 @@
 
 Site statique de recettes à suivre en cuisinant : cases à cocher pour les ingrédients et les étapes, minuteries, ajustement des portions, recherche et filtres par type.
 
-Site : https://julienmiron.github.io/recettes/
+Site : https://julienmiron.github.io/Recettes/
 
 ## Fichiers
 

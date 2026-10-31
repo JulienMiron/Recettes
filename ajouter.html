@@ -157,7 +157,7 @@ details summary{cursor:pointer;font-weight:600}
     </div>
     <div class="field" style="margin-top:10px">
       <label for="repo">Dépôt</label>
-      <input id="repo" value="JulienMiron/recettes">
+      <input id="repo" value="JulienMiron/Recettes">
     </div>
     <div class="actions" style="margin-top:12px">
       <button class="btn ghost" id="saveTok" type="button">Enregistrer et tester</button>
@@ -178,14 +178,14 @@ details summary{cursor:pointer;font-weight:600}
   const store = O.store;
 
   /* ---------- Code du favori ---------- */
-  const BM = "javascript:!function(){function e(r){if(!r||\"object\"!=typeof r)return null;if(function(e){var r=e&&e[\"@type\"];return\"Recipe\"===r||Array.isArray(r)&&r.indexOf(\"Recipe\")>=0}(r))return r;var t=Array.isArray(r)?r:r[\"@graph\"]||r.mainEntity||null;if(t){Array.isArray(t)||(t=[t]);for(var i=0;i<t.length;i++){var n=e(t[i]);if(n)return n}}return null}function r(e){return e?\"string\"==typeof e?e:Array.isArray(e)?e.map(r).join(\", \"):e.text||e.name||\"\":\"\"}for(var t,i=null,n=document.querySelectorAll('script[type=\"application/ld+json\"]'),o=0;o<n.length&&!i;o++)try{i=e(JSON.parse(n[o].textContent))}catch(e){}if(i){var a=i.image;Array.isArray(a)&&(a=a[0]),a&&a.url&&(a=a.url),t={titre:r(i.name),description:r(i.description),ingredients:[].concat(i.recipeIngredient||i.ingredients||[]).map(r),etapes:function e(r,t){if(t=t||[],!r)return t;if(\"string\"==typeof r)return r.split(/\\n+/).forEach(function(e){e.trim()&&t.push(e.trim())}),t;if(Array.isArray(r))return r.forEach(function(r){e(r,t)}),t;if(r.itemListElement)return r.name&&t.push(\"## \"+r.name),e(r.itemListElement,t);var i=r.text||r.name;return i&&t.push(String(i).trim()),t}(i.recipeInstructions),rendement:i.recipeYield||\"\",tempsActif:i.prepTime||\"\",tempsTotal:i.totalTime||i.cookTime||\"\",categorie:r(i.recipeCategory),motsCles:r(i.keywords),image:\"string\"==typeof a?a:\"\",source:location.href}}else{if(!confirm(\"Aucune recette structurée trouvée sur cette page. Ouvrir le formulaire avec le titre et le lien seulement?\"))return;t={titre:document.title,source:location.href,ingredients:[],etapes:[]}}location.href=\"https://julienmiron.github.io/recettes/ajouter.html#r=\"+encodeURIComponent(JSON.stringify(t))}();";
+  const BM = "javascript:!function(){function e(r){if(!r||\"object\"!=typeof r)return null;if(function(e){var r=e&&e[\"@type\"];return\"Recipe\"===r||Array.isArray(r)&&r.indexOf(\"Recipe\")>=0}(r))return r;var t=Array.isArray(r)?r:r[\"@graph\"]||r.mainEntity||null;if(t){Array.isArray(t)||(t=[t]);for(var i=0;i<t.length;i++){var n=e(t[i]);if(n)return n}}return null}function r(e){return e?\"string\"==typeof e?e:Array.isArray(e)?e.map(r).join(\", \"):e.text||e.name||\"\":\"\"}for(var t,i=null,n=document.querySelectorAll('script[type=\"application/ld+json\"]'),o=0;o<n.length&&!i;o++)try{i=e(JSON.parse(n[o].textContent))}catch(e){}if(i){var a=i.image;Array.isArray(a)&&(a=a[0]),a&&a.url&&(a=a.url),t={titre:r(i.name),description:r(i.description),ingredients:[].concat(i.recipeIngredient||i.ingredients||[]).map(r),etapes:function e(r,t){if(t=t||[],!r)return t;if(\"string\"==typeof r)return r.split(/\\n+/).forEach(function(e){e.trim()&&t.push(e.trim())}),t;if(Array.isArray(r))return r.forEach(function(r){e(r,t)}),t;if(r.itemListElement)return r.name&&t.push(\"## \"+r.name),e(r.itemListElement,t);var i=r.text||r.name;return i&&t.push(String(i).trim()),t}(i.recipeInstructions),rendement:i.recipeYield||\"\",tempsActif:i.prepTime||\"\",tempsTotal:i.totalTime||i.cookTime||\"\",categorie:r(i.recipeCategory),motsCles:r(i.keywords),image:\"string\"==typeof a?a:\"\",source:location.href}}else{if(!confirm(\"Aucune recette structurée trouvée sur cette page. Ouvrir le formulaire avec le titre et le lien seulement?\"))return;t={titre:document.title,source:location.href,ingredients:[],etapes:[]}}location.href=\"https://julienmiron.github.io/Recettes/ajouter.html#r=\"+encodeURIComponent(JSON.stringify(t))}();";
   $("#bmCode").textContent = BM;
   $("#copyBm").onclick = () => O.copy(BM).then(() => O.toast("Code copié"));
 
   /* ---------- Réglages ---------- */
   const tokIn = $("#token"), repoIn = $("#repo");
   tokIn.value = store.get("recettes:token", "");
-  repoIn.value = store.get("recettes:repo", "JulienMiron/recettes");
+  repoIn.value = store.get("recettes:repo", "JulienMiron/Recettes");
   const showMsg = (el, ok, txt) => { el.hidden = false; el.className = "msg " + (ok ? "ok" : "err"); el.textContent = txt; };
   const refreshTokNote = () => { $("#noToken").hidden = !!store.get("recettes:token", ""); };
   refreshTokNote();
@@ -289,7 +289,7 @@ details summary{cursor:pointer;font-weight:600}
     const token = store.get("recettes:token", "");
     if (!token) { showMsg($("#formMsg"), false, "Ajoutez d'abord votre jeton GitHub dans les réglages plus bas."); $("#reglages").scrollIntoView({ behavior: "smooth" }); return; }
     const btn = $("#save"); btn.disabled = true; btn.textContent = "Enregistrement…";
-    const repo = store.get("recettes:repo", "JulienMiron/recettes");
+    const repo = store.get("recettes:repo", "JulienMiron/Recettes");
     try {
       let recette;
       for (let tries = 0; tries < 2; tries++) {
