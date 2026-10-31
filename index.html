@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recettes</title>
+<meta name="description" content="Mes recettes, à suivre étape par étape.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf6f0; --surface:#fffdf9; --surface-2:#f3ece2; --ink:#2a211b; --muted:#76685c;
+  --line:#e6dccf; --accent:#b8492b; --accent-ink:#fff; --accent-soft:#f6e1d8; --ok:#4f7a3a;
+  --radius:14px; --shadow:0 1px 2px rgba(60,40,20,.06),0 4px 16px rgba(60,40,20,.06);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1b1714; --surface:#24201c; --surface-2:#2e2924; --ink:#f1e9df; --muted:#ac9f92;
+    --line:#3a332d; --accent:#e47a5a; --accent-ink:#1b1714; --accent-soft:#3c2a23; --ok:#8dbb73;
+    --shadow:none; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1b1714; --surface:#24201c; --surface-2:#2e2924; --ink:#f1e9df; --muted:#ac9f92;
+  --line:#3a332d; --accent:#e47a5a; --accent-ink:#1b1714; --accent-soft:#3c2a23; --ok:#8dbb73;
+  --shadow:none; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.15;margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+header.top .wrap{display:flex;align-items:center;gap:12px;height:60px}
+.brand{font-family:Fraunces,serif;font-size:1.4rem;font-weight:700;text-decoration:none;display:flex;gap:8px;align-items:center}
+.brand span{color:var(--accent)}
+.spacer{flex:1}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;height:38px;min-width:38px;padding:0 12px;display:inline-flex;align-items:center;gap:6px;font-size:.9rem}
+.icon-btn:hover{background:var(--surface-2)}
+.icon-btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* Liste */
+.hero{padding:28px 0 8px}
+.hero h1{font-size:clamp(1.8rem,5vw,2.4rem)}
+.hero p{color:var(--muted);margin:6px 0 0}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 12px}
+.search{flex:1 1 240px;position:relative}
+.search input{width:100%;height:44px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);padding:0 14px 0 40px;font:inherit}
+.search svg{position:absolute;left:13px;top:13px;color:var(--muted)}
+select{height:44px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);padding:0 12px;font:inherit}
+.filter-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:14px 0 6px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.chip:hover{background:var(--surface-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.count{color:var(--muted);font-size:.9rem;margin:18px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;padding-bottom:40px}
+.card{display:flex;flex-direction:column;gap:8px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card .cat{font-size:.78rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.card h2{font-size:1.25rem}
+.card p{margin:0;color:var(--muted);font-size:.93rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;color:var(--muted);margin-top:auto;padding-top:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.75rem;background:var(--surface-2);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.progress-pill{font-size:.75rem;background:var(--accent-soft);color:var(--accent);border-radius:6px;padding:2px 8px;font-weight:600}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+
+/* Recette */
+.back{display:inline-flex;align-items:center;gap:6px;margin:20px 0 0;text-decoration:none;color:var(--muted);font-size:.95rem}
+.back:hover{color:var(--ink)}
+.r-head{padding:12px 0 6px}
+.r-head .cat{font-size:.8rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.r-head h1{font-size:clamp(1.9rem,6vw,2.7rem);margin:6px 0 8px}
+.r-head p{color:var(--muted);margin:0 0 12px;max-width:62ch}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 14px}
+.fact small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.fact b{font-weight:600}
+.r-actions{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 20px}
+.servings{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:var(--surface);height:38px}
+.servings button{border:0;background:none;width:38px;height:36px;font-size:1.2rem;border-radius:999px}
+.servings button:hover{background:var(--surface-2)}
+.servings span{min-width:120px;text-align:center;font-size:.9rem}
+.layout{display:grid;grid-template-columns:1fr;gap:18px;padding-bottom:48px}
+@media (min-width:820px){.layout{grid-template-columns:300px 1fr;align-items:start}.layout .ing{position:sticky;top:16px}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px}
+.panel h2{font-size:1.3rem}
+.panel-head small{color:var(--muted);font-size:.85rem}
+ul.checks{list-style:none;margin:0;padding:0}
+.checks li+li{border-top:1px solid var(--line)}
+.check{display:flex;gap:12px;align-items:flex-start;padding:10px 0;cursor:pointer}
+.check input{appearance:none;flex:0 0 24px;width:24px;height:24px;margin:1px 0 0;border:2px solid var(--line);border-radius:7px;background:var(--bg);display:grid;place-items:center;cursor:pointer;transition:.12s}
+.check input:checked{background:var(--ok);border-color:var(--ok)}
+.check input:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.check input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.check .qty{font-weight:600;white-space:nowrap}
+.check .eq,.check .note{display:block;color:var(--muted);font-size:.85rem}
+.done .txt{opacity:.5}
+.done .txt .name,.done .txt .qty{text-decoration:line-through}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.step{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.step:first-child{border-top:0;padding-top:4px}
+.step .num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;font-family:Fraunces,serif}
+.step.current .num{background:var(--accent);color:var(--accent-ink)}
+.step.done .num{background:var(--ok);color:#fff}
+.step-body{flex:1;min-width:0}
+.step-top{display:flex;gap:10px;align-items:flex-start}
+.step-top .check{padding:0;flex:1}
+.step h3{font-family:Inter,sans-serif;font-size:1.02rem;font-weight:600}
+.step p{margin:4px 0 0}
+.step.done .step-body h3,.step.done .step-body p{opacity:.5}
+.timer{margin-top:10px;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px;font-variant-numeric:tabular-nums;font-size:.9rem;background:var(--bg)}
+.timer button{border:0;border-radius:999px;background:var(--surface-2);padding:4px 12px;font-size:.85rem}
+.timer.running{border-color:var(--accent);color:var(--accent)}
+.timer.finished{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);animation:pulse 1s infinite}
+.timer.finished button{background:rgba(255,255,255,.25);color:inherit}
+@keyframes pulse{50%{opacity:.7}}
+.tips{margin:18px 0 0;padding:0 0 0 20px}
+.tips li{margin:6px 0}
+.full{grid-column:1/-1}
+.bar{height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin:4px 0 0}
+.bar i{display:block;height:100%;background:var(--ok);transition:width .2s}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;transition:.2s;pointer-events:none}
+.toast.show{opacity:1}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:24px 0 36px}
+@media print{header.top,.r-actions,.back,.timer,.tools,footer{display:none}.panel{box-shadow:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/">🍕 <span>Recettes</span></a>
+    <div class="spacer"></div>
+    <button class="icon-btn" id="themeBtn" title="Changer le thème" aria-label="Changer le thème">◐</button>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+<footer class="wrap">Les cases cochées sont gardées dans ce navigateur.</footer>
+<div class="toast" id="toast"></div>
+
+<script src="recettes.js"></script>
+<script>
+(() => {
+  const R = window.RECETTES || [];
+  const app = document.getElementById("app");
+  const $ = (s, el = document) => el.querySelector(s);
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const norm = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+  /* ---------- Stockage (tolérant aux erreurs) ---------- */
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+    del(k) { try { localStorage.removeItem(k); } catch {} }
+  };
+  const progKey = id => "recettes:prog:" + id;
+  const getProg = id => store.get(progKey(id), { ing: [], steps: [], portions: null });
+
+  /* ---------- Thème ---------- */
+  const themeBtn = document.getElementById("themeBtn");
+  const applyTheme = t => { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
+  applyTheme(store.get("recettes:theme", null));
+  themeBtn.onclick = () => {
+    const dark = document.documentElement.dataset.theme
+      ? document.documentElement.dataset.theme === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    const t = dark ? "light" : "dark";
+    applyTheme(t); store.set("recettes:theme", t);
+  };
+
+  /* ---------- Formatage des quantités ---------- */
+  const UNITES = {
+    g: ["g", "g"], kg: ["kg", "kg"], ml: ["ml", "ml"], l: ["L", "L"],
+    c_the: ["c. à thé", "c. à thé"], c_soupe: ["c. à soupe", "c. à soupe"],
+    tasse: ["tasse", "tasses"], pincee: ["pincée", "pincées"], "": ["", ""]
+  };
+  const FRACS = [[0, ""], [1/8, "⅛"], [1/4, "¼"], [1/3, "⅓"], [1/2, "½"], [2/3, "⅔"], [3/4, "¾"], [1, ""]];
+  function frac(x) {
+    let ent = Math.floor(x), r = x - ent, best = FRACS[0], bd = 9;
+    for (const f of FRACS) { const d = Math.abs(r - f[0]); if (d < bd) { bd = d; best = f; } }
+    if (best[0] === 1) { ent += 1; best = FRACS[0]; }
+    if (!ent && !best[1]) return "une pointe";
+    return (ent ? ent + (best[1] ? " " : "") : "") + best[1];
+  }
+  function fmtQty(q, unite) {
+    const u = UNITES[unite] ?? [unite, unite];
+    if (["c_the", "c_soupe", "tasse", "pincee", ""].includes(unite)) {
+      const s = frac(q);
+      return (s + " " + (q > 1 ? u[1] : u[0])).trim();
+    }
+    let v = q;
+    const dec = v >= 100 ? 0 : v >= 10 ? 0 : 1;
+    let s = (Math.round(v * 10 ** dec) / 10 ** dec).toLocaleString("fr-CA");
+    return s + " " + u[0];
+  }
+  const fmtTime = s => {
+    s = Math.max(0, Math.round(s));
+    const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), ss = s % 60;
+    return h ? `${h} h ${String(m).padStart(2, "0")}` : `${m}:${String(ss).padStart(2, "0")}`;
+  };
+  const fmtDur = s => {
+    const h = Math.floor(s / 3600), m = Math.round(s % 3600 / 60);
+    if (h >= 24 && !m && h % 24 === 0) return `${h} h`;
+    return h ? (m ? `${h} h ${m}` : `${h} h`) : `${m} min`;
+  };
+
+  /* ---------- Toast ---------- */
+  let toastT;
+  function toast(msg) {
+    const t = document.getElementById("toast");
+    t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("show"), 2200);
+  }
+
+  /* ---------- Liste ---------- */
+  const listState = store.get("recettes:liste", { q: "", cat: "", tags: [], tri: "titre" });
+  const saveList = () => store.set("recettes:liste", listState);
+
+  function renderList() {
+    document.title = "Recettes";
+    const cats = [...new Set(R.map(r => r.categorie))].sort((a, b) => a.localeCompare(b, "fr"));
+    const tags = [...new Set(R.flatMap(r => r.etiquettes || []))].sort((a, b) => a.localeCompare(b, "fr"));
+    app.innerHTML = `
+      <section class="hero">
+        <h1>Mes recettes</h1>
+        <p>Choisissez une recette, puis cochez les ingrédients et les étapes au fur et à mesure.</p>
+      </section>
+      <div class="tools">
+        <label class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Chercher une recette ou un ingrédient" value="${esc(listState.q)}" aria-label="Chercher">
+        </label>
+        <select id="tri" aria-label="Trier">
+          <option value="titre">Trier : nom (A → Z)</option>
+          <option value="categorie">Trier : type</option>
+          <option value="recent">Trier : plus récentes</option>
+          <option value="rapide">Trier : plus rapides</option>
+        </select>
+      </div>
+      <div class="filter-label">Type</div>
+      <div class="chips" id="cats">
+        <button class="chip" data-cat="" aria-pressed="${!listState.cat}">Toutes</button>
+        ${cats.map(c => `<button class="chip" data-cat="${esc(c)}" aria-pressed="${listState.cat === c}">${esc(c)}</button>`).join("")}
+      </div>
+      ${tags.length ? `<div class="filter-label">Étiquettes</div>
+      <div class="chips" id="tags">
+        ${tags.map(t => `<button class="chip" data-tag="${esc(t)}" aria-pressed="${listState.tags.includes(t)}">${esc(t)}</button>`).join("")}
+      </div>` : ""}
+      <div class="count" id="count"></div>
+      <div class="grid" id="grid"></div>`;
+    $("#tri").value = listState.tri;
+    $("#q").oninput = e => { listState.q = e.target.value; saveList(); drawGrid(); };
+    $("#tri").onchange = e => { listState.tri = e.target.value; saveList(); drawGrid(); };
+    $("#cats").onclick = e => {
+      const b = e.target.closest("[data-cat]"); if (!b) return;
+      listState.cat = b.dataset.cat; saveList();
+      $("#cats").querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c.dataset.cat === listState.cat));
+      drawGrid();
+    };
+    const tg = $("#tags");
+    if (tg) tg.onclick = e => {
+      const b = e.target.closest("[data-tag]"); if (!b) return;
+      const t = b.dataset.tag, i = listState.tags.indexOf(t);
+      i < 0 ? listState.tags.push(t) : listState.tags.splice(i, 1);
+      b.setAttribute("aria-pressed", i < 0); saveList(); drawGrid();
+    };
+    drawGrid();
+  }
+
+  const totalSec = r => (r.etapes || []).reduce((a, e) => a + (e.minuterie || 0), 0);
+
+  function drawGrid() {
+    const q = norm(listState.q.trim());
+    let list = R.filter(r =>
+      (!listState.cat || r.categorie === listState.cat) &&
+      listState.tags.every(t => (r.etiquettes || []).includes(t)) &&
+      (!q || norm([r.titre, r.description, r.categorie, ...(r.etiquettes || []), ...r.ingredients.map(i => i.nom)].join(" ")).includes(q))
+    );
+    const by = {
+      titre: (a, b) => a.titre.localeCompare(b.titre, "fr"),
+      categorie: (a, b) => a.categorie.localeCompare(b.categorie, "fr") || a.titre.localeCompare(b.titre, "fr"),
+      recent: (a, b) => (b.ajoutee || "").localeCompare(a.ajoutee || ""),
+      rapide: (a, b) => totalSec(a) - totalSec(b)
+    };
+    list.sort(by[listState.tri] || by.titre);
+    $("#count").textContent = list.length + (list.length > 1 ? " recettes" : " recette");
+    $("#grid").innerHTML = list.length ? list.map(r => {
+      const p = getProg(r.id);
+      const n = p.ing.length + p.steps.length, tot = r.ingredients.length + r.etapes.length;
+      return `<a class="card" href="#/recette/${encodeURIComponent(r.id)}">
+        <div class="cat">${esc(r.categorie)}</div>
+        <h2>${esc(r.titre)}</h2>
+        <p>${esc(r.description)}</p>
+        <div class="tags">${(r.etiquettes || []).map(t => `<span class="tag">${esc(t)}</span>`).join("")}
+          ${n ? `<span class="progress-pill">En cours · ${n}/${tot}</span>` : ""}</div>
+        <div class="meta">
+          ${r.tempsTotal ? `<span>⏱ ${esc(r.tempsTotal)}</span>` : ""}
+          <span>🍽 ${r.portions} ${esc(r.unitePortion || "portions")}</span>
+        </div>
+      </a>`;
+    }).join("") : `<div class="empty">Aucune recette ne correspond.</div>`;
+  }
+
+  /* ---------- Recette ---------- */
+  const timers = {}; // index -> {end, remaining, iv}
+  let wakeLock = null;
+
+  function renderRecipe(id) {
+    const r = R.find(x => x.id === id);
+    if (!r) { app.innerHTML = `<a class="back" href="#/">← Toutes les recettes</a><p class="empty">Recette introuvable.</p>`; return; }
+    document.title = r.titre + " · Recettes";
+    const prog = getProg(r.id);
+    let portions = prog.portions || r.portions;
+    const save = () => store.set(progKey(r.id), prog);
+
+    app.innerHTML = `
+      <a class="back" href="#/">← Toutes les recettes</a>
+      <section class="r-head">
+        <div class="cat">${esc(r.categorie)}</div>
+        <h1>${esc(r.titre)}</h1>
+        <p>${esc(r.description)}</p>
+        <div class="tags">${(r.etiquettes || []).map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+        <div class="facts">
+          ${r.tempsActif ? `<div class="fact"><small>Temps actif</small><b>${esc(r.tempsActif)}</b></div>` : ""}
+          ${r.tempsTotal ? `<div class="fact"><small>Temps total</small><b>${esc(r.tempsTotal)}</b></div>` : ""}
+          <div class="fact"><small>Rendement</small><b>${r.portions} ${esc(r.unitePortion || "portions")}</b></div>
+        </div>
+      </section>
+      <div class="r-actions">
+        <div class="servings" title="Ajuster les quantités">
+          <button id="minus" aria-label="Moins">−</button>
+          <span id="portLbl"></span>
+          <button id="plus" aria-label="Plus">+</button>
+        </div>
+        <button class="icon-btn" id="wake" aria-pressed="false" title="Empêche l'écran de s'éteindre pendant que vous cuisinez">☀ Garder l'écran allumé</button>
+        <button class="icon-btn" id="reset">↺ Tout décocher</button>
+      </div>
+      <div class="layout">
+        <section class="panel ing">
+          <div class="panel-head"><h2>Ingrédients</h2><small id="ingCount"></small></div>
+          <div class="bar"><i id="ingBar"></i></div>
+          <ul class="checks" id="ingList"></ul>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><h2>Étapes</h2><small id="stepCount"></small></div>
+          <div class="bar"><i id="stepBar"></i></div>
+          <ol class="steps" id="stepList"></ol>
+        </section>
+        ${r.astuces && r.astuces.length ? `<section class="panel full">
+          <h2>Astuces</h2>
+          <ul class="tips">${r.astuces.map(a => `<li>${esc(a)}</li>`).join("")}</ul>
+        </section>` : ""}
+      </div>`;
+
+    function drawIng() {
+      const k = portions / r.portions;
+      $("#portLbl").textContent = `${portions} ${r.unitePortion || "portions"}`;
+      $("#ingList").innerHTML = r.ingredients.map((g, i) => {
+        const on = prog.ing.includes(i);
+        return `<li class="${on ? "done" : ""}"><label class="check">
+          <input type="checkbox" data-i="${i}" ${on ? "checked" : ""}>
+          <span class="txt"><span class="qty">${esc(fmtQty(g.quantite * k, g.unite))}</span> <span class="name">${esc(g.nom)}</span>
+          ${g.note ? `<span class="note">${esc(g.note)}</span>` : ""}
+          ${g.equivalent && k === 1 ? `<span class="eq">${esc(g.equivalent)}</span>` : ""}</span>
+        </label></li>`;
+      }).join("");
+      const n = prog.ing.length, t = r.ingredients.length;
+      $("#ingCount").textContent = `${n}/${t}`;
+      $("#ingBar").style.width = (100 * n / t) + "%";
+    }
+
+    function drawSteps() {
+      const cur = r.etapes.findIndex((_, i) => !prog.steps.includes(i));
+      $("#stepList").innerHTML = r.etapes.map((s, i) => {
+        const on = prog.steps.includes(i);
+        return `<li class="step ${on ? "done" : ""} ${i === cur ? "current" : ""}" id="step-${i}">
+          <div class="num">${on ? "✓" : i + 1}</div>
+          <div class="step-body">
+            <div class="step-top"><label class="check">
+              <input type="checkbox" data-s="${i}" ${on ? "checked" : ""} aria-label="Étape ${i + 1} terminée">
+              <span><h3>${esc(s.titre)}</h3><p>${esc(s.texte)}</p></span>
+            </label></div>
+            ${s.minuterie ? `<div class="timer" id="tm-${i}"><span class="t"></span><button data-t="${i}"></button><button data-tr="${i}" title="Réinitialiser">↺</button></div>` : ""}
+          </div>
+        </li>`;
+      }).join("");
+      r.etapes.forEach((s, i) => s.minuterie && drawTimer(i));
+      const n = prog.steps.length, t = r.etapes.length;
+      $("#stepCount").textContent = `${n}/${t}`;
+      $("#stepBar").style.width = (100 * n / t) + "%";
+    }
+
+    function drawTimer(i) {
+      const el = document.getElementById("tm-" + i); if (!el) return;
+      const tm = timers[r.id + i], dur = r.etapes[i].minuterie;
+      let rem = dur, state = "idle";
+      if (tm) { rem = tm.end ? (tm.end - Date.now()) / 1000 : tm.remaining; state = tm.end ? "running" : "paused"; }
+      const fin = rem <= 0 && state !== "idle";
+      el.className = "timer" + (fin ? " finished" : state === "running" ? " running" : "");
+      $(".t", el).textContent = fin ? "Terminé !" : (state === "idle" ? "⏲ " + fmtDur(dur) : "⏲ " + fmtTime(rem));
+      $("[data-t]", el).textContent = fin ? "OK" : state === "running" ? "Pause" : state === "paused" ? "Reprendre" : "Démarrer";
+      $("[data-tr]", el).style.display = state === "idle" ? "none" : "";
+    }
+
+    $("#ingList").onchange = e => {
+      const i = +e.target.dataset.i; if (isNaN(i)) return;
+      e.target.checked ? prog.ing.push(i) : prog.ing.splice(prog.ing.indexOf(i), 1);
+      save(); drawIng();
+    };
+    $("#stepList").onchange = e => {
+      const i = +e.target.dataset.s; if (isNaN(i)) return;
+      e.target.checked ? prog.steps.push(i) : prog.steps.splice(prog.steps.indexOf(i), 1);
+      save(); drawSteps();
+      if (e.target.checked && prog.steps.length === r.etapes.length) toast("Bon appétit !");
+      else if (e.target.checked) { const nx = document.querySelector(".step.current"); nx && nx.scrollIntoView({ behavior: "smooth", block: "center" }); }
+    };
+    $("#stepList").onclick = e => {
+      const b = e.target.closest("[data-t],[data-tr]"); if (!b) return;
+      e.preventDefault();
+      const i = +(b.dataset.t ?? b.dataset.tr), key = r.id + i, dur = r.etapes[i].minuterie;
+      let tm = timers[key];
+      if (b.dataset.tr !== undefined) { delete timers[key]; drawTimer(i); return; }
+      if (!tm) { timers[key] = { end: Date.now() + dur * 1000 }; askNotif(); }
+      else if (tm.end) {
+        const rem = (tm.end - Date.now()) / 1000;
+        if (rem <= 0) delete timers[key];
+        else timers[key] = { remaining: rem };
+      } else timers[key] = { end: Date.now() + tm.remaining * 1000 };
+      drawTimer(i);
+    };
+
+    $("#minus").onclick = () => { if (portions > 1) { portions--; prog.portions = portions; save(); drawIng(); } };
+    $("#plus").onclick = () => { portions++; prog.portions = portions; save(); drawIng(); };
+    $("#reset").onclick = () => {
+      prog.ing = []; prog.steps = []; prog.portions = null; portions = r.portions;
+      save(); drawIng(); drawSteps(); toast("Recette remise à zéro");
+    };
+    const wakeBtn = $("#wake");
+    if (!("wakeLock" in navigator)) wakeBtn.style.display = "none";
+    wakeBtn.setAttribute("aria-pressed", !!wakeLock);
+    wakeBtn.onclick = async () => {
+      try {
+        if (wakeLock) { await wakeLock.release(); wakeLock = null; }
+        else { wakeLock = await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release", () => { wakeLock = null; const b = $("#wake"); b && b.setAttribute("aria-pressed", "false"); }); }
+        wakeBtn.setAttribute("aria-pressed", !!wakeLock);
+      } catch { toast("Impossible de garder l'écran allumé ici"); }
+    };
+
+    drawIng(); drawSteps();
+    currentTick = () => r.etapes.forEach((s, i) => s.minuterie && drawTimer(i));
+  }
+
+  /* ---------- Minuteries globales ---------- */
+  let currentTick = null;
+  const notified = new Set();
+  function askNotif() { try { if ("Notification" in window && Notification.permission === "default") Notification.requestPermission(); } catch {} }
+  function beep() {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      [0, .35, .7].forEach(t => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.frequency.value = 880; o.connect(g); g.connect(ctx.destination);
+        g.gain.setValueAtTime(.2, ctx.currentTime + t); g.gain.exponentialRampToValueAtTime(.001, ctx.currentTime + t + .3);
+        o.start(ctx.currentTime + t); o.stop(ctx.currentTime + t + .3);
+      });
+    } catch {}
+  }
+  setInterval(() => {
+    for (const [key, tm] of Object.entries(timers)) {
+      if (tm.end && tm.end <= Date.now() && !notified.has(key + tm.end)) {
+        notified.add(key + tm.end);
+        const r = R.find(x => key.startsWith(x.id)); const i = r ? +key.slice(r.id.length) : 0;
+        const label = r ? `${r.titre} : ${r.etapes[i].titre}` : "Minuterie";
+        beep(); toast("⏲ " + label + " — terminé");
+        try { if ("Notification" in window && Notification.permission === "granted") new Notification("Minuterie terminée", { body: label }); } catch {}
+      }
+    }
+    currentTick && currentTick();
+  }, 1000);
+
+  /* ---------- Routeur ---------- */
+  function route() {
+    currentTick = null;
+    const m = location.hash.match(/^#\/recette\/(.+)$/);
+    if (m) renderRecipe(decodeURIComponent(m[1])); else renderList();
+    window.scrollTo(0, 0);
+  }
+  addEventListener("hashchange", route);
+  route();
+})();
+</script>
+</body>
+</html>
