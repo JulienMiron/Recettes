@@ -190,5 +190,83 @@ window.RECETTES = [
       "Une fermentation de 24 h n'apporte pas grand-chose sans gluten : faire la pâte le jour même.",
       "Pour une personne cœliaque, vérifier que tous les ingrédients sont certifiés sans gluten et bien nettoyer le bol et la feuille du batteur avant de commencer."
     ]
+  },
+  {
+    "id": "gratins-de-pommes-de-terre-au-canard-confit",
+    "titre": "Gratins de pommes de terre au canard confit",
+    "description": "Dans cette recette réconfortante en collaboration avec Aliments du Québec, on s’inspire de la classique tartiflette française et on lui donne une saveur locale. On alterne des pommes de terre, du canard confit et de la crème, puis on recouvre le dessus avec un fromage à pâte ferme de la Fromagerie Bergeron, qui fond bien. Un plat gourmand et savoureux.",
+    "categorie": "Accompagnement",
+    "etiquettes": [],
+    "portions": 4,
+    "unitePortion": "portion(s)",
+    "tempsActif": "35 min",
+    "tempsTotal": "1 h 45",
+    "ajoutee": "2026-10-31",
+    "ingredients": [
+      {
+        "nom": "(1 1/2 lb) de pommes de terre à chair jaune non pelées, de même grosseur",
+        "quantite": 675,
+        "unite": "g"
+      },
+      {
+        "nom": "oignon, haché",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "(1 c. à soupe) de beurre",
+        "quantite": 15,
+        "unite": "ml"
+      },
+      {
+        "nom": "(1/3 tasse) de vin blanc sec",
+        "quantite": 75,
+        "unite": "ml"
+      },
+      {
+        "nom": "cuisses de canard confites, désossées, la viande effilochée",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "fromages à pâte ferme et à croûte lavée affinés en surface de 170 g (6 oz) chacun (voir note)",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "(1 tasse) de crème 35 %",
+        "quantite": 250,
+        "unite": "ml"
+      }
+    ],
+    "etapes": [
+      {
+        "texte": "Dans une grande casserole, placer les pommes de terre. Couvrir d’eau froide. Saler. Porter à ébullition et cuire 25 minutes ou jusqu’à ce que les pommes de terre soient tendres à la pointe d’un couteau mais encore légèrement fermes. Égoutter les pommes de terre et laisser tiédir 15 minutes.",
+        "titre": "Gratins de pommes de terre au canard confit",
+        "minuterie": 1500
+      },
+      {
+        "texte": "Peler les pommes de terre et composter les pelures. Sur un plan de travail, couper les pommes de terre en rondelles de 1 cm (1/2 po) d’épaisseur. Réserver sur une assiette."
+      },
+      {
+        "texte": "Placer la grille au centre du four. Préchauffer le four à 220 °C (425 °F). Déposer 4 cassolettes en fonte ou 4 ramequins de 13 cm (5 po) de diamètre et de 3,5 cm (1 1/4 po) de hauteur sur une plaque de cuisson."
+      },
+      {
+        "texte": "Dans une poêle à feu moyen, attendrir l’oignon dans le beurre jusqu’à ce qu’il soit translucide et légèrement doré. Ajouter le vin et laisser réduire à sec. Ajouter le canard effiloché et poursuivre la cuisson 1 minute. Saler légèrement et poivrer. Réserver.",
+        "minuterie": 60
+      },
+      {
+        "texte": "Couper les fromages avec la croûte en tranches de 5 mm (1/4 po) d’épaisseur."
+      },
+      {
+        "texte": "Dans les cassolettes, étaler la moitié des pommes de terre. Couvrir de la moitié du mélange de canard. Répéter cette étape. Verser la crème sur le dessus et couvrir des tranches de fromage."
+      },
+      {
+        "texte": "Cuire au four 20 minutes ou jusqu’à ce que les gratins soient bien dorés. Laisser reposer 5 minutes avant de servir. Accompagner d’une salade verte, si désiré.",
+        "minuterie": 1200
+      }
+    ],
+    "source": "https://www.ricardocuisine.com/recettes/11359-gratins-de-pommes-de-terre-au-canard-confit",
+    "image": "https://ucarecdn.com/8d0bb214-d1ab-4e6b-a801-92f34e166e72/-/crop/5504x7435/0,821/-/preview/-/crop/1:1/"
   }
 ];
