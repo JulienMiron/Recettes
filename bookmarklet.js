@@ -50,7 +50,7 @@
       ingredients: [].concat(r.recipeIngredient || r.ingredients || []).map(txt),
       etapes: steps(r.recipeInstructions),
       rendement: r.recipeYield || "", tempsActif: r.prepTime || "", tempsTotal: r.totalTime || r.cookTime || "",
-      categorie: txt(r.recipeCategory), motsCles: txt(r.keywords), image: typeof img === "string" ? img : "",
+      categorie: txt(r.recipeCategory), etiquettes: txt(r.keywords), image: typeof img === "string" ? img : "",
       source: location.href
     };
   } else {
