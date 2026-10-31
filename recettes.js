@@ -2,7 +2,7 @@ window.RECETTES = [
   {
     "id": "pate-pizza-24h",
     "titre": "Pâte à pizza 24 heures",
-    "description": "Pâte à fermentation lente au frigo, pétrie au batteur sur socle : plus de saveur, croûte légère et bien alvéolée.",
+    "description": "Pâte à fermentation lente, gardée en un seul bloc au frigo puis divisée le lendemain : plus de saveur, croûte légère et bien alvéolée.",
     "categorie": "Pâtes à pizza",
     "etiquettes": [
       "Fermentation longue",
@@ -12,7 +12,7 @@ window.RECETTES = [
     "portions": 4,
     "unitePortion": "pâtons de 210 g",
     "tempsActif": "30 min",
-    "tempsTotal": "≈ 28 h",
+    "tempsTotal": "≈ 29 h",
     "ajoutee": "2026-10-29",
     "ingredients": [
       {
@@ -66,26 +66,26 @@ window.RECETTES = [
       },
       {
         "titre": "Première levée",
-        "texte": "Former une boule, mettre dans un bol légèrement huilé, couvrir et laisser lever 1 h 30 à température ambiante.",
+        "texte": "Former une boule, la mettre dans un bol légèrement huilé d'environ 3 L, couvrir et laisser lever 1 h 30 à température ambiante.",
         "minuterie": 5400
       },
       {
-        "titre": "Façonner les pâtons",
-        "texte": "Fariner très légèrement le comptoir et le coupe-pâte, puis diviser en 4 portions d'environ 210 g (les peser). Bouler chaque portion en repliant les bords dessous, avec le moins de farine possible pour que la pâte se tende. Huiler légèrement les pâtons et les placer dans des contenants fermés de 750 ml à 1 L, ou sur une plaque à biscuits huilée, espacés d'au moins 5 cm et couverts d'une pellicule plastique sans serrer."
-      },
-      {
         "titre": "Fermentation au froid",
-        "texte": "Réfrigérer 24 heures (de 18 à 48 h fonctionne aussi).",
+        "texte": "Sans dégazer la pâte, fermer le bol avec un couvercle ou une pellicule plastique bien tendue (pas de linge humide) et réfrigérer 24 heures (de 18 à 48 h fonctionne aussi).",
         "minuterie": 86400
       },
       {
+        "titre": "Diviser et bouler",
+        "texte": "Le lendemain, sortir la pâte et la diviser encore froide (c'est plus facile) en 4 portions d'environ 210 g, en farinant très légèrement le comptoir et le coupe-pâte. Bouler chaque portion en repliant les bords dessous, avec le moins de farine possible pour que la pâte se tende ; si elle colle, s'huiler légèrement les mains. Déposer les pâtons sur une plaque à biscuits légèrement huilée, espacés d'au moins 5 cm, et couvrir d'une pellicule plastique sans serrer ou d'un linge humide."
+      },
+      {
         "titre": "Tempérer",
-        "texte": "Sortir les pâtons du frigo 2 heures avant la cuisson, toujours couverts. Préchauffer le four au maximum (260–290 °C) avec la pierre, l'acier ou une plaque retournée dans le haut du four pendant au moins 45 minutes.",
-        "minuterie": 7200
+        "texte": "Laisser reposer les pâtons couverts 2 h 30 à 3 h à température ambiante. Pendant les 45 dernières minutes, préchauffer le four au maximum (260–290 °C) avec la pierre, l'acier ou une plaque retournée dans le haut du four.",
+        "minuterie": 9000
       },
       {
         "titre": "Abaisser et cuire",
-        "texte": "Fariner généreusement, étirer à la main du centre vers l'extérieur en gardant un rebord (éviter le rouleau). Garnir et cuire 6 à 9 minutes, jusqu'à ce que la croûte soit bien dorée.",
+        "texte": "Fariner généreusement, étirer à la main du centre vers l'extérieur en gardant un rebord (éviter le rouleau). Si la pâte se rétracte, la laisser reposer 10 minutes et reprendre. Garnir et cuire 6 à 9 minutes, jusqu'à ce que la croûte soit bien dorée.",
         "minuterie": 480
       }
     ],
@@ -94,8 +94,8 @@ window.RECETTES = [
       "Si l'huile fait se séparer la pâte en morceaux, continuer à pétrir 3 à 5 minutes : elle se ressoude. Racler les parois au besoin, et ajouter 1 c. à soupe de farine si elle reste luisante.",
       "Si la pâte grimpe sur le crochet, arrêter le batteur, la redescendre et continuer.",
       "Si la pâte colle au moment de bouler, s'huiler légèrement les mains plutôt que d'ajouter de la farine.",
-      "Au frigo, éviter le linge humide : l'air sec le fait sécher et la pâte colle dessus. Pellicule plastique ou grand sac fermé. Le linge humide convient pour les levées à température ambiante.",
-      "Fermentation en masse : on peut aussi garder toute la pâte dans un bol de 3 L couvert. Le lendemain, diviser la pâte encore froide, bouler, puis laisser reposer 2 h 30 à 3 h avant d'étirer. Si elle se rétracte, attendre 10 minutes et reprendre.",
+      "Les pâtons boulés le jour même sont un peu plus élastiques et les bords un peu moins aérés qu'avec des pâtons boulés la veille ; le goût est le même.",
+      "Variante : diviser et bouler avant le frigo, chaque pâton dans un contenant fermé de 750 ml à 1 L. Il suffit alors de 2 h de repos le lendemain.",
       "Sans pierre : préchauffer une plaque à biscuits retournée et y glisser la pizza sur du papier parchemin.",
       "Avec de la levure sèche active plutôt qu'instantanée, utiliser 3 g et la dissoudre d'abord dans l'eau."
     ]
