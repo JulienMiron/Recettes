@@ -47,10 +47,6 @@ details summary{cursor:pointer;font-weight:600}
     <p id="intro">Remplissez le formulaire, ou utilisez le favori « Ajouter recette » depuis un site de recettes (voir plus bas).</p>
   </section>
 
-  <div id="noToken" class="msg err" hidden style="margin:12px 0">
-    Pour enregistrer dans le dépôt, il faut d'abord entrer un jeton GitHub dans les <a href="#reglages">réglages</a> plus bas.
-  </div>
-
   <form class="form panel" id="form" autocomplete="off">
     <p class="src" id="srcLine" hidden></p>
     <div class="field">
@@ -110,7 +106,7 @@ details summary{cursor:pointer;font-weight:600}
     </div>
     <div id="formMsg" hidden></div>
     <div class="actions">
-      <button class="btn" id="save" type="submit">Enregistrer dans le dépôt</button>
+      <button class="btn" id="save" type="submit">Enregistrer</button>
       <button class="btn ghost" id="dl" type="button">Copier en JSON</button>
     </div>
   </form>
@@ -139,31 +135,10 @@ details summary{cursor:pointer;font-weight:600}
     </details>
   </section>
 
-  <section class="panel" id="reglages" style="margin-bottom:40px">
-    <h2>Réglages</h2>
-    <p>Pour écrire dans le dépôt, la page a besoin d'un jeton GitHub. Il reste uniquement dans ce navigateur.</p>
-    <details>
-      <summary>Créer le jeton (une seule fois)</summary>
-      <ol class="howto">
-        <li>Sur GitHub : <b>Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token</b>.</li>
-        <li>Repository access : <b>Only select repositories</b> → <b>recettes</b>.</li>
-        <li>Permissions → Repository permissions → <b>Contents : Read and write</b>. Rien d'autre.</li>
-        <li>Choisissez une date d'expiration, générez, puis collez le jeton ici.</li>
-      </ol>
-    </details>
-    <div class="field" style="margin-top:12px">
-      <label for="token">Jeton GitHub</label>
-      <input id="token" type="password" placeholder="github_pat_…">
-    </div>
-    <div class="field" style="margin-top:10px">
-      <label for="repo">Dépôt</label>
-      <input id="repo" value="JulienMiron/Recettes">
-    </div>
-    <div class="actions" style="margin-top:12px">
-      <button class="btn ghost" id="saveTok" type="button">Enregistrer et tester</button>
-      <button class="btn ghost" id="delTok" type="button">Oublier le jeton</button>
-    </div>
-    <div id="tokMsg" hidden style="margin-top:10px"></div>
+  <section class="panel" style="margin-bottom:40px">
+    <h2>Comment l'enregistrement fonctionne</h2>
+    <p><b>Enregistrer</b> ouvre la page « New issue » de votre dépôt sur GitHub, avec la recette déjà remplie. Touchez <b>Create</b> (ou <b>Submit new issue</b>) : en une à deux minutes, une GitHub Action ajoute la recette au site et ferme l'issue. Il faut être connecté à GitHub dans ce navigateur.</p>
+    <p>Seules les issues que vous ouvrez vous-même sont prises en compte. En cas de problème, l'Action laisse un commentaire dans l'issue.</p>
   </section>
 </main>
 <div class="toast" id="toast"></div>
@@ -182,24 +157,8 @@ details summary{cursor:pointer;font-weight:600}
   $("#bmCode").textContent = BM;
   $("#copyBm").onclick = () => O.copy(BM).then(() => O.toast("Code copié"));
 
-  /* ---------- Réglages ---------- */
-  const tokIn = $("#token"), repoIn = $("#repo");
-  tokIn.value = store.get("recettes:token", "");
-  repoIn.value = store.get("recettes:repo", "JulienMiron/Recettes");
+  const REPO = "JulienMiron/Recettes";
   const showMsg = (el, ok, txt) => { el.hidden = false; el.className = "msg " + (ok ? "ok" : "err"); el.textContent = txt; };
-  const refreshTokNote = () => { $("#noToken").hidden = !!store.get("recettes:token", ""); };
-  refreshTokNote();
-  $("#saveTok").onclick = async () => {
-    store.set("recettes:token", tokIn.value.trim()); store.set("recettes:repo", repoIn.value.trim());
-    refreshTokNote();
-    try {
-      const info = await O.gh("GET", `/repos/${repoIn.value.trim()}`);
-      showMsg($("#tokMsg"), !!(info.permissions && info.permissions.push),
-        info.permissions && info.permissions.push ? "Jeton valide : écriture permise dans " + info.full_name + "." :
-        "Le jeton lit le dépôt mais ne peut pas écrire. Vérifiez la permission Contents : Read and write.");
-    } catch (e) { showMsg($("#tokMsg"), false, "Échec : " + e.message); }
-  };
-  $("#delTok").onclick = () => { store.del("recettes:token"); tokIn.value = ""; refreshTokNote(); showMsg($("#tokMsg"), true, "Jeton oublié."); };
 
   /* ---------- Types et étiquettes existants ---------- */
   const cats = [...new Set(R.map(r => r.categorie))].sort((a, b) => a.localeCompare(b, "fr"));
@@ -288,33 +247,20 @@ details summary{cursor:pointer;font-weight:600}
 
   $("#form").onsubmit = async e => {
     e.preventDefault();
-    const token = store.get("recettes:token", "");
-    if (!token) { showMsg($("#formMsg"), false, "Ajoutez d'abord votre jeton GitHub dans les réglages plus bas."); $("#reglages").scrollIntoView({ behavior: "smooth" }); return; }
-    const btn = $("#save"); btn.disabled = true; btn.textContent = "Enregistrement…";
-    const repo = store.get("recettes:repo", "JulienMiron/Recettes");
-    try {
-      let recette;
-      for (let tries = 0; tries < 2; tries++) {
-        const f = await O.gh("GET", `/repos/${repo}/contents/recettes.js?ref=main`);
-        const text = O.b64decode(f.content);
-        const list = JSON.parse(text.slice(text.indexOf("["), text.lastIndexOf("]") + 1));
-        recette = build(list);
-        list.push(recette);
-        const body = "window.RECETTES = " + JSON.stringify(list, null, 2) + ";\n";
-        try {
-          await O.gh("PUT", `/repos/${repo}/contents/recettes.js`, {
-            message: "Ajouter la recette : " + recette.titre, content: O.b64encode(body), sha: f.sha, branch: "main"
-          });
-          break;
-        } catch (err) { if (err.status === 409 && tries === 0) continue; throw err; }
-      }
-      const att = store.get("recettes:attente", []); att.push(recette); store.set("recettes:attente", att);
-      showMsg($("#formMsg"), true, "Recette enregistrée ! Elle apparaîtra sur tous vos appareils d'ici une minute.");
-      setTimeout(() => location.href = "./#/recette/" + encodeURIComponent(recette.id), 900);
-    } catch (err) {
-      showMsg($("#formMsg"), false, "Échec de l'enregistrement : " + err.message);
-      btn.disabled = false; btn.textContent = "Enregistrer dans le dépôt";
+    const recette = build(R);
+    const json = JSON.stringify(recette, null, 1);
+    const intro = "<!-- recette -->\nRecette envoyée depuis la page Ajouter du site. Elle sera ajoutée automatiquement.\n\n";
+    const title = "Recette : " + recette.titre;
+    let body = intro + "```json\n" + json + "\n```\n";
+    let url = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+    if (url.length > 7500) {
+      // Trop long pour une adresse : on copie la recette et on la fait coller dans l'issue.
+      await O.copy("```json\n" + JSON.stringify(recette) + "\n```");
+      body = intro + "COLLER LA RECETTE ICI (elle est dans le presse-papiers)\n";
+      url = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+      alert("Cette recette est longue : elle a été copiée. Sur GitHub, remplacez la ligne « COLLER LA RECETTE ICI » en collant, puis créez l'issue.");
     }
+    location.href = url;
   };
 })();
 </script>

@@ -7,14 +7,18 @@ Site : https://julienmiron.github.io/Recettes/
 ## Fichiers
 
 - `index.html` : le site (aucune dépendance, aucune compilation).
-- `ajouter.html` : formulaire d'ajout, qui écrit dans `recettes.js` par l'API GitHub.
+- `ajouter.html` : formulaire d'ajout ; ouvre une issue pré-remplie sur GitHub.
+- `.github/workflows/ajouter-recette.yml` : ajoute à `recettes.js` la recette d'une issue ouverte par le propriétaire, ferme l'issue et republie le site.
+- `.github/workflows/publier.yml` : publie le site sur GitHub Pages à chaque push.
 - `recettes.js` : les recettes, au format JSON (`window.RECETTES = [...]`).
 - `outils.js`, `style.css` : code et styles partagés.
 - `bookmarklet.js` : source lisible du favori « Ajouter recette ». Après une modification, la version minifiée doit être recopiée dans `ajouter.html` (constante `BM`).
 
 ## Ajouter une recette
 
-Depuis le téléphone : sur un site de recettes, lancer le favori « Ajouter recette », vérifier, enregistrer. Les instructions d'installation (favori et jeton GitHub) sont sur la page `ajouter.html`.
+Depuis le téléphone : sur un site de recettes, lancer le favori « Ajouter recette », vérifier, toucher Enregistrer, puis créer l'issue sur GitHub. L'Action ajoute la recette en une à deux minutes. Les instructions d'installation du favori sont sur la page `ajouter.html`.
+
+Prérequis : Settings → Pages → Source : **GitHub Actions**.
 
 À la main : ajouter un objet dans le tableau de `recettes.js` (le fichier doit rester du JSON valide après `window.RECETTES = `).
 
