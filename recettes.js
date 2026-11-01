@@ -268,5 +268,113 @@ window.RECETTES = [
     ],
     "source": "https://www.ricardocuisine.com/recettes/11359-gratins-de-pommes-de-terre-au-canard-confit",
     "image": "https://ucarecdn.com/8d0bb214-d1ab-4e6b-a801-92f34e166e72/-/crop/5504x7435/0,821/-/preview/-/crop/1:1/"
+  },
+  {
+    "id": "pain-aux-bananes-ultra-moelleux",
+    "titre": "Pain aux bananes ultra moelleux",
+    "description": "L'ingrédient secret est le lait de coco, qui rend la mie très légère ; le jus de lime équilibre le sucre. Une collation maison facile à emporter.",
+    "categorie": "Desserts",
+    "etiquettes": [
+      "Végétarien",
+      "Sans noix",
+      "Se congèle"
+    ],
+    "portions": 10,
+    "unitePortion": "tranches (1 pain)",
+    "tempsActif": "20 min",
+    "tempsTotal": "≈ 2 h 20",
+    "ajoutee": "2026-11-01",
+    "ingredients": [
+      {
+        "nom": "farine tout usage non blanchie",
+        "quantite": 225,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "poudre à pâte",
+        "quantite": 1,
+        "unite": "c_the"
+      },
+      {
+        "nom": "bicarbonate de soude",
+        "quantite": 1,
+        "unite": "c_the"
+      },
+      {
+        "nom": "bananes mûres écrasées à la fourchette",
+        "quantite": 310,
+        "unite": "ml",
+        "equivalent": "1 ¼ tasse, 3 à 4 bananes"
+      },
+      {
+        "nom": "lait de coco",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "jus de lime",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "beurre non salé, ramolli",
+        "quantite": 115,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 210,
+        "unite": "g",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "œuf",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "extrait de vanille",
+        "quantite": 1,
+        "unite": "c_the"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préparer le four et le moule",
+        "texte": "Placer la grille au centre du four. Préchauffer le four à 180 °C (350 °F). Beurrer un moule à pain de 23 x 13 cm (9 x 5 po), d'une contenance de 1,5 L (6 tasses), et le tapisser d'une bande de papier parchemin en la laissant dépasser sur deux côtés."
+      },
+      {
+        "titre": "Ingrédients secs",
+        "texte": "Dans un bol, mélanger la farine, la poudre à pâte et le bicarbonate. Réserver."
+      },
+      {
+        "titre": "Mélange de bananes",
+        "texte": "Dans un autre bol, mélanger les bananes, le lait de coco et le jus de lime."
+      },
+      {
+        "titre": "Crémer et assembler",
+        "texte": "Dans un troisième bol, crémer le beurre avec le sucre au batteur électrique. Ajouter l'œuf et la vanille et mélanger jusqu'à ce que la préparation soit homogène. À basse vitesse, incorporer les ingrédients secs en alternant avec le mélange de bananes. Répartir la pâte dans le moule."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Cuire au four 1 heure ou jusqu'à ce qu'un cure-dents inséré au centre du pain en ressorte propre.",
+        "minuterie": 3600
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser tiédir sur une grille, environ 1 heure. Démouler, puis couper en tranches.",
+        "minuterie": 3600
+      }
+    ],
+    "astuces": [
+      "On ne reconnaît pas le goût du lait de coco : il sert seulement à rendre le pain plus moelleux. Le reste de la boîte se congèle.",
+      "Sans lait de coco : remplacer le lait de coco et le jus de lime par 125 ml (½ tasse) de crème sure.",
+      "Le pain se congèle."
+    ],
+    "source": "https://www.ricardocuisine.com/recettes/6085-pain-aux-bananes-ultra-moelleux-le-meilleur",
+    "image": "https://images.ricardocuisine.com/services/recipes/79546203852d456f1bc39c.jpg"
   }
 ];
