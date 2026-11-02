@@ -561,5 +561,131 @@ window.RECETTES = [
       "Se conserve 3 à 4 jours au frigo : on peut préparer plusieurs pots d'un coup (bouton + pour multiplier les quantités).",
       "Le cacao et le beurre d'arachide se mélangent plus facilement délayés d'abord dans une petite partie du liquide."
     ]
+  },
+  {
+    "id": "macaronis-gratines-au-fromage",
+    "titre": "Macaronis gratinés au fromage (mac and cheese)",
+    "description": "Le mac and cheese de Ricardo : une sauce crémeuse au lait évaporé, au cheddar fort, au havarti et au Velveeta, gratinée quelques minutes sous le gril.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Pâtes",
+      "Fromage",
+      "Comfort food",
+      "Sans noix",
+      "Sans oeufs"
+    ],
+    "portions": 6,
+    "unitePortion": "portions",
+    "tempsActif": "20 min",
+    "tempsTotal": "45 min",
+    "ajoutee": "2026-11-02",
+    "ingredients": [
+      {
+        "nom": "macaronis courts",
+        "quantite": 340,
+        "unite": "g",
+        "equivalent": "¾ lb"
+      },
+      {
+        "nom": "beurre",
+        "quantite": 2,
+        "unite": "c_soupe",
+        "equivalent": "30 ml"
+      },
+      {
+        "nom": "farine tout usage non blanchie",
+        "quantite": 2,
+        "unite": "c_soupe",
+        "equivalent": "30 ml"
+      },
+      {
+        "nom": "moutarde sèche",
+        "quantite": 0.5,
+        "unite": "c_the",
+        "equivalent": "2,5 ml"
+      },
+      {
+        "nom": "poudre d'oignon",
+        "quantite": 0.25,
+        "unite": "c_the",
+        "equivalent": "1 ml"
+      },
+      {
+        "nom": "poudre d'ail",
+        "quantite": 0.25,
+        "unite": "c_the",
+        "equivalent": "1 ml"
+      },
+      {
+        "nom": "lait évaporé",
+        "quantite": 354,
+        "unite": "ml",
+        "note": "1 boîte"
+      },
+      {
+        "nom": "bouillon de poulet",
+        "quantite": 250,
+        "unite": "ml",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "fromage cheddar orange fort râpé",
+        "quantite": 300,
+        "unite": "g",
+        "equivalent": "3 tasses",
+        "note": "100 g dans la sauce, le reste pour gratiner"
+      },
+      {
+        "nom": "fromage havarti râpé",
+        "quantite": 200,
+        "unite": "g",
+        "equivalent": "2 tasses",
+        "note": "100 g dans la sauce, le reste pour gratiner"
+      },
+      {
+        "nom": "fromage Velveeta coupé en cubes",
+        "quantite": 110,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Cuire les pâtes",
+        "texte": "Dans une casserole d'eau bouillante salée, cuire les pâtes al dente. Égoutter et réserver."
+      },
+      {
+        "titre": "Préparer le four",
+        "texte": "Placer la grille au centre du four. Préchauffer le four à gril (broil). Beurrer un plat de cuisson d'environ 2 litres (8 tasses) ou 4 ramequins d'environ 500 ml (2 tasses)."
+      },
+      {
+        "titre": "Faire le roux",
+        "texte": "Dans une casserole à feu moyen, fondre le beurre. Ajouter la farine et les épices et cuire 1 minute en remuant au fouet.",
+        "minuterie": 60
+      },
+      {
+        "titre": "Ajouter les liquides",
+        "texte": "Ajouter le lait évaporé et le bouillon, puis porter à ébullition en remuant."
+      },
+      {
+        "titre": "Fondre les fromages",
+        "texte": "Retirer du feu. Incorporer 100 g (1 tasse) de cheddar, 100 g (1 tasse) de havarti et le Velveeta. Bien mélanger jusqu'à ce qu'ils soient fondus."
+      },
+      {
+        "titre": "Enrober les pâtes",
+        "texte": "Ajouter les pâtes et réchauffer 2 minutes en remuant pour bien les enrober de sauce. Rectifier l'assaisonnement.",
+        "minuterie": 120
+      },
+      {
+        "titre": "Gratiner",
+        "texte": "Répartir dans le plat ou les ramequins. Parsemer du reste des fromages. Cuire au four 5 minutes ou jusqu'à ce que le fromage soit légèrement doré.",
+        "minuterie": 300
+      }
+    ],
+    "astuces": [
+      "Pour gagner du temps, utiliser un bouillon de poulet du commerce."
+    ],
+    "source": "https://www.ricardocuisine.com/recettes/5006-macaronis-gratines-au-fromage-mac-and-cheese",
+    "image": "https://images.ricardocuisine.com/services/recipes/5006.jpg"
   }
 ];
