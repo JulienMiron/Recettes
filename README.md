@@ -36,6 +36,7 @@ Prérequis : Settings → Pages → Source : **GitHub Actions**.
 | `ingredients` | `{ nom, quantite, unite, equivalent?, note? }`, unités : `g`, `kg`, `ml`, `l`, `c_the`, `c_soupe`, `tasse`, `pincee`, `oz`, `lb` ou `""`. Sans `quantite`, l'ingrédient est affiché tel quel. |
 | `etapes` | `{ titre?, texte, minuterie? }` (minuterie en secondes) |
 | `astuces` | liste de textes (facultatif) |
+| `composer` | groupes d'options à cocher (facultatif) : `{ titre, mode?, quantite?, unite?, options: [{ nom, quantite?, unite?, equivalent?, note?, defaut? }] }`. Avec `mode: "partage"`, la `quantite` du groupe est répartie également entre les options cochées ; sinon chaque option cochée ajoute sa propre quantité. Les options cochées s'ajoutent à la liste d'ingrédients. |
 | `source`, `image` | lien vers la recette originale et image (facultatif) |
 
 ## Consulter en local

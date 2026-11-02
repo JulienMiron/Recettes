@@ -376,5 +376,190 @@ window.RECETTES = [
     ],
     "source": "https://www.ricardocuisine.com/recettes/6085-pain-aux-bananes-ultra-moelleux-le-meilleur",
     "image": "https://images.ricardocuisine.com/services/recipes/79546203852d456f1bc39c.jpg"
+  },
+  {
+    "id": "overnight-oats-de-base",
+    "titre": "Overnight oats de base",
+    "description": "Le ratio de base pour un pot de gruau froid préparé la veille : cochez vos liquides, graines, sucrant et saveurs, les quantités s'ajustent toutes seules.",
+    "categorie": "Déjeuners",
+    "etiquettes": [
+      "Préparer la veille",
+      "Sans cuisson",
+      "Ratios"
+    ],
+    "portions": 1,
+    "unitePortion": "pot",
+    "tempsActif": "5 min",
+    "tempsTotal": "≈ 8 h (minimum 4 h)",
+    "ajoutee": "2026-11-01",
+    "ingredients": [
+      {
+        "nom": "gros flocons d'avoine",
+        "quantite": 45,
+        "unite": "g",
+        "equivalent": "½ tasse",
+        "note": "pas les flocons à cuisson rapide ni instantanés"
+      },
+      {
+        "nom": "sel",
+        "quantite": 1,
+        "unite": "pincee"
+      }
+    ],
+    "composer": [
+      {
+        "titre": "Liquides",
+        "mode": "partage",
+        "quantite": 180,
+        "unite": "ml",
+        "options": [
+          {
+            "nom": "lait de vache",
+            "defaut": true
+          },
+          {
+            "nom": "boisson d'amande"
+          },
+          {
+            "nom": "boisson de soya"
+          },
+          {
+            "nom": "boisson d'avoine"
+          },
+          {
+            "nom": "yogourt nature",
+            "defaut": true
+          },
+          {
+            "nom": "yogourt grec"
+          },
+          {
+            "nom": "kéfir"
+          }
+        ]
+      },
+      {
+        "titre": "Graines",
+        "options": [
+          {
+            "nom": "graines de chia",
+            "quantite": 1,
+            "unite": "c_soupe",
+            "defaut": true
+          },
+          {
+            "nom": "graines de lin moulues",
+            "quantite": 1,
+            "unite": "c_soupe"
+          },
+          {
+            "nom": "graines de chanvre",
+            "quantite": 1,
+            "unite": "c_soupe"
+          }
+        ]
+      },
+      {
+        "titre": "Sucrant",
+        "options": [
+          {
+            "nom": "sirop d'érable",
+            "quantite": 2,
+            "unite": "c_the",
+            "defaut": true
+          },
+          {
+            "nom": "miel",
+            "quantite": 2,
+            "unite": "c_the"
+          },
+          {
+            "nom": "cassonade",
+            "quantite": 2,
+            "unite": "c_the"
+          },
+          {
+            "nom": "banane mûre écrasée",
+            "quantite": 0.5,
+            "unite": "",
+            "note": "la moitié d'une banane"
+          }
+        ]
+      },
+      {
+        "titre": "Saveurs",
+        "options": [
+          {
+            "nom": "vanille",
+            "quantite": 0.25,
+            "unite": "c_the"
+          },
+          {
+            "nom": "cannelle",
+            "quantite": 0.25,
+            "unite": "c_the"
+          },
+          {
+            "nom": "cacao",
+            "quantite": 1,
+            "unite": "c_soupe"
+          },
+          {
+            "nom": "beurre d'arachide",
+            "quantite": 1,
+            "unite": "c_soupe"
+          }
+        ]
+      },
+      {
+        "titre": "Garnitures au moment de servir",
+        "options": [
+          {
+            "nom": "petits fruits",
+            "quantite": 75,
+            "unite": "g",
+            "equivalent": "½ tasse"
+          },
+          {
+            "nom": "pomme râpée",
+            "quantite": 0.5,
+            "unite": "",
+            "note": "la moitié d'une pomme"
+          },
+          {
+            "nom": "noix hachées",
+            "quantite": 1,
+            "unite": "c_soupe"
+          },
+          {
+            "nom": "granola",
+            "quantite": 2,
+            "unite": "c_soupe"
+          }
+        ]
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Mélanger",
+        "texte": "Dans un pot d'environ 500 ml, mettre les flocons, les graines, le sel et les saveurs choisies. Ajouter les liquides et le sucrant, puis bien mélanger en raclant le fond pour qu'il ne reste pas de flocons secs."
+      },
+      {
+        "titre": "Réfrigérer",
+        "texte": "Fermer le pot et réfrigérer au moins 4 heures, idéalement toute la nuit.",
+        "minuterie": 14400
+      },
+      {
+        "titre": "Servir",
+        "texte": "Brasser, ajuster la texture avec un trait de lait au besoin, puis ajouter les garnitures. Se mange froid, ou réchauffé 1 minute au micro-ondes."
+      }
+    ],
+    "astuces": [
+      "Ratio à retenir : 1 volume de flocons pour 1 ½ volume de liquide au total (lait + yogourt), plus 1 c. à soupe de graines.",
+      "Sans graines de chia ni de lin, réduire le liquide d'environ 30 ml (2 c. à soupe) pour éviter un gruau trop liquide.",
+      "Si le yogourt grec est le seul liquide coché, le mélange sera très épais : ajouter un peu de lait le matin.",
+      "Se conserve 3 à 4 jours au frigo : on peut préparer plusieurs pots d'un coup (bouton + pour multiplier les quantités).",
+      "Le cacao et le beurre d'arachide se mélangent plus facilement délayés d'abord dans une petite partie du liquide."
+    ]
   }
 ];

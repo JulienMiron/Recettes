@@ -123,3 +123,4 @@ footer{color:var(--muted);font-size:.85rem;text-align:center;padding:24px 0 36px
 .source{font-size:.9rem;color:var(--muted);margin:8px 0 0}
 .source a{color:var(--accent)}
 .step p.solo{margin:0}
+.compose .chips{margin-bottom:4px}.compose .filter-label:first-of-type{margin-top:0}.compose .note{color:var(--muted);font-size:.85rem;margin:4px 0 0}

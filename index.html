@@ -162,7 +162,7 @@
     let list = R.filter(r =>
       (!listState.cat || r.categorie === listState.cat) &&
       listState.tags.every(t => (r.etiquettes || []).includes(t)) &&
-      (!q || norm([r.titre, r.description, r.categorie, ...(r.etiquettes || []), ...r.ingredients.map(i => i.nom)].join(" ")).includes(q))
+      (!q || norm([r.titre, r.description, r.categorie, ...(r.etiquettes || []), ...r.ingredients.map(i => i.nom), ...(r.composer || []).flatMap(g => g.options.map(o => o.nom))].join(" ")).includes(q))
     );
     const by = {
       titre: (a, b) => a.titre.localeCompare(b.titre, "fr"),
@@ -227,6 +227,10 @@
         <button class="icon-btn" id="reset">↺ Tout décocher</button>
       </div>
       <div class="layout">
+        ${r.composer ? `<section class="panel full compose">
+          <div class="panel-head"><h2>Je compose</h2><small>Touchez ce que vous utilisez</small></div>
+          <div id="compose"></div>
+        </section>` : ""}
         <section class="panel ing">
           <div class="panel-head"><h2>Ingrédients</h2><small id="ingCount"></small></div>
           <div class="bar"><i id="ingBar"></i></div>
@@ -243,19 +247,56 @@
         </section>` : ""}
       </div>`;
 
+    /* Composeur : options cochées → ingrédients. Mode « partage » : la quantité du groupe
+       est répartie également entre les options choisies ; sinon chaque option a sa quantité. */
+    const groupes = r.composer || [];
+    const defauts = () => groupes.flatMap((g, gi) => g.options.flatMap((o, oi) => o.defaut ? [gi + "-" + oi] : []));
+    const choix = () => prog.choix || defauts();
+    const tasses = ml => { const t = ml / 250; return t >= 1 / 16 ? "≈ " + frac(t) + (t > 1.1 ? " tasses" : " tasse") : ""; };
+    function composes(k) {
+      const sel = choix(), out = [];
+      groupes.forEach((g, gi) => {
+        const on = g.options.map((_, oi) => oi).filter(oi => sel.includes(gi + "-" + oi));
+        on.forEach(oi => {
+          const o = g.options[oi], key = "c" + gi + "-" + oi;
+          if (g.mode === "partage") {
+            const q = g.quantite / on.length * k;
+            out.push({ key, nom: o.nom, quantite: q, unite: g.unite, note: o.note, eq: g.unite === "ml" ? tasses(q) : "" });
+          } else out.push({ key, ...o, quantite: o.quantite && o.quantite * k, eq: k === 1 ? o.equivalent : "" });
+        });
+      });
+      return out;
+    }
+    function drawCompose() {
+      const el = $("#compose"); if (!el) return;
+      const sel = choix(), k = portions / r.portions;
+      el.innerHTML = groupes.map((g, gi) => {
+        const n = g.options.filter((_, oi) => sel.includes(gi + "-" + oi)).length;
+        const info = g.mode === "partage"
+          ? ` · ${fmtQty(g.quantite * k, g.unite)} au total${g.unite === "ml" ? " (" + tasses(g.quantite * k) + ")" : ""}, réparti entre vos choix`
+          : "";
+        return `<div class="filter-label">${esc(g.titre)}${esc(info)}</div>
+          <div class="chips">${g.options.map((o, oi) => `<button class="chip" data-c="${gi}-${oi}" aria-pressed="${sel.includes(gi + "-" + oi)}">${esc(o.nom)}</button>`).join("")}</div>
+          ${g.mode === "partage" && !n ? `<p class="note">Choisissez au moins une option.</p>` : ""}`;
+      }).join("");
+    }
+
     function drawIng() {
       const k = portions / r.portions;
       $("#portLbl").textContent = `${portions} ${r.unitePortion || "portions"}`;
-      $("#ingList").innerHTML = r.ingredients.map((g, i) => {
-        const on = prog.ing.includes(i);
+      const items = r.ingredients.map((g, i) => ({ key: i, ...g, quantite: g.quantite && g.quantite * k, eq: k === 1 ? g.equivalent : "" })).concat(composes(k));
+      $("#ingList").innerHTML = items.map(g => {
+        const on = prog.ing.includes(g.key);
         return `<li class="${on ? "done" : ""}"><label class="check">
-          <input type="checkbox" data-i="${i}" ${on ? "checked" : ""}>
-          <span class="txt">${g.quantite ? `<span class="qty">${esc(fmtQty(g.quantite * k, g.unite))}</span> ` : ""}<span class="name">${esc(g.nom)}</span>
+          <input type="checkbox" data-i="${g.key}" ${on ? "checked" : ""}>
+          <span class="txt">${g.quantite ? `<span class="qty">${esc(fmtQty(g.quantite, g.unite))}</span> ` : ""}<span class="name">${esc(g.nom)}</span>
           ${g.note ? `<span class="note">${esc(g.note)}</span>` : ""}
-          ${g.equivalent && k === 1 ? `<span class="eq">${esc(g.equivalent)}</span>` : ""}</span>
+          ${g.eq ? `<span class="eq">${esc(g.eq)}</span>` : ""}</span>
         </label></li>`;
       }).join("");
-      const n = prog.ing.length, t = r.ingredients.length;
+      const keys = items.map(g => g.key);
+      prog.ing = prog.ing.filter(x => keys.includes(x));
+      const n = prog.ing.length, t = items.length;
       $("#ingCount").textContent = `${n}/${t}`;
       $("#ingBar").style.width = (100 * n / t) + "%";
     }
@@ -294,7 +335,8 @@
     }
 
     $("#ingList").onchange = e => {
-      const i = +e.target.dataset.i; if (isNaN(i)) return;
+      const d = e.target.dataset.i; if (d === undefined) return;
+      const i = /^\d+$/.test(d) ? +d : d;
       e.target.checked ? prog.ing.push(i) : prog.ing.splice(prog.ing.indexOf(i), 1);
       save(); drawIng();
     };
@@ -320,11 +362,18 @@
       drawTimer(i);
     };
 
-    $("#minus").onclick = () => { if (portions > 1) { portions--; prog.portions = portions; save(); drawIng(); } };
-    $("#plus").onclick = () => { portions++; prog.portions = portions; save(); drawIng(); };
+    const cmp = $("#compose");
+    if (cmp) cmp.onclick = e => {
+      const b = e.target.closest("[data-c]"); if (!b) return;
+      const sel = choix().slice(), c = b.dataset.c, j = sel.indexOf(c);
+      j < 0 ? sel.push(c) : sel.splice(j, 1);
+      prog.choix = sel; drawCompose(); drawIng(); save();
+    };
+    $("#minus").onclick = () => { if (portions > 1) { portions--; prog.portions = portions; save(); drawIng(); drawCompose(); } };
+    $("#plus").onclick = () => { portions++; prog.portions = portions; save(); drawIng(); drawCompose(); };
     $("#reset").onclick = () => {
       prog.ing = []; prog.steps = []; prog.portions = null; portions = r.portions;
-      save(); drawIng(); drawSteps(); toast("Recette remise à zéro");
+      save(); drawIng(); drawCompose(); drawSteps(); toast("Recette remise à zéro");
     };
     const wakeBtn = $("#wake");
     if (!("wakeLock" in navigator)) wakeBtn.style.display = "none";
@@ -337,7 +386,7 @@
       } catch { toast("Impossible de garder l'écran allumé ici"); }
     };
 
-    drawIng(); drawSteps();
+    drawCompose(); drawIng(); drawSteps();
     currentTick = () => r.etapes.forEach((s, i) => s.minuterie && drawTimer(i));
   }
 
