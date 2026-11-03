@@ -97,6 +97,7 @@
      Une semaine va du dimanche 18 h au dimanche 18 h suivant. Au premier chargement
      d'une nouvelle semaine, le menu en cours est archivé dans l'historique puis vidé. */
   const RESET_H = 18;
+  const REMISE_A_ZERO = false; // remise à zéro hebdomadaire désactivée pour l'instant ; mettre true pour la réactiver
   const dateKey = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   function debutSemaine(now = new Date()) {
     const d = new Date(now); d.setHours(RESET_H, 0, 0, 0);
@@ -116,7 +117,7 @@
   function rouler(e) {
     const cle = debutSemaine();
     e = { semaine: e && e.semaine || cle, ids: (e && e.ids || []).slice(), historique: (e && e.historique || []).slice() };
-    if (e.semaine !== cle) {
+    if (REMISE_A_ZERO && e.semaine !== cle) {
       if (e.ids.length) {
         e.historique = e.historique.filter(h => h.semaine !== e.semaine);
         e.historique.unshift({ semaine: e.semaine, ids: e.ids });
@@ -179,7 +180,7 @@
       <section class="menu-sem">
         <div class="menu-head">
           <h2>★ Au menu cette semaine</h2>
-          <a href="#/menus">Semaines précédentes →</a>
+          ${REMISE_A_ZERO || menu.historique.length ? `<a href="#/menus">Semaines précédentes →</a>` : ""}
         </div>
         <div id="menuGrid"></div>
       </section>
@@ -281,7 +282,7 @@
     app.innerHTML = `
       <a class="back" href="#/">← Toutes les recettes</a>
       <section class="hero"><h1>Semaines précédentes</h1>
-        <p>Le menu repart à zéro chaque dimanche à ${RESET_H} h. Touchez ☆ pour remettre une recette au menu de cette semaine.</p></section>
+        <p>${REMISE_A_ZERO ? `Le menu repart à zéro chaque dimanche à ${RESET_H} h. ` : ""}Touchez ☆ pour remettre une recette au menu de cette semaine.</p></section>
       ${hist.length ? hist.map(h => {
         const rs = h.ids.map(id => R.find(r => r.id === id)).filter(Boolean);
         return `<section class="panel hist">
