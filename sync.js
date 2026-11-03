@@ -75,9 +75,24 @@ btn.onclick = async () => {
   try { await signInWithPopup(auth, p); }
   catch (e) {
     if (e.code === "auth/popup-blocked" || e.code === "auth/operation-not-supported-in-this-environment") signInWithRedirect(auth, p);
-    else if (e.code !== "auth/popup-closed-by-user" && e.code !== "auth/cancelled-popup-request") { console.error(e); O.toast("Connexion impossible"); }
+    else {
+      console.error(e);
+      const msgs = {
+        "auth/operation-not-allowed": "Connexion Google non activée dans Firebase (Authentication → Méthode de connexion)",
+        "auth/unauthorized-domain": "Domaine non autorisé dans Firebase (Authentication → Paramètres)",
+        "auth/popup-closed-by-user": "Fenêtre fermée avant la fin de la connexion",
+        "auth/cancelled-popup-request": "Connexion annulée"
+      };
+      afficherErreur(msgs[e.code] || "Connexion impossible", e.code);
+    }
   }
 };
+/* Message d'erreur qui reste affiché assez longtemps pour être lu, avec le code Firebase. */
+function afficherErreur(msg, code) {
+  const t = document.getElementById("toast");
+  t.textContent = msg + (code ? " (" + code + ")" : ""); t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 9000);
+}
 /* Pas de boîte de dialogue bloquante : un second toucher dans les 4 s déconnecte. */
 let armee = 0;
 function confirmerDeconnexion() {
