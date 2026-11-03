@@ -853,5 +853,102 @@ window.RECETTES = [
     ],
     "source": "https://ici.radio-canada.ca/mordu/recettes/9276/boulettes-porc-sesame-salade-concombre",
     "image": "https://images.radio-canada.ca/v1/alimentation/recette/1x1/boulettes-de-porc-au-sesame-salade-de-concombre.jpg"
+  },
+  {
+    "id": "schnitzels-viennoise",
+    "titre": "Schnitzels à la viennoise (wiener schnitzel)",
+    "description": "Escalopes de veau panées et frites, servies avec du citron et une salade de pommes de terre. Recette de Frédéric Gagnon, publiée sur Mordu.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Veau",
+      "Cuisine allemande",
+      "Friture",
+      "Facile"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "15 min",
+    "tempsTotal": "25 min",
+    "ajoutee": "2026-11-03",
+    "ingredients": [
+      {
+        "nom": "escalopes de veau",
+        "quantite": 450,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "farine",
+        "quantite": 250,
+        "unite": "ml",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "sel et poivre",
+        "note": "au goût"
+      },
+      {
+        "nom": "œufs",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "eau",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml"
+      },
+      {
+        "nom": "chapelure",
+        "quantite": 375,
+        "unite": "ml",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "huile végétale",
+        "note": "quantité suffisante, environ 2,5 cm dans la poêle"
+      },
+      {
+        "nom": "citron en tranches",
+        "note": "pour servir"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Aplatir les escalopes",
+        "texte": "Aplatissez les escalopes avec un rouleau à pâtisserie ou une casserole jusqu’à ce qu’elles soient d’environ 5 mm (¼ po) d’épaisseur. Salez et poivrez-les légèrement."
+      },
+      {
+        "titre": "Préparer la panure",
+        "texte": "Dans une assiette creuse, mettez la farine, puis assaisonnez-la légèrement de sel et de poivre. Dans un bol, fouettez les œufs et 15 ml (1 c. à soupe) d’eau jusqu’à ce que le mélange soit très liquide. Dans une autre assiette, mettez la chapelure."
+      },
+      {
+        "titre": "Paner",
+        "texte": "Enrobez les escalopes de farine et retirez l’excédent. Trempez-les dans l’œuf, laissez-les s’égoutter quelques secondes et enrobez-les de chapelure. Réservez les escalopes dans une assiette."
+      },
+      {
+        "titre": "Chauffer l’huile",
+        "texte": "Versez environ 2,5 cm (1 po) d’huile dans une grande poêle. Faites-la chauffer jusqu’à ce qu’elle atteigne une température d’environ 175 °C (350 °F)."
+      },
+      {
+        "titre": "Frire",
+        "texte": "Faites cuire les escalopes 2 à la fois de 2 à 3 minutes par côté pour le veau et le porc. Si vous utilisez du poulet, le temps de cuisson sera un peu plus long.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Égoutter",
+        "texte": "Épongez les escalopes frites sur du papier absorbant et salez-les aussitôt."
+      },
+      {
+        "titre": "Servir",
+        "texte": "Servez les schnitzels avec des tranches de citron et une salade de pommes de terre."
+      }
+    ],
+    "astuces": [
+      "Sans thermomètre, mettez le bout du manche d’une cuillère en bois dans l’huile : si des bulles se forment et éclatent rapidement, l’huile est assez chaude.",
+      "Fonctionne aussi avec du porc (même cuisson) ou du poulet (cuisson un peu plus longue)."
+    ],
+    "source": "https://ici.radio-canada.ca/mordu/recettes/9091/schnitzels-viennoise-wienerschnitzel",
+    "image": "https://images.radio-canada.ca/q_auto,w_1200/v1/alimentation/recette/16x9/schnitzels-viennoise.jpg"
   }
 ];
