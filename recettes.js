@@ -950,5 +950,98 @@ window.RECETTES = [
     ],
     "source": "https://ici.radio-canada.ca/mordu/recettes/9091/schnitzels-viennoise-wienerschnitzel",
     "image": "https://images.radio-canada.ca/q_auto,w_1200/v1/alimentation/recette/16x9/schnitzels-viennoise.jpg"
+  },
+  {
+    "id": "legumes-racines-rotis",
+    "titre": "Légumes-racines rôtis",
+    "description": "Un mélange de légumes-racines, de choux de Bruxelles et d'échalotes rôtis au four avec du thym, très simple à faire. Tiré de My Paris Kitchen de David Lebovitz (p. 225-226). Se sert avec un poulet rôti, du porc ou une autre viande rôtie.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "légumes",
+      "four",
+      "végétarien"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "20 min",
+    "tempsTotal": "1 h 20",
+    "ajoutee": "2026-11-03",
+    "ingredients": [
+      {
+        "nom": "grosses carottes",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "panais",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "grosse betterave",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "patate douce, ou 225 g de pommes de terre grelots allongées (fingerling)",
+        "quantite": 1,
+        "unite": "",
+        "equivalent": "8 oz de grelots"
+      },
+      {
+        "nom": "choux de Bruxelles",
+        "quantite": 225,
+        "unite": "g",
+        "equivalent": "8 oz"
+      },
+      {
+        "nom": "échalotes françaises",
+        "quantite": 8,
+        "unite": ""
+      },
+      {
+        "nom": "huile d'olive",
+        "quantite": 3,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "sel de mer ou sel casher",
+        "quantite": 1,
+        "unite": "c_the"
+      },
+      {
+        "nom": "poivre noir fraîchement moulu",
+        "unite": ""
+      },
+      {
+        "nom": "brins de thym",
+        "quantite": 10,
+        "unite": ""
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le four à 200 °C (400 °F). Idéalement, cuire sur la grille du bas, où la chaleur est plus concentrée, pour bien caraméliser les légumes."
+      },
+      {
+        "titre": "Couper les légumes",
+        "texte": "Peler les carottes et les panais et les couper en bâtonnets d'environ 8 cm (3 po). Peler la betterave et la patate douce et les couper en bâtonnets de même taille. (Avec des pommes de terre grelots : ne pas les peler, les couper en deux sur la longueur.) Retirer les feuilles extérieures abîmées des choux de Bruxelles et les couper en deux. Couper les échalotes en deux sur la longueur et retirer la pelure qui se détache."
+      },
+      {
+        "titre": "Assaisonner",
+        "texte": "Étaler les légumes sur une plaque à rebords, en plaçant les choux de Bruxelles et les échalotes côté coupé vers le bas pour qu'ils dorent bien. Arroser d'huile d'olive, saupoudrer de sel, poivrer et parsemer de thym."
+      },
+      {
+        "titre": "Rôtir",
+        "texte": "Rôtir de 45 à 60 minutes, en remuant à mi-cuisson, jusqu'à ce que les légumes soient tendres et dorés. Servir.",
+        "minuterie": 2700
+      }
+    ],
+    "astuces": [
+      "On peut varier le mélange (radis, céleri-rave pelé, etc.) en gardant environ 1,25 kg (2 1/2 lb) de légumes au total, tous coupés de taille semblable.",
+      "On peut remplacer le thym par du romarin, de la sarriette ou une bonne poignée de feuilles de sauge.",
+      "Le livre indique « 400 °C (200 °C) » : il s'agit bien de 400 °F, soit 200 °C."
+    ]
   }
 ];
