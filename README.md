@@ -44,3 +44,7 @@ Prérequis : Settings → Pages → Source : **GitHub Actions**.
 Ouvrir `index.html` directement dans un navigateur suffit.
 
 Les cases cochées et les portions choisies sont gardées dans le navigateur (localStorage), par recette.
+
+## Menu de la semaine
+
+Le bouton ☆ (sur chaque carte et sur la page d'une recette) met la recette « Au menu cette semaine » ; ces recettes s'affichent en premier sur l'accueil. Le menu repart à zéro chaque dimanche à 18 h : le menu terminé est archivé et consultable sous « Semaines précédentes » (`#/menus`), d'où on peut remettre une recette au menu. Comme les cases cochées, le menu est gardé dans le navigateur (`recettes:menu`, `recettes:menus`).
