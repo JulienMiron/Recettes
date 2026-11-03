@@ -687,5 +687,171 @@ window.RECETTES = [
     ],
     "source": "https://www.ricardocuisine.com/recettes/5006-macaronis-gratines-au-fromage-mac-and-cheese",
     "image": "https://images.ricardocuisine.com/services/recipes/5006.jpg"
+  },
+  {
+    "id": "boulettes-porc-sesame-salade-concombre",
+    "titre": "Boulettes de porc au sésame, salade de concombre",
+    "description": "24 boulettes nappées de sauce soya sucrée, avec une salade croquante. Recette de La cuisine d’Isabelle et Ricardo, publiée sur Mordu.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Porc",
+      "Boulettes",
+      "Se congèle"
+    ],
+    "portions": 6,
+    "unitePortion": "portions",
+    "tempsActif": "35 min",
+    "tempsTotal": "1 h 05",
+    "ajoutee": "2026-11-02",
+    "ingredients": [
+      {
+        "nom": "œufs",
+        "quantite": 2,
+        "unite": "",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "lait",
+        "quantite": 250,
+        "unite": "ml",
+        "equivalent": "1 tasse",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "chapelure panko",
+        "quantite": 120,
+        "unite": "g",
+        "equivalent": "1 ½ tasse",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "porc haché maigre",
+        "quantite": 1,
+        "unite": "kg",
+        "equivalent": "2,2 lb",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "huile de sésame grillé",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "sambal oelek",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "gousses d’ail finement râpées",
+        "quantite": 2,
+        "unite": "",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "sel",
+        "quantite": 1,
+        "unite": "c_the",
+        "equivalent": "5 ml",
+        "note": "Boulettes"
+      },
+      {
+        "nom": "concombre anglais en fines tranches",
+        "quantite": 1,
+        "unite": "",
+        "note": "Salade"
+      },
+      {
+        "nom": "carotte en fines tranches",
+        "quantite": 1,
+        "unite": "",
+        "note": "Salade"
+      },
+      {
+        "nom": "vinaigre de riz",
+        "quantite": 2,
+        "unite": "c_soupe",
+        "equivalent": "30 ml",
+        "note": "Salade"
+      },
+      {
+        "nom": "sel et poivre",
+        "note": "Salade, au goût"
+      },
+      {
+        "nom": "sauce soya à faible teneur en sodium",
+        "quantite": 6,
+        "unite": "c_soupe",
+        "equivalent": "90 ml",
+        "note": "Sauce"
+      },
+      {
+        "nom": "cassonade",
+        "quantite": 70,
+        "unite": "g",
+        "equivalent": "⅓ tasse",
+        "note": "Sauce"
+      },
+      {
+        "nom": "graines de sésame grillées",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Sauce"
+      },
+      {
+        "nom": "huile de sésame grillé",
+        "quantite": 2,
+        "unite": "c_the",
+        "equivalent": "10 ml",
+        "note": "Sauce"
+      },
+      {
+        "nom": "feuilles de coriandre",
+        "note": "Garniture, au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Chauffer le four",
+        "texte": "Régler le four à 220 °C (425 °F), grille au milieu. Couvrir une plaque de papier parchemin ou d’un tapis de silicone."
+      },
+      {
+        "titre": "Hydrater le panko",
+        "texte": "Combiner œufs, lait et panko dans un grand bol. Attendre 5 minutes.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Façonner les boulettes",
+        "texte": "Incorporer à la main le porc, l’ail, le sambal oelek, le sel et l’huile réservée aux boulettes. Avec une cuillère de 60 ml et les mains huilées, former 24 boulettes sur la plaque."
+      },
+      {
+        "titre": "Cuire les boulettes",
+        "texte": "Enfourner environ 25 minutes, jusqu’à cuisson complète et légère coloration.",
+        "minuterie": 1500
+      },
+      {
+        "titre": "Faire la salade",
+        "texte": "Pendant ce temps, réunir concombre, carotte, vinaigre, sel et poivre. Après au moins 5 minutes de repos, égoutter.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Réduire la sauce",
+        "texte": "Dans une grande poêle, faire bouillir sauce soya, cassonade, graines et huile de sésame. Réduire environ 3 minutes pour épaissir, puis y rouler délicatement les boulettes cuites.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Dresser les assiettes",
+        "texte": "Servir avec la salade et la coriandre; ajouter du riz collant si désiré."
+      }
+    ],
+    "astuces": [
+      "Pour congeler : placer les boulettes crues au congélateur, puis dans un contenant hermétique (3 mois). Cuire directement congelées, en prolongeant la cuisson de 10 minutes."
+    ],
+    "source": "https://ici.radio-canada.ca/mordu/recettes/9276/boulettes-porc-sesame-salade-concombre",
+    "image": "https://images.radio-canada.ca/v1/alimentation/recette/1x1/boulettes-de-porc-au-sesame-salade-de-concombre.jpg"
   }
 ];
