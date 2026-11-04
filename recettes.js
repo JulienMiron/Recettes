@@ -1006,8 +1006,10 @@ window.RECETTES = [
       },
       {
         "nom": "sel de mer ou sel casher",
-        "quantite": 1,
-        "unite": "c_the"
+        "quantite": 6,
+        "unite": "g",
+        "equivalent": "1 c. à thé",
+        "note": "environ 6 g de sel de mer fin, 3 à 5 g de sel casher"
       },
       {
         "nom": "poivre noir fraîchement moulu",
