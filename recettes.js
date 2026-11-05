@@ -1045,5 +1045,209 @@ window.RECETTES = [
       "On peut remplacer le thym par du romarin, de la sarriette ou une bonne poignée de feuilles de sauge.",
       "Le livre indique « 400 °C (200 °C) » : il s'agit bien de 400 °F, soit 200 °C."
     ]
+  },
+  {
+    "id": "tofu-teriyaki-soba-legumes-sautes",
+    "titre": "Tofu teriyaki et nouilles soba aux légumes sautés",
+    "description": "Tofu croustillant laqué d’une sauce teriyaki maison, sur des nouilles soba sautées avec poivrons, oignon et champignons dans une sauce soya-sésame légère.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Végétarien",
+      "Tofu",
+      "Nouilles",
+      "Asiatique",
+      "Semaine"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "30 min",
+    "tempsTotal": "40 min",
+    "ajoutee": "2026-11-05",
+    "ingredients": [
+      {
+        "nom": "tofu ferme ou extra-ferme",
+        "quantite": 454,
+        "unite": "g",
+        "equivalent": "1 lb",
+        "note": "Tofu"
+      },
+      {
+        "nom": "fécule de maïs",
+        "quantite": 16,
+        "unite": "g",
+        "equivalent": "2 c. à soupe",
+        "note": "Tofu"
+      },
+      {
+        "nom": "huile neutre canola ou arachide",
+        "quantite": 2,
+        "unite": "c_soupe",
+        "equivalent": "30 ml",
+        "note": "Tofu"
+      },
+      {
+        "nom": "sauce soya",
+        "quantite": 80,
+        "unite": "ml",
+        "equivalent": "⅓ tasse",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "mirin",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "cassonade",
+        "quantite": 25,
+        "unite": "g",
+        "equivalent": "2 c. à soupe",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "gingembre frais râpé",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "gousses d’ail râpées",
+        "quantite": 2,
+        "unite": "",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "fécule de maïs",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "eau",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse",
+        "note": "Sauce teriyaki"
+      },
+      {
+        "nom": "nouilles soba",
+        "quantite": 250,
+        "unite": "g",
+        "equivalent": "9 oz",
+        "note": "Nouilles"
+      },
+      {
+        "nom": "huile neutre",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Nouilles"
+      },
+      {
+        "nom": "oignon émincé",
+        "quantite": 1,
+        "unite": "",
+        "note": "Nouilles"
+      },
+      {
+        "nom": "poivrons en lanières",
+        "quantite": 2,
+        "unite": "",
+        "note": "Nouilles"
+      },
+      {
+        "nom": "champignons tranchés",
+        "quantite": 225,
+        "unite": "g",
+        "equivalent": "8 oz",
+        "note": "Nouilles"
+      },
+      {
+        "nom": "sauce soya",
+        "quantite": 2,
+        "unite": "c_soupe",
+        "equivalent": "30 ml",
+        "note": "Sauce des nouilles"
+      },
+      {
+        "nom": "vinaigre de riz",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Sauce des nouilles"
+      },
+      {
+        "nom": "huile de sésame grillé",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml",
+        "note": "Sauce des nouilles"
+      },
+      {
+        "nom": "sambal oelek ou sriracha",
+        "quantite": 1,
+        "unite": "c_the",
+        "equivalent": "5 ml",
+        "note": "Sauce des nouilles, facultatif"
+      },
+      {
+        "nom": "graines de sésame",
+        "quantite": 8,
+        "unite": "g",
+        "equivalent": "1 c. à soupe",
+        "note": "Garniture"
+      },
+      {
+        "nom": "oignons verts émincés",
+        "quantite": 2,
+        "unite": "",
+        "note": "Garniture, facultatif"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Égoutter le tofu",
+        "texte": "Envelopper le tofu dans un linge propre et le presser sous un objet lourd pour retirer l’excès d’eau. Couper en cubes de 2 cm.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Préparer les sauces",
+        "texte": "Sauce teriyaki : dans un bol, mélanger la sauce soya, le mirin, la cassonade, le gingembre, l’ail, la fécule de maïs et l’eau. Sauce des nouilles : dans un autre bol, mélanger la sauce soya, le vinaigre de riz, l’huile de sésame et le sambal oelek."
+      },
+      {
+        "titre": "Cuire les soba",
+        "texte": "Porter une grande casserole d’eau à ébullition (sans sel). Cuire les nouilles selon l’emballage, environ 4 minutes. Égoutter, rincer sous l’eau froide en frottant pour retirer l’amidon, puis bien égoutter.",
+        "minuterie": 240
+      },
+      {
+        "titre": "Dorer le tofu",
+        "texte": "Enrober les cubes de tofu de fécule de maïs. Dans une grande poêle antiadhésive, chauffer l’huile à feu moyen-vif et dorer le tofu en le retournant, jusqu’à ce qu’il soit croustillant de tous les côtés, environ 8 minutes.",
+        "minuterie": 480
+      },
+      {
+        "titre": "Laquer au teriyaki",
+        "texte": "Remuer la sauce teriyaki, la verser sur le tofu et laisser mijoter en remuant jusqu’à ce qu’elle épaississe et nappe le tofu, 1 à 2 minutes. Réserver dans un bol.",
+        "minuterie": 120
+      },
+      {
+        "titre": "Sauter les légumes",
+        "texte": "Essuyer la poêle, chauffer l’huile à feu vif. Sauter l’oignon et les champignons sans trop remuer jusqu’à ce que les champignons soient dorés, environ 4 minutes. Ajouter les poivrons et cuire 2 à 3 minutes : ils doivent rester croquants.",
+        "minuterie": 420
+      },
+      {
+        "titre": "Assembler",
+        "texte": "Ajouter les nouilles et la sauce des nouilles dans la poêle; sauter 1 minute pour réchauffer et enrober. Répartir dans les bols, garnir de tofu teriyaki, de graines de sésame et d’oignons verts.",
+        "minuterie": 60
+      }
+    ],
+    "astuces": [
+      "Les soba 100 % sarrasin collent facilement : bien les rincer à l’eau froide et les ajouter à la poêle à la toute fin.",
+      "Sans mirin : remplacer par 60 ml d’eau et 1 c. à soupe de sucre de plus, avec un trait de vinaigre de riz.",
+      "Pour plus de sauce sur les nouilles, doubler la sauce teriyaki et en verser la moitié sur les légumes."
+    ]
   }
 ];
