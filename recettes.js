@@ -1249,5 +1249,129 @@ window.RECETTES = [
       "Sans mirin : remplacer par 60 ml d’eau et 1 c. à soupe de sucre de plus, avec un trait de vinaigre de riz.",
       "Pour plus de sauce sur les nouilles, doubler la sauce teriyaki et en verser la moitié sur les légumes."
     ]
+  },
+  {
+    "id": "croustade-aux-pommes",
+    "titre": "Croustade aux pommes",
+    "description": "Pommes tendres à la cannelle sous un croustillant doré à l’avoine et à la cassonade.",
+    "categorie": "Desserts",
+    "etiquettes": [
+      "Pommes",
+      "Automne",
+      "Avoine"
+    ],
+    "portions": 8,
+    "unitePortion": "portions",
+    "tempsActif": "20 min",
+    "tempsTotal": "1 h 20",
+    "ajoutee": "2026-11-07",
+    "ingredients": [
+      {
+        "nom": "pommes Cortland ou McIntosh, pelées et tranchées",
+        "quantite": 8,
+        "unite": "",
+        "note": "Garniture"
+      },
+      {
+        "nom": "cassonade",
+        "quantite": 50,
+        "unite": "g",
+        "equivalent": "¼ tasse",
+        "note": "Garniture"
+      },
+      {
+        "nom": "farine",
+        "quantite": 15,
+        "unite": "g",
+        "equivalent": "2 c. à soupe",
+        "note": "Garniture"
+      },
+      {
+        "nom": "cannelle",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé",
+        "note": "Garniture"
+      },
+      {
+        "nom": "jus de citron",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe",
+        "note": "Garniture"
+      },
+      {
+        "nom": "flocons d’avoine",
+        "quantite": 90,
+        "unite": "g",
+        "equivalent": "1 tasse",
+        "note": "Croustillant"
+      },
+      {
+        "nom": "farine",
+        "quantite": 65,
+        "unite": "g",
+        "equivalent": "½ tasse",
+        "note": "Croustillant"
+      },
+      {
+        "nom": "cassonade tassée",
+        "quantite": 110,
+        "unite": "g",
+        "equivalent": "½ tasse",
+        "note": "Croustillant"
+      },
+      {
+        "nom": "cannelle",
+        "quantite": 1,
+        "unite": "g",
+        "equivalent": "½ c. à thé",
+        "note": "Croustillant"
+      },
+      {
+        "nom": "sel",
+        "quantite": 1,
+        "unite": "pincee",
+        "note": "Croustillant"
+      },
+      {
+        "nom": "beurre fondu",
+        "quantite": 115,
+        "unite": "g",
+        "equivalent": "½ tasse",
+        "note": "Croustillant"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le four à 180 °C (350 °F)."
+      },
+      {
+        "titre": "Garniture",
+        "texte": "Dans un plat de 23 × 23 cm, mélanger les pommes, la cassonade, la farine, la cannelle et le jus de citron."
+      },
+      {
+        "titre": "Croustillant",
+        "texte": "Dans un bol, mélanger l’avoine, la farine, la cassonade, la cannelle et le sel. Ajouter le beurre fondu et mélanger jusqu’à obtenir une texture granuleuse."
+      },
+      {
+        "titre": "Assembler",
+        "texte": "Répartir le croustillant sur les pommes sans tasser."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Cuire de 45 à 50 minutes, jusqu’à ce que le dessus soit doré et que les pommes bouillonnent sur les bords.",
+        "minuterie": 2700
+      },
+      {
+        "titre": "Reposer",
+        "texte": "Laisser reposer 15 minutes avant de servir, idéalement avec de la crème glacée à la vanille.",
+        "minuterie": 900
+      }
+    ],
+    "astuces": [
+      "Pour plus de croustillant, doubler la garniture d’avoine et ajouter 30 g de pacanes hachées (¼ tasse)."
+    ]
   }
 ];
