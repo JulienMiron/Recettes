@@ -1373,5 +1373,100 @@ window.RECETTES = [
     "astuces": [
       "Pour plus de croustillant, doubler la garniture d’avoine et ajouter 30 g de pacanes hachées (¼ tasse)."
     ]
+  },
+  {
+    "id": "pancakes-dodus",
+    "titre": "Pancakes dodus",
+    "description": "Pancakes épais et moelleux à la farine à pain, à servir avec du sirop d’érable ou une sauce aux bleuets.",
+    "categorie": "Déjeuners",
+    "etiquettes": [
+      "Pancakes",
+      "Ricardo",
+      "Brunch"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "10 min",
+    "tempsTotal": "50 min",
+    "ajoutee": "2026-11-08",
+    "ingredients": [
+      {
+        "nom": "farine à pain",
+        "quantite": 300,
+        "unite": "g",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "poudre à pâte",
+        "quantite": 18,
+        "unite": "g",
+        "equivalent": "4 c. à thé"
+      },
+      {
+        "nom": "œufs",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "sucre",
+        "quantite": 55,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "extrait de vanille",
+        "quantite": 5,
+        "unite": "ml",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "lait",
+        "quantite": 430,
+        "unite": "ml",
+        "equivalent": "1 ¾ tasse"
+      },
+      {
+        "nom": "beurre ramolli, pour la cuisson"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Ingrédients secs",
+        "texte": "Dans un grand bol, mélanger la farine et la poudre à pâte. Réserver."
+      },
+      {
+        "titre": "Fouetter les œufs",
+        "texte": "Dans un autre bol, fouetter les œufs, le sucre et la vanille 5 minutes au batteur électrique.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Pâte",
+        "texte": "À basse vitesse, ajouter la moitié du lait puis incorporer les ingrédients secs. Ajouter le reste du lait et mélanger jusqu’à ce que la pâte soit homogène."
+      },
+      {
+        "titre": "Repos",
+        "texte": "Laisser reposer la pâte 10 minutes à la température ambiante.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Poêle",
+        "texte": "Chauffer une poêle antiadhésive à feu moyen à doux. Lorsque la poêle est chaude, badigeonner de beurre avec un pinceau. Pour chaque pancake, verser environ 75 ml (⅓ tasse) de pâte au centre de la poêle. Avec le dos d’une cuillère, étaler légèrement la pâte."
+      },
+      {
+        "titre": "Cuisson",
+        "texte": "Cuire le pancake de 1 à 2 minutes de chaque côté. Il est prêt à être retourné lorsque des bulles apparaissent au centre ou que les rebords commencent à cuire. Régler la chaleur au besoin pour que la pâte cuise avant de dorer trop vite.",
+        "minuterie": 120
+      },
+      {
+        "titre": "Servir",
+        "texte": "Réserver les pancakes au chaud dans un four préchauffé à 95 °C (200 °F) le temps de cuire le reste de la pâte, ou les servir au fur et à mesure. Délicieux avec du sirop d’érable ou de la sauce aux bleuets."
+      }
+    ],
+    "astuces": [
+      "Environ 145 calories par pancake (selon Ricardo).",
+      "Sauce aux bleuets : https://www.ricardocuisine.com/recettes/5766-sauce-aux-bleuets-super-facile"
+    ],
+    "source": "https://www.ricardocuisine.com/recettes/5765-pancakes-dodus",
+    "image": "https://images.ricardocuisine.com/services/recipes/5765.jpg"
   }
 ];
