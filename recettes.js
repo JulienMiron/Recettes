@@ -1468,5 +1468,118 @@ window.RECETTES = [
     ],
     "source": "https://www.ricardocuisine.com/recettes/5765-pancakes-dodus",
     "image": "https://images.ricardocuisine.com/services/recipes/5765.jpg"
+  },
+  {
+    "id": "focaccia-romarin-fleur-de-sel",
+    "titre": "Focaccia au romarin et à la fleur de sel",
+    "description": "Focaccia maison très hydratée, croustillante dessous et alvéolée dedans, cuite dans un moule 23 x 33 cm. Sans pétrissage : quelques séries de rabats suffisent.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Focaccia",
+      "Pain",
+      "Italien",
+      "Sans pétrissage"
+    ],
+    "portions": 1,
+    "unitePortion": "moule de 23 x 33 cm",
+    "tempsActif": "20 min",
+    "tempsTotal": "3 h 30",
+    "ajoutee": "2026-11-08",
+    "ingredients": [
+      {
+        "nom": "farine à pain",
+        "quantite": 500,
+        "unite": "g",
+        "equivalent": "3 ⅓ tasses"
+      },
+      {
+        "nom": "eau tiède",
+        "quantite": 400,
+        "unite": "ml",
+        "equivalent": "1 ⅔ tasse"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 10,
+        "unite": "g",
+        "equivalent": "1 ¾ c. à thé"
+      },
+      {
+        "nom": "levure instantanée",
+        "quantite": 4,
+        "unite": "g",
+        "equivalent": "1 ¼ c. à thé"
+      },
+      {
+        "nom": "huile d’olive",
+        "quantite": 75,
+        "unite": "ml",
+        "equivalent": "5 c. à soupe",
+        "note": "15 ml dans la pâte, le reste pour le moule et le dessus"
+      },
+      {
+        "nom": "romarin frais haché",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "fleur de sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Mélanger",
+        "texte": "Dans un grand bol, mélanger la farine, le sel et la levure. Ajouter l’eau tiède et 15 ml (1 c. à soupe) d’huile. Mélanger à la cuillère ou à la main jusqu’à ce qu’il ne reste plus de farine sèche. La pâte est collante, c’est normal. Couvrir et laisser reposer 30 minutes.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Rabats 1",
+        "texte": "Avec une main mouillée, prendre un côté de la pâte, l’étirer vers le haut et le rabattre sur le centre. Tourner le bol d’un quart de tour et répéter 4 fois. Couvrir et attendre 30 minutes.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Rabats 2",
+        "texte": "Refaire une série de rabats. Couvrir et attendre 30 minutes.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Rabats 3",
+        "texte": "Refaire une dernière série de rabats. La pâte devient plus lisse et élastique. Couvrir et laisser lever 30 minutes.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Mettre en moule",
+        "texte": "Verser 30 ml (2 c. à soupe) d’huile dans un moule de 23 x 33 cm (9 x 13 po). Y déposer la pâte, la retourner pour l’enrober d’huile et l’étirer doucement vers les coins. Si elle résiste, attendre 10 minutes et recommencer. Couvrir et laisser lever environ 1 heure, jusqu’à ce qu’elle soit gonflée et pleine de bulles.",
+        "minuterie": 3600
+      },
+      {
+        "titre": "Préchauffer",
+        "texte": "Pendant la levée, placer la grille au centre du four et préchauffer à 230 °C (450 °F)."
+      },
+      {
+        "titre": "Garnir",
+        "texte": "Arroser la pâte du reste de l’huile (environ 30 ml). Avec les doigts huilés, enfoncer la pâte jusqu’au fond du moule pour former des creux partout. Parsemer de romarin et de fleur de sel."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Cuire de 22 à 25 minutes, jusqu’à ce que le dessus soit bien doré et le dessous croustillant.",
+        "minuterie": 1380
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Démouler sur une grille et laisser tiédir 10 minutes avant de couper.",
+        "minuterie": 600
+      }
+    ],
+    "astuces": [
+      "Version longue : après la 3e série de rabats, couvrir et réfrigérer de 12 à 48 heures. Laisser revenir à la température ambiante dans le moule (2 à 3 heures) avant de garnir ; le goût est plus développé.",
+      "Variantes de garniture : tomates cerises coupées, olives, oignon rouge émincé ou ail en lamelles, enfoncés dans la pâte avant la cuisson.",
+      "Si le dessous n’est pas assez croustillant, terminer la cuisson 3 à 5 minutes sur la grille du bas.",
+      "Se garde 2 jours dans un sac, ou se congèle en morceaux ; réchauffer 5 minutes au four à 200 °C (400 °F)."
+    ]
   }
 ];
