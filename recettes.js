@@ -1581,5 +1581,120 @@ window.RECETTES = [
       "Si le dessous n’est pas assez croustillant, terminer la cuisson 3 à 5 minutes sur la grille du bas.",
       "Se garde 2 jours dans un sac, ou se congèle en morceaux ; réchauffer 5 minutes au four à 200 °C (400 °F)."
     ]
+  },
+  {
+    "id": "vol-au-vent-canard-champignons",
+    "titre": "Vol-au-vent au canard et aux champignons",
+    "description": "Vol-au-vent dorés garnis d’une sauce crémeuse au vin blanc, aux champignons, aux asperges et au canard confit effiloché.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Canard",
+      "Champignons",
+      "Asperges",
+      "Semaine"
+    ],
+    "portions": 6,
+    "unitePortion": "vol-au-vent",
+    "tempsActif": "15 min",
+    "tempsTotal": "45 min",
+    "ajoutee": "2026-11-08",
+    "ingredients": [
+      {
+        "nom": "gros vol-au-vent du commerce, ou déjà cuits",
+        "quantite": 6,
+        "unite": ""
+      },
+      {
+        "nom": "asperges coupées en tronçons de 2,5 cm",
+        "quantite": 270,
+        "unite": "g",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "oignon, émincé",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "champignons blancs, tranchés",
+        "quantite": 227,
+        "unite": "g",
+        "equivalent": "8 oz"
+      },
+      {
+        "nom": "beurre",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "huile d’olive",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "farine tout usage non blanchie",
+        "quantite": 35,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "bouillon de poulet",
+        "quantite": 310,
+        "unite": "ml",
+        "equivalent": "1 ¼ tasse"
+      },
+      {
+        "nom": "vin blanc",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "crème 35 % ou 15 % à cuisson",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "cuisses de canard confites, chair effilochée",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "Sel et poivre"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Placer la grille au centre du four. Préchauffer le four à 200 °C (400 °F). Tapisser une plaque de cuisson de papier parchemin."
+      },
+      {
+        "titre": "Cuire les vol-au-vent",
+        "texte": "Déposer les vol-au-vent sur la plaque. Cuire au four environ 20 minutes ou jusqu’à ce qu’ils soient bien dorés. Retirer la calotte à l’aide d’une fourchette et réserver.",
+        "minuterie": 1200
+      },
+      {
+        "titre": "Asperges",
+        "texte": "Dans une casserole d’eau bouillante salée ou à la marguerite, cuire les asperges jusqu’à ce qu’elles soient al dente. Plonger dans l’eau glacée et égoutter. Réserver."
+      },
+      {
+        "titre": "Dorer",
+        "texte": "Dans une grande poêle, dorer l’oignon et les champignons dans le beurre et l’huile. Saler et poivrer."
+      },
+      {
+        "titre": "Sauce",
+        "texte": "Saupoudrer de farine et bien mélanger. Ajouter le bouillon, le vin et la crème, et porter à ébullition en remuant. Laisser mijoter doucement environ 3 minutes.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Garnir",
+        "texte": "Ajouter les asperges et le canard. Réchauffer et rectifier l’assaisonnement. Garnir les vol-au-vent. Accompagner de légumes verts."
+      }
+    ],
+    "source": "https://www.ricardocuisine.com/recettes/4195-vol-au-vent-au-canard-et-aux-champignons",
+    "image": "https://images.ricardocuisine.com/services/recipes/4195.jpg"
   }
 ];
