@@ -1696,5 +1696,123 @@ window.RECETTES = [
     ],
     "source": "https://www.ricardocuisine.com/recettes/4195-vol-au-vent-au-canard-et-aux-champignons",
     "image": "https://images.ricardocuisine.com/services/recipes/4195.jpg"
+  },
+  {
+    "id": "sauce-pizza-classique",
+    "titre": "Sauce à pizza classique",
+    "description": "Sauce tomate mijotée à l’ail et à l’origan, épaisse et bien assaisonnée, comme dans les pizzerias. Donne environ 750 ml, assez pour 4 pizzas de 30 cm.",
+    "categorie": "Sauces",
+    "etiquettes": [
+      "Pizza",
+      "Sauce tomate",
+      "Italien",
+      "Se congèle"
+    ],
+    "portions": 4,
+    "unitePortion": "pizzas de 30 cm",
+    "tempsActif": "10 min",
+    "tempsTotal": "40 min",
+    "ajoutee": "2026-11-09",
+    "ingredients": [
+      {
+        "nom": "huile d’olive",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "gousses d’ail hachées finement",
+        "quantite": 3,
+        "unite": ""
+      },
+      {
+        "nom": "pâte de tomate",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "tomates broyées en conserve",
+        "quantite": 796,
+        "unite": "ml",
+        "equivalent": "1 boîte de 28 oz"
+      },
+      {
+        "nom": "origan séché",
+        "quantite": 1,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "basilic séché",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 4,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "poivre noir moulu",
+        "quantite": 1,
+        "unite": "pincee"
+      },
+      {
+        "nom": "flocons de piment",
+        "quantite": 1,
+        "unite": "pincee",
+        "note": "facultatif"
+      },
+      {
+        "nom": "feuilles de basilic frais déchirées",
+        "quantite": 4,
+        "unite": "",
+        "note": "facultatif"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Faire revenir l’ail",
+        "texte": "Dans une casserole moyenne, chauffer l’huile à feu moyen-doux. Ajouter l’ail et le faire revenir environ 1 minute en remuant, sans le laisser brunir.",
+        "minuterie": 60
+      },
+      {
+        "titre": "Ajouter la pâte de tomate",
+        "texte": "Ajouter la pâte de tomate et cuire 1 minute en remuant, jusqu’à ce qu’elle fonce légèrement.",
+        "minuterie": 60
+      },
+      {
+        "titre": "Assaisonner",
+        "texte": "Ajouter les tomates broyées, l’origan, le basilic séché, le sucre, le sel, le poivre et les flocons de piment, si désiré. Bien mélanger et porter à frémissement."
+      },
+      {
+        "titre": "Mijoter",
+        "texte": "Réduire le feu à doux et laisser mijoter à découvert de 25 à 30 minutes, en remuant de temps en temps, jusqu’à ce que la sauce ait épaissi et qu’une cuillère tirée au fond laisse un sillon.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Finir",
+        "texte": "Retirer du feu, ajouter le basilic frais, si désiré, et rectifier l’assaisonnement. Pour une sauce lisse, passer au mélangeur à main."
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser tiédir avant d’étaler sur la pâte : une sauce chaude ramollit la pâte et fait glisser la garniture. Compter environ 180 ml (¾ tasse) par pizza de 30 cm.",
+        "minuterie": 900
+      }
+    ],
+    "astuces": [
+      "Version crue, style napolitain : mélanger simplement les tomates broyées, l’huile, le sel et quelques feuilles de basilic, sans cuisson ; la sauce cuit sur la pizza.",
+      "Si les tomates sont acides, ajouter un peu plus de sucre ; si elles sont déjà sucrées, l’omettre.",
+      "Se garde 1 semaine au réfrigérateur ou 3 mois au congélateur, en portions d’environ 180 ml."
+    ]
   }
 ];
