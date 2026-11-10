@@ -28,7 +28,7 @@ jobs:
       - name: Préparer les fichiers du site
         run: |
           mkdir _site
-          cp index.html ajouter.html recettes.js outils.js style.css _site/
+          cp index.html ajouter.html recettes.js outils.js sync.js style.css _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
