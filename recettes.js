@@ -1814,5 +1814,164 @@ window.RECETTES = [
       "Si les tomates sont acides, ajouter un peu plus de sucre ; si elles sont déjà sucrées, l’omettre.",
       "Se garde 1 semaine au réfrigérateur ou 3 mois au congélateur, en portions d’environ 180 ml."
     ]
+  },
+  {
+    "id": "bols-burrito-porc-haricots-noirs",
+    "titre": "Bols burrito au porc, haricots noirs et maïs",
+    "description": "Porc haché épicé à la mexicaine avec oignon, carotte et champignons, haricots noirs et maïs, servi sur du riz à la lime. Un repas complet en environ 30 minutes, qui se réchauffe très bien.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Tex-mex",
+      "Porc",
+      "Riz",
+      "Rapide",
+      "Restes"
+    ],
+    "portions": 4,
+    "unitePortion": "bols",
+    "tempsActif": "20 min",
+    "tempsTotal": "30 min",
+    "ajoutee": "2026-11-10",
+    "ingredients": [
+      {
+        "nom": "riz blanc à grains longs",
+        "quantite": 300,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "eau",
+        "quantite": 750,
+        "unite": "ml",
+        "equivalent": "3 tasses"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 6,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "huile végétale",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "porc haché",
+        "quantite": 450,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "oignon haché",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "carotte râpée",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "champignons tranchés",
+        "quantite": 225,
+        "unite": "g",
+        "equivalent": "½ lb"
+      },
+      {
+        "nom": "gousses d’ail hachées",
+        "quantite": 2,
+        "unite": "",
+        "note": "facultatif"
+      },
+      {
+        "nom": "cumin moulu",
+        "quantite": 4,
+        "unite": "g",
+        "equivalent": "2 c. à thé"
+      },
+      {
+        "nom": "paprika fumé",
+        "quantite": 2,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "assaisonnement au chili",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "origan séché",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "haricots noirs rincés et égouttés",
+        "quantite": 540,
+        "unite": "ml",
+        "equivalent": "1 boîte de 19 oz"
+      },
+      {
+        "nom": "maïs en grains égoutté ou décongelé",
+        "quantite": 250,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "eau ou bouillon",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "lime",
+        "quantite": 1,
+        "unite": "",
+        "note": "jus et zeste"
+      },
+      {
+        "nom": "garnitures au choix : crème sure, coriandre, avocat, fromage râpé, salsa, sauce piquante"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Cuire le riz",
+        "texte": "Rincer le riz. Dans une casserole, porter l’eau et la moitié du sel à ébullition, ajouter le riz, couvrir et cuire à feu doux 15 minutes. Retirer du feu et laisser reposer 5 minutes à couvert.",
+        "minuterie": 900
+      },
+      {
+        "titre": "Dorer le porc",
+        "texte": "Pendant ce temps, chauffer l’huile dans une grande poêle à feu moyen-vif. Ajouter le porc et le cuire en l’émiettant jusqu’à ce qu’il ne soit plus rosé et commence à dorer, environ 6 minutes.",
+        "minuterie": 360
+      },
+      {
+        "titre": "Ajouter les légumes",
+        "texte": "Ajouter l’oignon, la carotte et les champignons. Cuire en remuant jusqu’à ce que les légumes soient tendres et que l’eau des champignons soit évaporée, environ 6 minutes.",
+        "minuterie": 360
+      },
+      {
+        "titre": "Épicer",
+        "texte": "Ajouter l’ail, le cumin, le paprika, l’assaisonnement au chili, l’origan et le reste du sel. Cuire 1 minute en remuant.",
+        "minuterie": 60
+      },
+      {
+        "titre": "Ajouter haricots et maïs",
+        "texte": "Ajouter les haricots noirs, le maïs et l’eau ou le bouillon. Laisser mijoter jusqu’à ce que le tout soit bien chaud et légèrement nappé, environ 4 minutes. Ajouter la moitié du jus de lime et rectifier l’assaisonnement.",
+        "minuterie": 240
+      },
+      {
+        "titre": "Assembler",
+        "texte": "Égrainer le riz à la fourchette et y mélanger le zeste et le reste du jus de lime. Répartir le riz dans les bols, garnir du mélange au porc et des garnitures au choix."
+      }
+    ],
+    "astuces": [
+      "Le riz cuit la veille ou les restes de riz conviennent très bien : réchauffer au micro-ondes avec un peu d’eau.",
+      "Le mélange au porc se conserve 3 jours au réfrigérateur et se congèle 3 mois.",
+      "Les restes font d’excellents burritos : rouler le mélange et le riz dans une tortilla avec du fromage, puis dorer à la poêle."
+    ]
   }
 ];
