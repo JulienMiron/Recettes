@@ -302,6 +302,20 @@
   /* ---------- Recette ---------- */
   const timers = {}; // index -> {end, remaining, iv}
   let wakeLock = null;
+  /* « Garder l'écran allumé » est activé par défaut ; le choix est mémorisé sur l'appareil. */
+  const ecranVoulu = () => store.get("recettes:ecran-allume", true) !== false;
+  const surRecette = () => /^#\/recette\//.test(location.hash);
+  function majWake() { const b = document.getElementById("wake"); if (b) b.setAttribute("aria-pressed", ecranVoulu()); }
+  async function prendreEcran() {
+    if (wakeLock || !("wakeLock" in navigator) || !ecranVoulu() || !surRecette() || document.visibilityState !== "visible") return;
+    try {
+      wakeLock = await navigator.wakeLock.request("screen");
+      wakeLock.addEventListener("release", () => { wakeLock = null; });
+    } catch {}
+  }
+  async function lacherEcran() { if (wakeLock) { const l = wakeLock; wakeLock = null; try { await l.release(); } catch {} } }
+  /* Le navigateur relâche le verrou quand l'onglet est masqué : on le reprend au retour. */
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") prendreEcran(); });
 
   function renderRecipe(id) {
     const r = R.find(x => x.id === id);
@@ -332,7 +346,7 @@
           <button id="plus" aria-label="Plus">+</button>
         </div>
         <button class="icon-btn" id="menuBtn" aria-pressed="${auMenu(r.id)}">${auMenu(r.id) ? "★ Au menu cette semaine" : "☆ Ajouter au menu"}</button>
-        <button class="icon-btn" id="wake" aria-pressed="false" title="Empêche l'écran de s'éteindre pendant que vous cuisinez">☀ Garder l'écran allumé</button>
+        <button class="icon-btn" id="wake" aria-pressed="${ecranVoulu()}" title="Empêche l'écran de s'éteindre pendant que vous cuisinez">☀ Garder l'écran allumé</button>
         <button class="icon-btn" id="reset">↺ Tout décocher</button>
       </div>
       <div class="layout">
@@ -492,14 +506,13 @@
     };
     const wakeBtn = $("#wake");
     if (!("wakeLock" in navigator)) wakeBtn.style.display = "none";
-    wakeBtn.setAttribute("aria-pressed", !!wakeLock);
     wakeBtn.onclick = async () => {
-      try {
-        if (wakeLock) { await wakeLock.release(); wakeLock = null; }
-        else { wakeLock = await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release", () => { wakeLock = null; const b = $("#wake"); b && b.setAttribute("aria-pressed", "false"); }); }
-        wakeBtn.setAttribute("aria-pressed", !!wakeLock);
-      } catch { toast("Impossible de garder l'écran allumé ici"); }
+      const on = !ecranVoulu();
+      store.set("recettes:ecran-allume", on); majWake();
+      if (on) { await prendreEcran(); if (!wakeLock) toast("Impossible de garder l'écran allumé ici"); }
+      else await lacherEcran();
     };
+    prendreEcran();
 
     drawCompose(); drawIng(); drawSteps();
     currentTick = () => r.etapes.forEach((s, i) => s.minuterie && drawTimer(i));
@@ -548,6 +561,7 @@
     if (m) renderRecipe(decodeURIComponent(m[1]));
     else if (location.hash === "#/menus") renderMenus();
     else renderList();
+    if (!m) lacherEcran();
     window.scrollTo(0, remonter ? 0 : y);
   }
   addEventListener("hashchange", () => route());
