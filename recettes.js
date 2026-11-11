@@ -1973,5 +1973,118 @@ window.RECETTES = [
       "Le mélange au porc se conserve 3 jours au réfrigérateur et se congèle 3 mois.",
       "Les restes font d’excellents burritos : rouler le mélange et le riz dans une tortilla avec du fromage, puis dorer à la poêle."
     ]
+  },
+  {
+    "id": "brownies-pepites-chocolat",
+    "titre": "Brownies aux pépites de chocolat",
+    "description": "Brownies fondants où les pépites fondues remplacent presque tout le cacao : idéal quand il reste peu de cacao et beaucoup de pépites.",
+    "categorie": "Desserts",
+    "etiquettes": [
+      "Chocolat",
+      "Peu de cacao",
+      "Un seul bol"
+    ],
+    "portions": 16,
+    "unitePortion": "carrés",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 1 h 45",
+    "ajoutee": "2026-11-10",
+    "ingredients": [
+      {
+        "nom": "pépites de chocolat mi-sucré, à faire fondre",
+        "quantite": 255,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "beurre non salé",
+        "quantite": 115,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "¾ tasse"
+      },
+      {
+        "nom": "gros œufs, température ambiante",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "vanille",
+        "quantite": 5,
+        "unite": "ml",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "farine tout usage",
+        "quantite": 95,
+        "unite": "g",
+        "equivalent": "¾ tasse"
+      },
+      {
+        "nom": "cacao",
+        "quantite": 12,
+        "unite": "g",
+        "equivalent": "2 c. à soupe",
+        "note": "facultatif"
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "pépites de chocolat, à incorporer",
+        "quantite": 85,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le four à 175 °C (350 °F). Tapisser un moule carré de 20 cm (8 po) de papier parchemin."
+      },
+      {
+        "titre": "Fondre le chocolat",
+        "texte": "Faire fondre 255 g de pépites avec le beurre au micro-ondes par tranches de 30 secondes, en remuant chaque fois, jusqu'à ce que ce soit lisse.",
+        "minuterie": 90
+      },
+      {
+        "titre": "Tiédir",
+        "texte": "Laisser tiédir le mélange quelques minutes pour ne pas cuire les œufs.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Sucre et œufs",
+        "texte": "Incorporer le sucre, puis les œufs un à la fois, et la vanille. Fouetter 1 minute : le mélange devient brillant (c'est ce qui donne la croûte craquelée).",
+        "minuterie": 60
+      },
+      {
+        "titre": "Ingrédients secs",
+        "texte": "Ajouter la farine, le cacao et le sel. Mélanger à la spatule juste assez pour qu'il ne reste plus de farine visible. Incorporer les 85 g de pépites restantes."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Verser dans le moule et cuire 25 à 30 minutes : un cure-dent piqué au centre doit ressortir avec quelques miettes humides, pas de pâte liquide.",
+        "minuterie": 1620
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser refroidir complètement dans le moule avant de couper en 16 carrés.",
+        "minuterie": 3600
+      }
+    ],
+    "astuces": [
+      "Avec des pépites au lait, réduire le sucre à 100 g (½ tasse).",
+      "Sans cacao du tout, la recette fonctionne ; le goût est juste un peu moins intense.",
+      "Sortir les brownies quand le centre semble encore un peu mou : ils finissent de prendre en refroidissant.",
+      "Pour des brownies plus épais, doubler la recette dans un moule de 23 × 33 cm (9 × 13 po) et cuire 30 à 35 minutes."
+    ]
   }
 ];
