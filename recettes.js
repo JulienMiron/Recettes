@@ -2086,5 +2086,106 @@ window.RECETTES = [
       "Sortir les brownies quand le centre semble encore un peu mou : ils finissent de prendre en refroidissant.",
       "Pour des brownies plus épais, doubler la recette dans un moule de 23 × 33 cm (9 × 13 po) et cuire 30 à 35 minutes."
     ]
+  },
+  {
+    "id": "poulet-entier-air-fryer",
+    "titre": "Poulet entier au air fryer",
+    "description": "Peau dorée et croustillante, chair juteuse : on commence poitrine en dessous, puis on retourne.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Poulet",
+      "Air fryer"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "10 min",
+    "tempsTotal": "≈ 1 h 15",
+    "ajoutee": "2026-11-12",
+    "ingredients": [
+      {
+        "nom": "poulet entier",
+        "quantite": 1,
+        "unite": "",
+        "note": "environ 1,6 kg (3 ½ lb)"
+      },
+      {
+        "nom": "huile d'olive ou de canola",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 9,
+        "unite": "g",
+        "equivalent": "1 ½ c. à thé"
+      },
+      {
+        "nom": "paprika fumé",
+        "quantite": 7,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "ail en poudre",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "oignon en poudre",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "thym séché",
+        "quantite": 1,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "poivre noir moulu",
+        "quantite": 1,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préparer le poulet",
+        "texte": "Retirer les abats, puis bien éponger le poulet partout avec du papier essuie-tout, y compris l'intérieur. Une peau sèche est la clé d'une peau croustillante."
+      },
+      {
+        "titre": "Assaisonner",
+        "texte": "Mélanger le sel, le paprika, l'ail, l'oignon, le thym et le poivre. Badigeonner le poulet d'huile, puis frotter le mélange d'épices partout. Attacher les cuisses avec de la ficelle et replier les bouts d'ailes sous le dos."
+      },
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le air fryer à 180 °C (360 °F).",
+        "minuterie": 180
+      },
+      {
+        "titre": "Cuire, poitrine en dessous",
+        "texte": "Déposer le poulet dans le panier, poitrine vers le bas. Cuire 30 minutes.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Retourner et finir",
+        "texte": "Retourner le poulet, poitrine vers le haut, et poursuivre la cuisson 20 à 30 minutes, jusqu'à 74 °C (165 °F) dans la partie la plus épaisse de la poitrine et environ 80 °C (175 °F) dans la cuisse.",
+        "minuterie": 1500
+      },
+      {
+        "titre": "Laisser reposer",
+        "texte": "Laisser reposer 10 minutes sur une planche avant de découper.",
+        "minuterie": 600
+      }
+    ],
+    "astuces": [
+      "Prévoir un air fryer d'au moins 5,5 L pour que le poulet ne touche pas l'élément chauffant.",
+      "Compter environ 30 minutes de cuisson par 500 g ; se fier au thermomètre plutôt qu'au temps.",
+      "Pour une peau encore plus croustillante, saler le poulet la veille et le laisser à découvert au frigo toute la nuit.",
+      "On peut ajouter des légumes-racines coupés sous la grille pendant les 25 dernières minutes."
+    ]
   }
 ];
