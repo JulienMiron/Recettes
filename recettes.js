@@ -2318,5 +2318,128 @@ window.RECETTES = [
       "Une pomme Honeycrisp remplace bien la poire.",
       "Mettre le cheddar directement sur la tortilla, sous la garniture : il fond mieux et colle le wrap."
     ]
+  },
+  {
+    "id": "bagels-machine-a-pain",
+    "titre": "Bagels (machine à pain)",
+    "description": "Bagels denses et élastiques : pâte pétrie par la machine à pain, levée lente au frigo, bouillis au miel et cuits au four bien chaud.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Machine à pain",
+      "Bagels",
+      "Fermentation au froid"
+    ],
+    "portions": 10,
+    "unitePortion": "bagels",
+    "tempsActif": "45 min",
+    "tempsTotal": "≈ 14 h (avec une nuit au frigo)",
+    "ajoutee": "2026-11-12",
+    "ingredients": [
+      {
+        "nom": "eau",
+        "quantite": 270,
+        "unite": "ml"
+      },
+      {
+        "nom": "farine panifiable",
+        "quantite": 488,
+        "unite": "g",
+        "equivalent": "3 ¾ tasses"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 24,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "sel",
+        "quantite": 9,
+        "unite": "g",
+        "equivalent": "1 ¾ c. à thé"
+      },
+      {
+        "nom": "levure à levée rapide",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "eau pour bouillir",
+        "quantite": 2,
+        "unite": "l"
+      },
+      {
+        "nom": "miel",
+        "quantite": 20,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "blanc d'œuf battu",
+        "quantite": 1,
+        "unite": "",
+        "note": "facultatif, pour les garnitures"
+      },
+      {
+        "nom": "graines de sésame, fromage râpé, etc.",
+        "note": "facultatif, au goût"
+      },
+      {
+        "nom": "fromage à la crème",
+        "note": "pour servir"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Pétrir à la machine",
+        "texte": "Mettre l'eau, la farine, le sucre, le sel et la levure dans la cuve, dans cet ordre. Choisir le programme 11 (DOUGH) et appuyer sur START."
+      },
+      {
+        "titre": "Diviser",
+        "texte": "Retirer la pâte, la diviser en 10 morceaux égaux (environ 78 g) et façonner des boules. Couvrir d'un linge et laisser reposer.",
+        "minuterie": 1200
+      },
+      {
+        "titre": "Façonner",
+        "texte": "Enfoncer un doigt au centre de chaque boule, puis tourner autour pour agrandir graduellement le trou (environ 3 cm, il se refermera à la cuisson). Déposer chaque bagel sur un carré de papier parchemin de 13 cm (5 po), sur une plaque."
+      },
+      {
+        "titre": "Levée au froid",
+        "texte": "Couvrir la plaque d'une pellicule plastique et réfrigérer de 12 à 24 h."
+      },
+      {
+        "titre": "Test de flottaison",
+        "texte": "Le lendemain, préchauffer le four à 220 °C (425 °F). Déposer un bagel dans un bol d'eau froide : s'il flotte, passer à l'étape suivante ; sinon, laisser les bagels 20 à 30 minutes à température ambiante et refaire le test.",
+        "minuterie": 1500
+      },
+      {
+        "titre": "Préparer le bain",
+        "texte": "Porter l'eau à ébullition dans une grande marmite, dissoudre le miel, puis baisser à frémissement (environ 93 °C / 200 °F)."
+      },
+      {
+        "titre": "Bouillir",
+        "texte": "Déposer les bagels avec leur papier, 2 ou 3 à la fois, et bouillir 45 à 60 secondes par côté. Le papier se détache tout seul : le retirer. Égoutter et déposer sur une plaque tapissée de papier parchemin.",
+        "minuterie": 120
+      },
+      {
+        "titre": "Garnir",
+        "texte": "Si désiré, badigeonner de blanc d'œuf et saupoudrer de graines de sésame, de fromage, etc."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Cuire 18 à 20 minutes à 220 °C (425 °F), jusqu'à ce qu'ils soient bien dorés. Laisser refroidir sur une grille.",
+        "minuterie": 1140
+      },
+      {
+        "titre": "Servir",
+        "texte": "Trancher en deux et tartiner de fromage à la crème à température ambiante."
+      }
+    ],
+    "astuces": [
+      "Adaptée de la recette 35 du livret de la Zojirushi BB-PDC20 : moins d'eau (270 g au lieu de 300 g), plus de sel (9 g au lieu de 5 g), levée au frigo, bain plus long et four plus chaud.",
+      "Pour des bagels de taille standard (environ 100 g), en faire 8 et ajouter 2 à 3 minutes de cuisson.",
+      "Pressé ? Remplacer la levée au frigo par environ 20 minutes dans un endroit tiède (35 °C / 95 °F), jusqu'à ce qu'ils doublent de volume. Le goût sera moins développé."
+    ]
   }
 ];
