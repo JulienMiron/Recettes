@@ -2187,5 +2187,136 @@ window.RECETTES = [
       "Pour une peau encore plus croustillante, saler le poulet la veille et le laisser à découvert au frigo toute la nuit.",
       "On peut ajouter des légumes-racines coupés sous la grille pendant les 25 dernières minutes."
     ]
+  },
+  {
+    "id": "wraps-poulet-poire-cheddar",
+    "titre": "Wraps au poulet, poire et cheddar",
+    "description": "Poulet doré, poire croquante, cheddar fondant et sauce miel-moutarde, le tout grillé à la poêle.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Poulet",
+      "Wraps",
+      "Rapide"
+    ],
+    "portions": 4,
+    "unitePortion": "wraps",
+    "tempsActif": "25 min",
+    "tempsTotal": "≈ 35 min",
+    "ajoutee": "2026-11-12",
+    "ingredients": [
+      {
+        "nom": "poitrines de poulet désossées",
+        "quantite": 2,
+        "unite": "",
+        "note": "environ 500 g au total"
+      },
+      {
+        "nom": "huile d'olive",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "poivre noir moulu",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "¼ c. à thé"
+      },
+      {
+        "nom": "thym séché",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "mayonnaise",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "moutarde de Dijon",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "miel",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "grandes tortillas",
+        "quantite": 4,
+        "unite": "",
+        "note": "25 cm (10 po)"
+      },
+      {
+        "nom": "cheddar fort râpé",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "poire Bosc ou Bartlett",
+        "quantite": 1,
+        "unite": "",
+        "note": "tranchée mince"
+      },
+      {
+        "nom": "roquette ou épinards",
+        "quantite": 40,
+        "unite": "g",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "noix de Grenoble grillées, hachées",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "¼ tasse",
+        "note": "facultatif"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Assaisonner le poulet",
+        "texte": "Couper les poitrines en deux sur l'épaisseur pour obtenir des escalopes minces. Badigeonner d'huile et assaisonner de sel, de poivre et de thym."
+      },
+      {
+        "titre": "Cuire le poulet",
+        "texte": "Cuire dans une poêle à feu moyen-vif, 4 à 5 minutes par côté, jusqu'à 74 °C (165 °F) au centre.",
+        "minuterie": 540
+      },
+      {
+        "titre": "Reposer et trancher",
+        "texte": "Laisser reposer 5 minutes, puis trancher en lanières.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Faire la sauce",
+        "texte": "Mélanger la mayonnaise, la moutarde et le miel."
+      },
+      {
+        "titre": "Garnir",
+        "texte": "Tartiner chaque tortilla de sauce. Répartir le cheddar au centre, puis le poulet, les tranches de poire, la roquette et les noix. Replier les côtés, puis rouler serré."
+      },
+      {
+        "titre": "Griller",
+        "texte": "Déposer les wraps, jointure en dessous, dans la poêle essuyée à feu moyen. Griller 2 à 3 minutes par côté, jusqu'à ce que la tortilla soit dorée et le fromage fondu. Couper en deux pour servir.",
+        "minuterie": 300
+      }
+    ],
+    "astuces": [
+      "Pour aller plus vite, remplacer le poulet par environ 400 g (3 tasses) de poulet cuit effiloché, par exemple un reste de poulet rôti.",
+      "Une pomme Honeycrisp remplace bien la poire.",
+      "Mettre le cheddar directement sur la tortilla, sous la garniture : il fond mieux et colle le wrap."
+    ]
   }
 ];
