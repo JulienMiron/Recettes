@@ -16,7 +16,7 @@ window.RECETTES = [
     "ajoutee": "2026-10-29",
     "ingredients": [
       {
-        "nom": "farine tout usage non blanchie ou farine 00",
+        "nom": "farine tout usage non blanchie",
         "quantite": 500,
         "unite": "g"
       },
@@ -90,6 +90,7 @@ window.RECETTES = [
       }
     ],
     "astuces": [
+      "Éviter la farine 00 seule (comme la farine à pizza Robin Hood style 00) : faite pour les fours à pizza vers 450 °C, elle dore mal dans un four maison et donne une pâte plus collante. Pour l'utiliser quand même : moitié 00, moitié tout usage, environ 305–310 ml d'eau, 5 g (1 c. à thé) de sucre, et finir la cuisson 1 à 2 minutes sous le gril.",
       "Hydratation de 65 % : facile à manipuler. Pour une pâte plus aérée, monter à 340–350 ml d'eau une fois la technique maîtrisée.",
       "Si l'huile fait se séparer la pâte en morceaux, continuer à pétrir 3 à 5 minutes : elle se ressoude. Racler les parois au besoin, et ajouter 1 c. à soupe de farine si elle reste luisante.",
       "Si la pâte grimpe sur le crochet, arrêter le batteur, la redescendre et continuer.",
