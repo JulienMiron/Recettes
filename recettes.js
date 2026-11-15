@@ -2442,5 +2442,142 @@ window.RECETTES = [
       "Pour des bagels de taille standard (environ 100 g), en faire 8 et ajouter 2 à 3 minutes de cuisson.",
       "Pressé ? Remplacer la levée au frigo par environ 20 minutes dans un endroit tiède (35 °C / 95 °F), jusqu'à ce qu'ils doublent de volume. Le goût sera moins développé."
     ]
+  },
+  {
+    "id": "salade-lentilles-kale-pomme-feta",
+    "titre": "Salade de lentilles, kale, pomme et feta",
+    "description": "Lentilles, kale massé, pomme verte croquante, maïs, avocat, feta et raisins secs, avec une sauce crémeuse à la lime.",
+    "categorie": "Salades",
+    "etiquettes": [
+      "Lentilles",
+      "Végétarien",
+      "Sans cuisson",
+      "Lunchs"
+    ],
+    "portions": 4,
+    "unitePortion": "portions en accompagnement (2 en repas)",
+    "tempsActif": "20 min",
+    "tempsTotal": "≈ 20 min",
+    "ajoutee": "2026-11-15",
+    "ingredients": [
+      {
+        "nom": "lentilles en conserve, rincées et égouttées",
+        "quantite": 1,
+        "unite": "",
+        "note": "boîte de 540 ml (≈ 300 g égouttées)"
+      },
+      {
+        "nom": "grosse feuille de kale",
+        "quantite": 1,
+        "unite": "",
+        "note": "≈ 40 g, environ 1 ½ tasse hachée"
+      },
+      {
+        "nom": "huile d'olive (pour masser le kale)",
+        "quantite": 5,
+        "unite": "ml",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "jus de lime (pour masser le kale)",
+        "quantite": 5,
+        "unite": "ml",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "sel",
+        "quantite": 1,
+        "unite": "pincee"
+      },
+      {
+        "nom": "pomme verte, en petits dés",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "maïs en grains, égoutté",
+        "quantite": 125,
+        "unite": "g",
+        "equivalent": "½ boîte de 341 ml"
+      },
+      {
+        "nom": "avocat, en dés",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "feta émiettée",
+        "quantite": 100,
+        "unite": "g",
+        "equivalent": "¾ tasse"
+      },
+      {
+        "nom": "raisins secs",
+        "quantite": 40,
+        "unite": "g",
+        "equivalent": "¼ tasse, ≈ 2 poignées"
+      },
+      {
+        "nom": "mayonnaise (sauce)",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "crème sure (sauce)",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "jus de lime (sauce)",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe, ≈ ½ lime"
+      },
+      {
+        "nom": "huile d'olive (sauce)",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sel et poivre",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Rincer les lentilles",
+        "texte": "Rincer les lentilles à l'eau froide dans une passoire et bien les égoutter. Égoutter le maïs."
+      },
+      {
+        "titre": "Masser le kale",
+        "texte": "Retirer la tige centrale du kale et hacher finement la feuille. Dans un grand bol, ajouter 1 c. à thé d'huile, 1 c. à thé de jus de lime et une pincée de sel, puis masser avec les doigts 1 à 2 minutes, jusqu'à ce que le kale devienne plus foncé et tendre.",
+        "minuterie": 90
+      },
+      {
+        "titre": "Préparer la sauce",
+        "texte": "Dans un petit bol, fouetter la mayonnaise, la crème sure, 1 c. à soupe de jus de lime et 1 c. à soupe d'huile d'olive. Saler et poivrer."
+      },
+      {
+        "titre": "Couper les fruits",
+        "texte": "Couper la pomme en petits dés (sans la peler). Couper l'avocat en dés et l'arroser d'un peu de jus de lime pour éviter qu'il noircisse."
+      },
+      {
+        "titre": "Assembler",
+        "texte": "Ajouter au kale les lentilles, le maïs, la pomme et les raisins secs. Verser la sauce et mélanger."
+      },
+      {
+        "titre": "Finir et servir",
+        "texte": "Ajouter délicatement l'avocat et la feta, rectifier l'assaisonnement et servir."
+      }
+    ],
+    "astuces": [
+      "Version vinaigrette (plus légère) : remplacer la sauce crémeuse par 45 ml (3 c. à soupe) d'huile d'olive, 15 ml (1 c. à soupe) de jus de lime ou de vinaigre de cidre, 5 ml (1 c. à thé) de moutarde de Dijon, 5 ml (1 c. à thé) de miel, sel et poivre.",
+      "Pour les lunchs : se garde 2 à 3 jours au frigo sans l'avocat ; ajouter l'avocat au moment de servir.",
+      "Le kale massé reste croquant même assaisonné à l'avance, contrairement à la laitue.",
+      "Pour plus de croquant : ajouter des graines de citrouille ou des noix grillées."
+    ]
   }
 ];
