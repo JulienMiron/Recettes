@@ -2579,5 +2579,90 @@ window.RECETTES = [
       "Le kale massé reste croquant même assaisonné à l'avance, contrairement à la laitue.",
       "Pour plus de croquant : ajouter des graines de citrouille ou des noix grillées."
     ]
+  },
+  {
+    "id": "crepes-bananes-avoine",
+    "titre": "Crêpes aux bananes et à l'avoine",
+    "description": "Petites crêpes épaisses sans gluten, faites de banane, d'œufs et d'avoine moulue, prêtes en 15 minutes.",
+    "categorie": "Déjeuners",
+    "etiquettes": [
+      "Sans gluten",
+      "Banane",
+      "Rapide"
+    ],
+    "portions": 5,
+    "unitePortion": "petites crêpes",
+    "tempsActif": "5 min",
+    "tempsTotal": "≈ 15 min",
+    "ajoutee": "2026-11-16",
+    "source": "https://chefcuisto.com/recette/crepes-aux-bananes-a-lavoine/",
+    "image": "https://chefcuisto.com/files/2017/01/crepes-bananes-avoines.jpg",
+    "ingredients": [
+      {
+        "nom": "banane mûre",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "gros œufs",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "gruau instantané (flocons d'avoine)",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "⅓ tasse"
+      },
+      {
+        "nom": "cannelle",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "¼ c. à thé"
+      },
+      {
+        "nom": "huile ou beurre, pour la cuisson",
+        "note": "au besoin"
+      },
+      {
+        "nom": "sirop d'érable, pour servir",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Écraser la banane",
+        "texte": "Mettre la banane dans un bol et bien l'écraser à la fourchette."
+      },
+      {
+        "titre": "Ajouter les œufs",
+        "texte": "Ajouter les œufs et mélanger."
+      },
+      {
+        "titre": "Moudre l'avoine",
+        "texte": "Passer le gruau au mélangeur jusqu'à obtenir une poudre fine."
+      },
+      {
+        "titre": "Compléter la pâte",
+        "texte": "Ajouter l'avoine moulue et la cannelle au mélange de banane et bien mélanger."
+      },
+      {
+        "titre": "Chauffer la poêle",
+        "texte": "Chauffer un peu d'huile ou de beurre dans une poêle à feu moyen."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Verser ¼ tasse (60 ml) de pâte par crêpe. Cuire environ 1 minute 30 secondes, retourner et cuire environ 1 minute de l'autre côté, jusqu'à ce que les crêpes soient bien dorées.",
+        "minuterie": 150
+      },
+      {
+        "titre": "Servir",
+        "texte": "Servir avec du sirop d'érable."
+      }
+    ],
+    "astuces": [
+      "Pour un repas vraiment sans gluten, choisir de l'avoine certifiée sans gluten.",
+      "Le gruau instantané peut être remplacé par des flocons d'avoine à cuisson rapide ou à l'ancienne : une fois moulus, le résultat est le même."
+    ]
   }
 ];
