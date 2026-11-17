@@ -2664,5 +2664,934 @@ window.RECETTES = [
       "Pour un repas vraiment sans gluten, choisir de l'avoine certifiée sans gluten.",
       "Le gruau instantané peut être remplacé par des flocons d'avoine à cuisson rapide ou à l'ancienne : une fois moulus, le résultat est le même."
     ]
+  },
+  {
+    "id": "pommes-de-terre-sarladaises",
+    "titre": "Pommes de terre sarladaises",
+    "description": "Pommes de terre rissolées dans le gras de canard, puis relevées d'ail et de persil. L'accompagnement classique du canard confit.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Pommes de terre",
+      "Poêle"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "20 min",
+    "tempsTotal": "≈ 50 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "pommes de terre à chair ferme (Yukon Gold)",
+        "quantite": 1.2,
+        "unite": "kg",
+        "equivalent": "2 ½ lb"
+      },
+      {
+        "nom": "gras de canard",
+        "quantite": 50,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "gousses d'ail, hachées finement",
+        "quantite": 3,
+        "unite": ""
+      },
+      {
+        "nom": "persil plat, haché",
+        "quantite": 15,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "sel et poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Couper",
+        "texte": "Peler les pommes de terre et les couper en rondelles d'environ 5 mm ou en cubes de 1,5 cm. Les rincer à l'eau froide et bien les éponger dans un linge."
+      },
+      {
+        "titre": "Chauffer le gras",
+        "texte": "Dans une grande poêle (idéalement en fonte), faire fondre le gras de canard à feu moyen-vif."
+      },
+      {
+        "titre": "Cuire à couvert",
+        "texte": "Ajouter les pommes de terre, saler et cuire à couvert à feu moyen environ 15 minutes en remuant de temps en temps, jusqu'à ce qu'elles soient presque tendres.",
+        "minuterie": 900
+      },
+      {
+        "titre": "Dorer",
+        "texte": "Retirer le couvercle et poursuivre la cuisson de 10 à 15 minutes en remuant délicatement, jusqu'à ce qu'elles soient bien dorées et croustillantes.",
+        "minuterie": 720
+      },
+      {
+        "titre": "Ail et persil",
+        "texte": "Ajouter l'ail et le persil, mélanger et cuire 1 à 2 minutes. Poivrer, rectifier le sel et servir.",
+        "minuterie": 90
+      }
+    ],
+    "astuces": [
+      "Le gras qui entoure les cuisses de canard confites fait parfaitement l'affaire.",
+      "Les pommes de terre peuvent être coupées quelques heures d'avance et gardées dans l'eau froide ; bien les sécher avant la cuisson."
+    ]
+  },
+  {
+    "id": "puree-celeri-rave-panais",
+    "titre": "Purée de céleri-rave et panais",
+    "description": "Une purée douce et légèrement sucrée, plus festive qu'une purée de pommes de terre, qui va très bien avec le canard.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Purée",
+      "Légumes"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 40 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "céleri-rave, pelé et coupé en cubes",
+        "quantite": 700,
+        "unite": "g",
+        "equivalent": "1 ½ lb"
+      },
+      {
+        "nom": "panais, pelés et coupés en tronçons",
+        "quantite": 450,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "pomme de terre Yukon Gold, pelée et coupée en cubes",
+        "quantite": 200,
+        "unite": "g",
+        "equivalent": "7 oz"
+      },
+      {
+        "nom": "beurre",
+        "quantite": 60,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "crème 35 %",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "muscade moulue",
+        "quantite": 1,
+        "unite": "pincee"
+      },
+      {
+        "nom": "sel et poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Cuire les légumes",
+        "texte": "Mettre le céleri-rave, les panais et la pomme de terre dans une casserole, couvrir d'eau froide salée et porter à ébullition. Cuire de 20 à 25 minutes, jusqu'à ce que les légumes soient très tendres.",
+        "minuterie": 1320
+      },
+      {
+        "titre": "Assécher",
+        "texte": "Égoutter, remettre les légumes dans la casserole et les assécher 1 à 2 minutes sur le feu en remuant.",
+        "minuterie": 90
+      },
+      {
+        "titre": "Réduire en purée",
+        "texte": "Chauffer la crème avec le beurre. Réduire les légumes en purée au pilon (ou au robot pour une texture très lisse) en incorporant la crème chaude."
+      },
+      {
+        "titre": "Assaisonner",
+        "texte": "Ajouter la muscade, saler, poivrer et servir."
+      }
+    ],
+    "astuces": [
+      "Variante : remplacer le céleri-rave par des pommes de terre pour une purée moitié pommes de terre, moitié panais.",
+      "Se prépare d'avance et se réchauffe à feu doux avec un peu de crème ou de lait."
+    ]
+  },
+  {
+    "id": "gratin-dauphinois",
+    "titre": "Gratin dauphinois",
+    "description": "Fines tranches de pommes de terre cuites lentement dans la crème et le lait parfumés à l'ail. Pratique pour recevoir, car il se prépare d'avance.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Pommes de terre",
+      "Four",
+      "Préparer d'avance"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "25 min",
+    "tempsTotal": "≈ 1 h 30",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "pommes de terre Yukon Gold",
+        "quantite": 1.2,
+        "unite": "kg",
+        "equivalent": "2 ½ lb"
+      },
+      {
+        "nom": "lait",
+        "quantite": 500,
+        "unite": "ml",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "crème 35 %",
+        "quantite": 250,
+        "unite": "ml",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "gousses d'ail, dont 1 coupée en deux",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "beurre, pour le plat",
+        "quantite": 15,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sel",
+        "quantite": 6,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "muscade moulue",
+        "quantite": 1,
+        "unite": "pincee"
+      },
+      {
+        "nom": "poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le four à 180 °C (350 °F). Frotter un plat à gratin d'environ 23 × 33 cm (9 × 13 po) avec la demi-gousse d'ail, puis le beurrer."
+      },
+      {
+        "titre": "Trancher",
+        "texte": "Peler les pommes de terre et les trancher finement (environ 3 mm), à la mandoline idéalement. Ne pas les rincer : l'amidon fait épaissir la crème."
+      },
+      {
+        "titre": "Précuire dans la crème",
+        "texte": "Dans une grande casserole, mettre les pommes de terre, le lait, la crème, l'autre gousse d'ail hachée, le sel, la muscade et le poivre. Porter à frémissement et cuire 10 minutes en remuant délicatement pour que ça ne colle pas.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Cuire au four",
+        "texte": "Verser dans le plat et égaliser. Cuire environ 1 heure, jusqu'à ce que le dessus soit bien doré et que la pointe d'un couteau s'enfonce sans résistance.",
+        "minuterie": 3600
+      },
+      {
+        "titre": "Reposer",
+        "texte": "Laisser reposer 10 minutes avant de servir.",
+        "minuterie": 600
+      }
+    ],
+    "astuces": [
+      "Pour préparer d'avance : cuire la veille, réfrigérer, puis réchauffer environ 30 minutes à 180 °C (350 °F).",
+      "Le vrai gratin dauphinois ne contient pas de fromage, mais on peut parsemer un peu de gruyère râpé avant la cuisson."
+    ]
+  },
+  {
+    "id": "carottes-panais-rotis-miel-thym",
+    "titre": "Carottes et panais rôtis au miel et au thym",
+    "description": "Carottes et panais rôtis au four, puis laqués au miel et au thym en fin de cuisson.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Légumes",
+      "Four",
+      "Végétarien"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 50 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "carottes",
+        "quantite": 500,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "panais",
+        "quantite": 500,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "huile d'olive",
+        "quantite": 3,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "miel",
+        "quantite": 2,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "brins de thym",
+        "quantite": 6,
+        "unite": ""
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le four à 220 °C (425 °F). Tapisser une grande plaque de papier parchemin."
+      },
+      {
+        "titre": "Couper",
+        "texte": "Peler les carottes et les panais et les couper en bâtonnets de même grosseur (coupés en deux ou en quatre sur la longueur selon leur taille)."
+      },
+      {
+        "titre": "Rôtir",
+        "texte": "Mélanger les légumes avec l'huile, le sel, le poivre et le thym, puis les étaler en une seule couche. Rôtir 25 minutes en remuant à mi-cuisson.",
+        "minuterie": 1500
+      },
+      {
+        "titre": "Laquer au miel",
+        "texte": "Arroser de miel, mélanger et poursuivre la cuisson environ 10 minutes, jusqu'à ce que les légumes soient tendres et caramélisés.",
+        "minuterie": 600
+      }
+    ],
+    "astuces": [
+      "Ne pas surcharger la plaque, sinon les légumes cuisent à la vapeur au lieu de dorer : utiliser deux plaques au besoin.",
+      "Le miel peut être remplacé par du sirop d'érable."
+    ]
+  },
+  {
+    "id": "choux-bruxelles-lardons-chataignes",
+    "titre": "Choux de Bruxelles aux lardons et aux châtaignes",
+    "description": "Choux de Bruxelles blanchis puis poêlés avec des lardons, des échalotes et des châtaignes. Un accompagnement typique des fêtes.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Légumes",
+      "Poêle"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "25 min",
+    "tempsTotal": "≈ 30 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "choux de Bruxelles",
+        "quantite": 700,
+        "unite": "g",
+        "equivalent": "1 ½ lb"
+      },
+      {
+        "nom": "lardons",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "5 oz"
+      },
+      {
+        "nom": "échalote française, émincée",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "châtaignes cuites (emballées sous vide), coupées en deux",
+        "quantite": 200,
+        "unite": "g",
+        "equivalent": "7 oz"
+      },
+      {
+        "nom": "beurre",
+        "quantite": 15,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sel et poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Parer",
+        "texte": "Retirer les feuilles abîmées des choux de Bruxelles, couper le bout du trognon et couper les choux en deux."
+      },
+      {
+        "titre": "Blanchir",
+        "texte": "Cuire les choux 4 minutes dans une grande casserole d'eau bouillante salée. Égoutter et plonger dans l'eau glacée, puis bien égoutter.",
+        "minuterie": 240
+      },
+      {
+        "titre": "Lardons",
+        "texte": "Dans une grande poêle, faire dorer les lardons à feu moyen environ 6 minutes. Ajouter l'échalote et cuire 1 minute.",
+        "minuterie": 420
+      },
+      {
+        "titre": "Dorer les choux",
+        "texte": "Ajouter les choux, côté coupé vers le bas, et les laisser dorer environ 5 minutes sans trop remuer.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Châtaignes",
+        "texte": "Ajouter les châtaignes et le beurre et cuire 2 à 3 minutes en remuant. Poivrer, saler au besoin (les lardons sont déjà salés) et servir.",
+        "minuterie": 150
+      }
+    ],
+    "astuces": [
+      "Les choux peuvent être blanchis le matin et gardés au frigo ; il ne reste qu'à les poêler au moment de servir."
+    ]
+  },
+  {
+    "id": "haricots-verts-echalotes",
+    "titre": "Haricots verts aux échalotes",
+    "description": "Haricots verts croquants, blanchis puis sautés au beurre avec des échalotes françaises.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Légumes",
+      "Rapide",
+      "Végétarien"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 20 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "haricots verts, équeutés",
+        "quantite": 600,
+        "unite": "g",
+        "equivalent": "1 ⅓ lb"
+      },
+      {
+        "nom": "échalotes françaises, émincées",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "beurre",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "sel et poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Blanchir",
+        "texte": "Cuire les haricots de 4 à 5 minutes dans une grande casserole d'eau bouillante salée, jusqu'à ce qu'ils soient tendres mais encore croquants.",
+        "minuterie": 270
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Égoutter et plonger aussitôt dans l'eau glacée pour garder leur couleur. Bien égoutter."
+      },
+      {
+        "titre": "Échalotes",
+        "texte": "Dans une grande poêle, faire fondre le beurre à feu moyen et cuire les échalotes environ 3 minutes, jusqu'à ce qu'elles soient tendres.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Sauter",
+        "texte": "Ajouter les haricots et les réchauffer 2 à 3 minutes en remuant. Saler, poivrer et servir.",
+        "minuterie": 150
+      }
+    ],
+    "astuces": [
+      "Les haricots peuvent être blanchis quelques heures d'avance."
+    ]
+  },
+  {
+    "id": "compotee-oignons-rouges-porto",
+    "titre": "Compotée d'oignons rouges au porto",
+    "description": "Oignons rouges fondus lentement avec du porto et du vinaigre : le côté sucré-acidulé coupe le gras du canard.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Condiment",
+      "Préparer d'avance",
+      "Végétarien"
+    ],
+    "portions": 8,
+    "unitePortion": "portion(s)",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 55 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "oignons rouges, émincés finement",
+        "quantite": 800,
+        "unite": "g",
+        "equivalent": "4 oignons"
+      },
+      {
+        "nom": "beurre",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "huile d'olive",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "cassonade",
+        "quantite": 50,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "porto",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "vinaigre de vin rouge",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "brins de thym",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "sel",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Faire fondre les oignons",
+        "texte": "Dans une casserole à fond épais, chauffer le beurre et l'huile à feu moyen-doux. Ajouter les oignons et une pincée de sel et cuire environ 20 minutes en remuant souvent, jusqu'à ce qu'ils soient bien tendres.",
+        "minuterie": 1200
+      },
+      {
+        "titre": "Caraméliser",
+        "texte": "Ajouter la cassonade et cuire 5 minutes en remuant.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Réduire",
+        "texte": "Ajouter le porto, le vinaigre et le thym. Laisser mijoter à découvert de 20 à 25 minutes, jusqu'à ce que le liquide soit presque entièrement évaporé et que la compotée soit sirupeuse.",
+        "minuterie": 1320
+      },
+      {
+        "titre": "Servir",
+        "texte": "Retirer le thym, rectifier l'assaisonnement et servir tiède ou à la température ambiante."
+      }
+    ],
+    "astuces": [
+      "Se conserve une semaine au frigo dans un pot fermé.",
+      "Le porto peut être remplacé par du vin rouge ; ajouter alors un peu plus de cassonade."
+    ]
+  },
+  {
+    "id": "chou-rouge-braise-pommes",
+    "titre": "Chou rouge braisé aux pommes",
+    "description": "Chou rouge mijoté lentement avec des pommes, du vinaigre de cidre et des épices douces. Son acidité équilibre bien le canard.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Légumes",
+      "Mijoté",
+      "Préparer d'avance"
+    ],
+    "portions": 8,
+    "unitePortion": "portion(s)",
+    "tempsActif": "20 min",
+    "tempsTotal": "≈ 1 h 30",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "petit chou rouge, émincé finement",
+        "quantite": 1,
+        "unite": "kg",
+        "equivalent": "2 lb"
+      },
+      {
+        "nom": "pommes (Cortland ou Granny Smith), pelées et coupées en dés",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "oignon, émincé",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "beurre ou gras de canard",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "cassonade",
+        "quantite": 50,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "vinaigre de cidre",
+        "quantite": 80,
+        "unite": "ml",
+        "equivalent": "⅓ tasse"
+      },
+      {
+        "nom": "jus de pomme ou eau",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "feuille de laurier",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "clous de girofle",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "bâton de cannelle",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "sel",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "¾ c. à thé"
+      },
+      {
+        "nom": "poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Oignon",
+        "texte": "Dans une grande casserole, faire fondre le beurre à feu moyen et cuire l'oignon environ 5 minutes.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Ajouter le reste",
+        "texte": "Ajouter le chou, les pommes, la cassonade, le vinaigre, le jus de pomme, les épices et le sel. Bien mélanger."
+      },
+      {
+        "titre": "Braiser",
+        "texte": "Couvrir et laisser mijoter à feu doux environ 1 heure, en remuant de temps en temps, jusqu'à ce que le chou soit très tendre.",
+        "minuterie": 3600
+      },
+      {
+        "titre": "Réduire",
+        "texte": "Retirer le couvercle et cuire encore environ 10 minutes pour évaporer le surplus de liquide. Retirer le laurier, les clous et la cannelle, rectifier l'assaisonnement et servir.",
+        "minuterie": 600
+      }
+    ],
+    "astuces": [
+      "Encore meilleur réchauffé le lendemain ; se congèle aussi très bien.",
+      "Ajouter le vinaigre dès le début garde au chou sa belle couleur rouge vif."
+    ]
+  },
+  {
+    "id": "poires-pochees-vin-epice",
+    "titre": "Poires pochées au vin épicé",
+    "description": "Poires pochées dans un vin rouge parfumé à la cannelle, à l'anis étoilé et à l'orange. Coupées en quartiers, elles accompagnent très bien le canard.",
+    "categorie": "Accompagnement",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Fruits",
+      "Préparer d'avance"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 50 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "poires Bosc fermes",
+        "quantite": 6,
+        "unite": ""
+      },
+      {
+        "nom": "vin rouge",
+        "quantite": 750,
+        "unite": "ml",
+        "equivalent": "1 bouteille"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "¾ tasse"
+      },
+      {
+        "nom": "bâton de cannelle",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "anis étoilés",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "clous de girofle",
+        "quantite": 3,
+        "unite": ""
+      },
+      {
+        "nom": "orange, zeste prélevé en lanières",
+        "quantite": 1,
+        "unite": ""
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Sirop",
+        "texte": "Dans une casserole juste assez grande pour contenir les poires, porter à ébullition le vin, le sucre, les épices et le zeste d'orange en remuant pour dissoudre le sucre."
+      },
+      {
+        "titre": "Peler les poires",
+        "texte": "Peler les poires en gardant la queue. Pour un accompagnement, les couper en deux et retirer le cœur à la cuillère parisienne."
+      },
+      {
+        "titre": "Pocher",
+        "texte": "Déposer les poires dans le vin frémissant et pocher de 20 à 25 minutes en les retournant de temps en temps, jusqu'à ce que la pointe d'un couteau s'y enfonce facilement.",
+        "minuterie": 1320
+      },
+      {
+        "titre": "Réduire le sirop",
+        "texte": "Retirer les poires. Faire bouillir le liquide environ 15 minutes, jusqu'à ce qu'il soit sirupeux (environ 250 ml / 1 tasse).",
+        "minuterie": 900
+      },
+      {
+        "titre": "Servir",
+        "texte": "Couper les poires en quartiers et les napper d'un peu de sirop."
+      }
+    ],
+    "astuces": [
+      "Se préparent la veille : les garder au frigo dans leur sirop, elles se colorent encore plus.",
+      "Variante : figues rôties. Couper des figues fraîches en deux, arroser d'un filet de miel et de vinaigre balsamique et rôtir environ 10 minutes à 200 °C (400 °F)."
+    ]
+  },
+  {
+    "id": "sauce-canneberges-orange",
+    "titre": "Sauce aux canneberges et à l'orange",
+    "description": "Sauce de canneberges acidulée et parfumée à l'orange, un clin d'œil à Noël à côté du canard.",
+    "categorie": "Sauces",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Fruits",
+      "Préparer d'avance",
+      "Végétarien"
+    ],
+    "portions": 8,
+    "unitePortion": "portion(s)",
+    "tempsActif": "5 min",
+    "tempsTotal": "≈ 15 min + refroidissement",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "canneberges fraîches ou surgelées",
+        "quantite": 340,
+        "unite": "g",
+        "equivalent": "1 sac de 12 oz, environ 3 ½ tasses"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "¾ tasse"
+      },
+      {
+        "nom": "jus d'orange",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "orange, zeste râpé",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "sel",
+        "quantite": 1,
+        "unite": "pincee"
+      },
+      {
+        "nom": "porto",
+        "quantite": 2,
+        "unite": "c_soupe",
+        "note": "facultatif"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Sirop",
+        "texte": "Dans une casserole, porter à ébullition le sucre et le jus d'orange en remuant."
+      },
+      {
+        "titre": "Cuire les canneberges",
+        "texte": "Ajouter les canneberges et le sel et laisser mijoter environ 10 minutes en remuant de temps en temps, jusqu'à ce que la plupart des canneberges aient éclaté.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Parfumer",
+        "texte": "Retirer du feu et ajouter le zeste d'orange et le porto, s'il y a lieu."
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser tiédir : la sauce épaissit en refroidissant. Servir tiède ou froide."
+      }
+    ],
+    "astuces": [
+      "Se conserve une semaine au frigo et se congèle bien.",
+      "Si la sauce est trop épaisse, la détendre avec un peu de jus d'orange."
+    ]
+  },
+  {
+    "id": "salade-mache-poire-noix",
+    "titre": "Salade de mâche, poire et noix",
+    "description": "Une salade fraîche de mâche (ou de roquette), de poire et de noix grillées, en vinaigrette à l'huile de noix, pour alléger un repas riche.",
+    "categorie": "Salades",
+    "etiquettes": [
+      "Noël",
+      "Canard confit",
+      "Rapide",
+      "Végétarien"
+    ],
+    "portions": 6,
+    "unitePortion": "portion(s)",
+    "tempsActif": "15 min",
+    "tempsTotal": "≈ 15 min",
+    "ajoutee": "2026-11-16",
+    "ingredients": [
+      {
+        "nom": "mâche ou roquette",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "environ 6 tasses"
+      },
+      {
+        "nom": "poires mûres mais fermes",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "cerneaux de noix",
+        "quantite": 60,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "huile de noix",
+        "quantite": 3,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "vinaigre de cidre ou de xérès",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "moutarde de Dijon",
+        "quantite": 1,
+        "unite": "c_the"
+      },
+      {
+        "nom": "miel",
+        "quantite": 1,
+        "unite": "c_the"
+      },
+      {
+        "nom": "sel et poivre",
+        "unite": "",
+        "note": "au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Griller les noix",
+        "texte": "Faire griller les noix à sec dans une poêle à feu moyen environ 4 minutes, en remuant, jusqu'à ce qu'elles sentent bon. Laisser refroidir et concasser grossièrement.",
+        "minuterie": 240
+      },
+      {
+        "titre": "Vinaigrette",
+        "texte": "Dans un bol, fouetter le vinaigre, la moutarde, le miel, le sel et le poivre, puis incorporer l'huile de noix."
+      },
+      {
+        "titre": "Poires",
+        "texte": "Couper les poires en quartiers, retirer le cœur et les trancher finement."
+      },
+      {
+        "titre": "Assembler",
+        "texte": "Au moment de servir, mélanger la mâche avec la vinaigrette, ajouter les poires et parsemer de noix."
+      }
+    ],
+    "astuces": [
+      "Un peu de fromage bleu ou de chèvre émietté s'y ajoute très bien.",
+      "L'huile de noix peut être remplacée par de l'huile d'olive douce."
+    ]
   }
 ];
