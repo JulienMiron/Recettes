@@ -3593,5 +3593,97 @@ window.RECETTES = [
       "Un peu de fromage bleu ou de chèvre émietté s'y ajoute très bien.",
       "L'huile de noix peut être remplacée par de l'huile d'olive douce."
     ]
+  },
+  {
+    "id": "gaufres-sirop-erable",
+    "titre": "Gaufres à l'érable",
+    "description": "Gaufres simples sucrées au sirop d'érable, gardées chaudes au four pendant qu'on cuit le reste.",
+    "categorie": "Déjeuners",
+    "etiquettes": [
+      "Gaufrier",
+      "Érable"
+    ],
+    "portions": 1,
+    "unitePortion": "recette (≈ 6 à 8 gaufres selon le gaufrier)",
+    "tempsActif": "30 min",
+    "tempsTotal": "≈ 35 min",
+    "ajoutee": "2026-11-21",
+    "ingredients": [
+      {
+        "nom": "œufs",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "lait",
+        "quantite": 375,
+        "unite": "ml",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "sirop d'érable",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "huile végétale",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "farine tout usage",
+        "quantite": 260,
+        "unite": "g",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "poudre à pâte",
+        "quantite": 7,
+        "unite": "g",
+        "equivalent": "½ c. à soupe"
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "garnitures au choix",
+        "note": "sirop d'érable, petits fruits, etc."
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer le four",
+        "texte": "Préchauffer le four à 80 °C (175 °F), grille au centre, pour garder les gaufres au chaud."
+      },
+      {
+        "titre": "Préchauffer le gaufrier",
+        "texte": "Préchauffer le gaufrier à intensité maximale."
+      },
+      {
+        "titre": "Liquides",
+        "texte": "Dans un grand bol, fouetter les œufs, le lait, le sirop d'érable et l'huile."
+      },
+      {
+        "titre": "Secs",
+        "texte": "Ajouter la farine, la poudre à pâte et le sel. Fouetter jusqu'à ce que la pâte soit homogène."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Verser de la pâte dans le gaufrier, refermer et réduire à intensité moyenne. Cuire de 2 à 4 minutes, jusqu'à ce que la gaufre soit bien dorée. Réserver sur une plaque au four et répéter avec le reste de la pâte.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Servir",
+        "texte": "Servir avec les garnitures de votre choix."
+      }
+    ],
+    "astuces": [
+      "Ne pas trop fouetter une fois la farine ajoutée : quelques petits grumeaux donnent des gaufres plus tendres."
+    ]
   }
 ];
