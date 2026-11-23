@@ -4069,5 +4069,104 @@ window.RECETTES = [
       "Réhydrater les raisins les empêche d'assécher la mie, et les ajouter au bip évite que la pale les écrase dès le début.",
       "Ne pas utiliser la minuterie différée avec cette recette, à cause du lait."
     ]
+  },
+  {
+    "id": "pain-croute-cocotte-levee-frigo",
+    "titre": "Pain croûté à la cocotte, levée au frigo",
+    "description": "Pain rustique pétri à la main, à croûte craquante et mie aérée. Pétri le soir, levé au réfrigérateur et cuit le lendemain dans une cocotte : plus de goût et un horaire flexible.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Pain",
+      "Cocotte",
+      "Levée au froid"
+    ],
+    "portions": 1,
+    "unitePortion": "pain",
+    "tempsActif": "40 min",
+    "tempsTotal": "12 h à 28 h (dont 8 à 24 h au frigo)",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "farine panifiable",
+        "quantite": 500,
+        "unite": "g",
+        "equivalent": "3 ⅓ tasses"
+      },
+      {
+        "nom": "eau tiède",
+        "quantite": 350,
+        "unite": "ml",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 10,
+        "unite": "g",
+        "equivalent": "1 ¾ c. à thé"
+      },
+      {
+        "nom": "levure instantanée",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "1 ½ c. à thé",
+        "note": "levée rapide"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Mélanger",
+        "texte": "Dans un grand bol, mélanger la farine, la levure et le sel (le sel d’un côté, la levure de l’autre). Ajouter l’eau tiède et mélanger à la cuillère jusqu’à ce qu’il ne reste plus de farine sèche. Couvrir et laisser reposer 15 minutes.",
+        "minuterie": 900
+      },
+      {
+        "titre": "Pétrir",
+        "texte": "Pétrir de 8 à 10 minutes sur le comptoir, en ajoutant le moins de farine possible (se mouiller les mains si la pâte colle). La pâte est prête quand elle est lisse, élastique, et qu’un petit morceau étiré devient presque translucide sans se déchirer.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Première levée",
+        "texte": "Mettre la pâte dans un bol légèrement huilé, couvrir et laisser lever dans un endroit tiède jusqu’à ce qu’elle ait presque doublé, de 1 h à 1 h 30. S’arrêter un peu avant le double : elle continue de lever au début de son séjour au frigo.",
+        "minuterie": 4500
+      },
+      {
+        "titre": "Façonner",
+        "texte": "Renverser la pâte sur le comptoir, la dégonfler doucement, puis replier les bords vers le centre pour former une boule. La retourner et la faire tourner sur le comptoir pour tendre la surface. La déposer, pliure en dessous, sur du papier parchemin dans un bol."
+      },
+      {
+        "titre": "Levée au frigo",
+        "texte": "Couvrir le bol hermétiquement (pellicule plastique ou couvercle) pour que la surface ne sèche pas, et réfrigérer de 8 à 24 heures. Choisir un bol qui laisse un peu d’espace au-dessus de la pâte pour qu’elle puisse gonfler."
+      },
+      {
+        "titre": "Préchauffer",
+        "texte": "Le lendemain, préchauffer le four à 230 °C (450 °F) avec la cocotte et son couvercle dedans pendant environ 45 minutes. Laisser la pâte au frigo pendant ce temps.",
+        "minuterie": 2700
+      },
+      {
+        "titre": "Inciser",
+        "texte": "Sortir la pâte du frigo juste avant la cuisson et faire une entaille d’environ 1 cm de profondeur sur le dessus avec une lame de rasoir ou un couteau bien tranchant."
+      },
+      {
+        "titre": "Cuire couvert",
+        "texte": "Déposer le pain froid avec son papier dans la cocotte chaude, mettre le couvercle et cuire de 30 à 35 minutes.",
+        "minuterie": 1950
+      },
+      {
+        "titre": "Cuire découvert",
+        "texte": "Retirer le couvercle et poursuivre la cuisson de 15 à 20 minutes, jusqu’à ce que la croûte soit bien brun doré et que l’intérieur atteigne 96 à 99 °C (205 à 210 °F).",
+        "minuterie": 1200
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser refroidir au moins 1 heure sur une grille avant de couper.",
+        "minuterie": 3600
+      }
+    ],
+    "astuces": [
+      "Pas besoin de laisser la pâte revenir à la température ambiante : froide, elle se tient mieux, s’incise plus proprement et gonfle bien dans la cocotte chaude.",
+      "Plus la pâte reste longtemps au frigo, plus le goût est prononcé et légèrement acidulé. Si le frigo est très froid et que la pâte a peu bougé après 8 heures, la laisser quelques heures de plus.",
+      "À 70 % d’hydratation, la pâte est un peu collante au début du pétrissage mais devient lisse en travaillant : éviter d’ajouter beaucoup de farine, c’est ce qui donne une mie aérée. Si elle reste vraiment trop collante, commencer avec 330 ml d’eau.",
+      "Version le jour même : remplacer la levée au frigo par 45 à 60 minutes à température ambiante, jusqu’à ce qu’une pression du doigt laisse une marque qui remonte lentement, puis cuire 30 minutes couvert.",
+      "Exemple d’horaire : commencer vers 19 h, la pâte est au frigo avant 21 h et peut être cuite n’importe quand le lendemain."
+    ]
   }
 ];
