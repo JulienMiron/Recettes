@@ -3794,5 +3794,280 @@ window.RECETTES = [
       "Pour des filets sans peau, tapisser le panier d'un papier parchemin perforé pour éviter qu'ils collent.",
       "Accompagnements : riz, brocoli ou haricots verts, ou une salade."
     ]
+  },
+  {
+    "id": "pain-blanc-zojirushi",
+    "titre": "Pain blanc moelleux (machine à pain)",
+    "description": "Pain de mie tendre au lait et au beurre, cuit entièrement dans la Zojirushi BB-PDC20 avec le programme 1 (White).",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Machine à pain",
+      "Zojirushi",
+      "Pain blanc"
+    ],
+    "portions": 1,
+    "unitePortion": "pain de 2 lb",
+    "tempsActif": "10 min",
+    "tempsTotal": "≈ 4 h 45 (programme + refroidissement)",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "eau tiède",
+        "quantite": 200,
+        "unite": "ml"
+      },
+      {
+        "nom": "lait",
+        "quantite": 160,
+        "unite": "ml"
+      },
+      {
+        "nom": "beurre mou, en morceaux",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "farine panifiable",
+        "quantite": 540,
+        "unite": "g",
+        "equivalent": "4 ⅓ tasses"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 25,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 10,
+        "unite": "g",
+        "equivalent": "1 ¾ c. à thé"
+      },
+      {
+        "nom": "levure instantanée",
+        "quantite": 4,
+        "unite": "g",
+        "equivalent": "1 ¼ c. à thé"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Liquides et beurre",
+        "texte": "Verser l'eau et le lait dans la cuve, puis ajouter le beurre."
+      },
+      {
+        "titre": "Farine",
+        "texte": "Ajouter la farine pour couvrir complètement les liquides."
+      },
+      {
+        "titre": "Sucre, sel, levure",
+        "texte": "Mettre le sucre et le sel dans deux coins. Creuser un petit puits au centre de la farine, sans toucher le liquide, et y déposer la levure."
+      },
+      {
+        "titre": "Lancer le programme",
+        "texte": "Choisir le programme 1 (White), croûte Medium, et appuyer sur START. Après 5 minutes de pétrissage, vérifier la pâte : elle doit former une boule lisse et souple. Trop collante, ajouter 1 c. à soupe de farine ; trop sèche, 1 c. à soupe d'eau.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Démouler et refroidir",
+        "texte": "Démouler tout de suite et laisser refroidir sur une grille au moins 1 heure avant de trancher.",
+        "minuterie": 3600
+      }
+    ],
+    "astuces": [
+      "Améliorations par rapport au livret : farine pesée (une tasse mesurée varie de 15 à 20 %), lait et beurre pour une mie tendre, sel à 1,8 % de la farine pour plus de goût.",
+      "Ne pas utiliser la minuterie différée avec cette recette, à cause du lait."
+    ]
+  },
+  {
+    "id": "pain-ble-entier-miel-zojirushi",
+    "titre": "Pain de blé entier au miel (machine à pain)",
+    "description": "Pain aux deux tiers de blé entier, adouci au miel, avec une mie qui reste légère. Programme 2 (Whole Wheat) de la Zojirushi BB-PDC20.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Machine à pain",
+      "Zojirushi",
+      "Blé entier",
+      "Miel"
+    ],
+    "portions": 1,
+    "unitePortion": "pain de 2 lb",
+    "tempsActif": "10 min",
+    "tempsTotal": "≈ 5 h (programme + refroidissement)",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "eau tiède",
+        "quantite": 390,
+        "unite": "ml"
+      },
+      {
+        "nom": "miel",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "beurre mou ou huile",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "farine de blé entier",
+        "quantite": 360,
+        "unite": "g",
+        "equivalent": "2 ¾ tasses"
+      },
+      {
+        "nom": "farine panifiable",
+        "quantite": 180,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 10,
+        "unite": "g",
+        "equivalent": "1 ¾ c. à thé"
+      },
+      {
+        "nom": "levure instantanée",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "1 ½ c. à thé"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Liquides",
+        "texte": "Verser l'eau, le miel et le beurre (ou l'huile) dans la cuve."
+      },
+      {
+        "titre": "Farines",
+        "texte": "Ajouter la farine de blé entier, puis la farine panifiable, pour couvrir les liquides."
+      },
+      {
+        "titre": "Sel et levure",
+        "texte": "Mettre le sel dans un coin. Creuser un petit puits au centre et y déposer la levure."
+      },
+      {
+        "titre": "Lancer le programme",
+        "texte": "Choisir le programme 2 (Whole Wheat), croûte Medium, et appuyer sur START. Après 5 minutes de pétrissage, vérifier la pâte : elle doit être souple et légèrement collante, plus humide qu'une pâte blanche ; c'est normal, le blé entier absorbe l'eau lentement. Trop collante, ajouter 1 c. à soupe de farine ; trop sèche, 1 c. à soupe d'eau.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Démouler et refroidir",
+        "texte": "Démouler tout de suite et laisser refroidir sur une grille au moins 1 heure avant de trancher.",
+        "minuterie": 3600
+      }
+    ],
+    "astuces": [
+      "Le programme Whole Wheat prévoit un long trempage avant le pétrissage, ce qui ramollit le son. Les 72 % d'eau compensent l'absorption du blé entier, et la farine panifiable donne la structure qui fait lever le pain.",
+      "Pour un pain 100 % blé entier : 540 g de blé entier, 400 ml d'eau et 15 g (1 ½ c. à soupe) de gluten de blé.",
+      "Ce pain se prête à la minuterie différée (pas de lait)."
+    ]
+  },
+  {
+    "id": "pain-blanc-raisins-zojirushi",
+    "titre": "Pain blanc aux raisins (machine à pain)",
+    "description": "Pain légèrement sucré, avec des raisins qui restent entiers et juteux, ajoutés au bip. Programme 1 (White) de la Zojirushi BB-PDC20.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Machine à pain",
+      "Zojirushi",
+      "Raisins",
+      "Pain blanc"
+    ],
+    "portions": 1,
+    "unitePortion": "pain de 2 lb",
+    "tempsActif": "20 min",
+    "tempsTotal": "≈ 5 h (programme + refroidissement)",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "raisins secs",
+        "quantite": 150,
+        "unite": "g",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "eau tiède",
+        "quantite": 190,
+        "unite": "ml"
+      },
+      {
+        "nom": "lait",
+        "quantite": 150,
+        "unite": "ml"
+      },
+      {
+        "nom": "beurre mou, en morceaux",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "farine panifiable",
+        "quantite": 500,
+        "unite": "g",
+        "equivalent": "4 tasses"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 40,
+        "unite": "g",
+        "equivalent": "3 c. à soupe"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 9,
+        "unite": "g",
+        "equivalent": "1 ½ c. à thé"
+      },
+      {
+        "nom": "cannelle",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "1 c. à thé",
+        "note": "facultatif"
+      },
+      {
+        "nom": "levure instantanée",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "1 ½ c. à thé"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Réhydrater les raisins",
+        "texte": "Couvrir les raisins d'eau très chaude 10 minutes, égoutter et bien éponger. Les enrober d'une cuillère à soupe de farine prise dans la quantité de la recette.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Remplir la cuve",
+        "texte": "Verser l'eau, le lait et le beurre, puis le reste de la farine. Mettre le sucre, le sel et la cannelle dans les coins, et la levure dans un petit puits au centre."
+      },
+      {
+        "titre": "Lancer le programme",
+        "texte": "Choisir le programme 1 (White), croûte Light ou Medium (le sucre colore plus vite), et appuyer sur START."
+      },
+      {
+        "titre": "Ajouter les raisins au bip",
+        "texte": "Au bip d'ajout, ouvrir le couvercle et ajouter les raisins. Refermer : le pétrissage les incorpore."
+      },
+      {
+        "titre": "Démouler et refroidir",
+        "texte": "Démouler tout de suite et laisser refroidir sur une grille au moins 1 heure avant de trancher.",
+        "minuterie": 3600
+      }
+    ],
+    "astuces": [
+      "Réhydrater les raisins les empêche d'assécher la mie, et les ajouter au bip évite que la pale les écrase dès le début.",
+      "Ne pas utiliser la minuterie différée avec cette recette, à cause du lait."
+    ]
   }
 ];
