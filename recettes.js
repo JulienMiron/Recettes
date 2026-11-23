@@ -3685,5 +3685,114 @@ window.RECETTES = [
     "astuces": [
       "Ne pas trop fouetter une fois la farine ajoutée : quelques petits grumeaux donnent des gaufres plus tendres."
     ]
+  },
+  {
+    "id": "saumon-erable-air-fryer",
+    "titre": "Saumon à l'érable au air fryer",
+    "description": "Filets de saumon glacés à l'érable et à la moutarde de Dijon, tendres au centre et caramélisés sur le dessus, prêts en 15 minutes.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Poisson",
+      "Air fryer",
+      "Érable",
+      "Rapide"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "10 min",
+    "tempsTotal": "≈ 30 min",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "filets de saumon avec la peau",
+        "quantite": 4,
+        "unite": "",
+        "note": "environ 150 g et 2,5 cm d'épaisseur chacun"
+      },
+      {
+        "nom": "huile d'olive",
+        "quantite": 10,
+        "unite": "ml",
+        "equivalent": "2 c. à thé"
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "poivre noir moulu",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "¼ c. à thé"
+      },
+      {
+        "nom": "sirop d'érable",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "moutarde de Dijon",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sauce soya",
+        "quantite": 15,
+        "unite": "ml",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "gousse d'ail, hachée finement",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "quartiers de citron, pour servir",
+        "quantite": 4,
+        "unite": ""
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préparer le saumon",
+        "texte": "Sortir le saumon du frigo 15 minutes avant la cuisson, puis bien l'éponger avec du papier essuie-tout. Badigeonner d'huile et assaisonner de sel et de poivre.",
+        "minuterie": 900
+      },
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le air fryer à 200 °C (400 °F).",
+        "minuterie": 180
+      },
+      {
+        "titre": "Faire le glaçage",
+        "texte": "Mélanger le sirop d'érable, la moutarde, la sauce soya et l'ail."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Déposer les filets dans le panier, peau en dessous, sans qu'ils se touchent. Badigeonner le dessus de la moitié du glaçage et cuire 5 minutes.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Glacer et finir",
+        "texte": "Badigeonner du reste du glaçage et poursuivre la cuisson 3 à 5 minutes, jusqu'à ce que la chair se défasse facilement à la fourchette (52 à 57 °C / 125 à 135 °F au centre pour un saumon encore rosé et tendre).",
+        "minuterie": 240
+      },
+      {
+        "titre": "Servir",
+        "texte": "Laisser reposer 2 minutes et servir avec les quartiers de citron.",
+        "minuterie": 120
+      }
+    ],
+    "astuces": [
+      "Le temps dépend surtout de l'épaisseur : environ 8 minutes pour 2,5 cm, 1 à 2 minutes de plus si le filet est plus épais.",
+      "Le glaçage en deux temps évite que l'érable brûle.",
+      "Pour un glaçage plus sucré, doubler l'érable ; on peut aussi remplacer la sauce soya par du jus de citron.",
+      "Pour des filets sans peau, tapisser le panier d'un papier parchemin perforé pour éviter qu'ils collent.",
+      "Accompagnements : riz, brocoli ou haricots verts, ou une salade."
+    ]
   }
 ];
