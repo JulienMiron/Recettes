@@ -89,7 +89,7 @@ select{height:44px;border:1px solid var(--line);border-radius:12px;background:va
 .servings button:hover{background:var(--surface-2)}
 .servings span{min-width:120px;text-align:center;font-size:.9rem}
 .layout{display:grid;grid-template-columns:1fr;gap:18px;padding-bottom:48px}
-@media (min-width:820px){.layout{grid-template-columns:300px 1fr;align-items:start}.layout .ing{position:sticky;top:16px}}
+@media (min-width:820px){.layout{grid-template-columns:300px 1fr;align-items:start}.ing-col{align-self:stretch}.layout .ing{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
 .panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px}
 .panel h2{font-size:1.3rem}
