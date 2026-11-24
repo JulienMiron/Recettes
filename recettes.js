@@ -4500,7 +4500,7 @@ window.RECETTES = [
       },
       {
         "titre": "Diviser",
-        "texte": "À la fin du programme, déposer la pâte sur un comptoir légèrement fariné et la diviser en 10 morceaux d'environ 80 g."
+        "texte": "Dégazer légèrement la pâte, la déposer sur un comptoir légèrement fariné et la diviser en 10 morceaux d'environ 80 g."
       },
       {
         "titre": "Façonner",
