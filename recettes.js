@@ -4644,10 +4644,10 @@ window.RECETTES = [
         "equivalent": "1 lb"
       },
       {
-        "nom": "paquets de ramens",
-        "quantite": 3,
-        "unite": "",
-        "note": "sans les sachets d'assaisonnement"
+        "nom": "ramens frais, décongelés",
+        "quantite": 350,
+        "unite": "g",
+        "note": "ou 3 paquets de ramens instantanés, sans les sachets d'assaisonnement"
       },
       {
         "nom": "champignons, tranchés",
@@ -4739,8 +4739,8 @@ window.RECETTES = [
       },
       {
         "titre": "Cuire les ramens",
-        "texte": "Cuire les ramens dans l'eau bouillante 1 minute de moins que le temps indiqué sur l'emballage. Égoutter et rincer à l'eau froide pour arrêter la cuisson.",
-        "minuterie": 120
+        "texte": "Bien détacher et aérer les ramens décongelés, puis les plonger dans un grand volume d'eau bouillante 1 minute 30 (ils finiront de cuire dans la poêle). Égoutter et rincer à l'eau froide pour arrêter la cuisson.",
+        "minuterie": 90
       },
       {
         "titre": "Dorer le porc",
@@ -4759,6 +4759,7 @@ window.RECETTES = [
       }
     ],
     "astuces": [
+      "Ramens frais congelés : décongeler au réfrigérateur pendant la nuit, ou 1 à 2 heures à température ambiante, paquet ouvert.",
       "Sans ail ni gingembre, la recette fonctionne quand même : ajouter alors un peu plus de sriracha.",
       "Garnir d'oignons verts, de graines de sésame ou d'arachides."
     ]
