@@ -197,33 +197,51 @@
           <option value="rapide">Trier : plus rapides</option>
         </select>
       </div>
-      <div class="filter-label">Type</div>
-      <div class="chips" id="cats">
-        <button class="chip" data-cat="" aria-pressed="${!listState.cat}">Toutes</button>
-        ${cats.map(c => `<button class="chip" data-cat="${esc(c)}" aria-pressed="${listState.cat === c}">${esc(c)}</button>`).join("")}
+      <div class="filtres">
+        <select id="cats" aria-label="Type">
+          <option value="">Type : tous</option>
+          ${cats.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join("")}
+        </select>
+        ${tags.length ? `<details class="dd" id="tagsDd">
+          <summary id="tagsSum"></summary>
+          <div class="dd-list" id="tags">
+            ${tags.map(t => `<label><input type="checkbox" value="${esc(t)}" ${listState.tags.includes(t) ? "checked" : ""}> ${esc(t)}</label>`).join("")}
+            <div class="dd-pied"><button type="button" class="dd-clear" id="tagsClear">Effacer</button></div>
+          </div>
+        </details>` : ""}
       </div>
-      ${tags.length ? `<div class="filter-label">Étiquettes</div>
-      <div class="chips" id="tags">
-        ${tags.map(t => `<button class="chip" data-tag="${esc(t)}" aria-pressed="${listState.tags.includes(t)}">${esc(t)}</button>`).join("")}
-      </div>` : ""}
       <div class="count" id="count"></div>
       <div class="grid" id="grid"></div>`;
     $("#tri").value = listState.tri;
     $("#q").oninput = e => { listState.q = e.target.value; saveList(); drawGrid(); };
     $("#tri").onchange = e => { listState.tri = e.target.value; saveList(); drawGrid(); };
-    $("#cats").onclick = e => {
-      const b = e.target.closest("[data-cat]"); if (!b) return;
-      listState.cat = b.dataset.cat; saveList();
-      $("#cats").querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c.dataset.cat === listState.cat));
-      drawGrid();
-    };
+    if (listState.cat && !cats.includes(listState.cat)) listState.cat = "";
+    listState.tags = listState.tags.filter(t => tags.includes(t));
+    $("#cats").value = listState.cat;
+    $("#cats").onchange = e => { listState.cat = e.target.value; saveList(); drawGrid(); };
     const tg = $("#tags");
-    if (tg) tg.onclick = e => {
-      const b = e.target.closest("[data-tag]"); if (!b) return;
-      const t = b.dataset.tag, i = listState.tags.indexOf(t);
-      i < 0 ? listState.tags.push(t) : listState.tags.splice(i, 1);
-      b.setAttribute("aria-pressed", i < 0); saveList(); drawGrid();
+    const majSum = () => {
+      const n = listState.tags.length;
+      $("#tagsSum").textContent = n ? (n === 1 ? "Étiquette : " + listState.tags[0] : "Étiquettes : " + n) : "Étiquettes : toutes";
     };
+    if (tg) {
+      majSum();
+      tg.onchange = e => {
+        listState.tags = [...tg.querySelectorAll("input:checked")].map(i => i.value);
+        majSum(); saveList(); drawGrid();
+      };
+      $("#tagsClear").onclick = () => {
+        tg.querySelectorAll("input").forEach(i => i.checked = false);
+        listState.tags = []; majSum(); saveList(); drawGrid();
+      };
+      if (!window.__ddFerme) {
+        window.__ddFerme = true;
+        document.addEventListener("click", e => {
+          const d = document.getElementById("tagsDd");
+          if (d && d.open && !d.contains(e.target)) d.open = false;
+        });
+      }
+    }
     app.onclick = e => {
       const b = e.target.closest("[data-menu]"); if (!b) return;
       e.preventDefault(); e.stopPropagation();
@@ -237,17 +255,10 @@
     const n = p.ing.length + p.steps.length, tot = r.ingredients.length + r.etapes.length;
     return `<a class="card" href="#/recette/${encodeURIComponent(r.id)}">
       ${btnMenu(r.id)}
-      ${r.image ? `<img class="thumb" src="${esc(r.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
-      <div class="cat">${esc(r.categorie)}</div>
       <h2>${esc(r.titre)}</h2>
-      <p>${esc(r.description)}</p>
-      <div class="tags">${(r.etiquettes || []).map(t => `<span class="tag">${esc(t)}</span>`).join("")}
+      ${n || r.enAttente ? `<div class="tags">
         ${n ? `<span class="progress-pill">En cours · ${n}/${tot}</span>` : ""}
-        ${r.enAttente ? `<span class="tag">Publication en cours…</span>` : ""}</div>
-      <div class="meta">
-        ${r.tempsTotal ? `<span>⏱ ${esc(r.tempsTotal)}</span>` : ""}
-        <span>🍽 ${r.portions} ${esc(r.unitePortion || "portions")}</span>
-      </div>
+        ${r.enAttente ? `<span class="tag">Publication en cours…</span>` : ""}</div>` : ""}
     </a>`;
   }
 
