@@ -4168,5 +4168,137 @@ window.RECETTES = [
       "Version le jour même : remplacer la levée au frigo par 45 à 60 minutes à température ambiante, jusqu’à ce qu’une pression du doigt laisse une marque qui remonte lentement, puis cuire 30 minutes couvert.",
       "Exemple d’horaire : commencer vers 19 h, la pâte est au frigo avant 21 h et peut être cuite n’importe quand le lendemain."
     ]
+  },
+  {
+    "id": "pates-boeuf-brocoli-une-casserole",
+    "titre": "Pâtes au bœuf et brocoli en une casserole",
+    "description": "Des pâtes courtes cuites directement dans le bouillon avec du bœuf haché et du brocoli : elles l'absorbent et donnent une sauce crémeuse, sans égoutter, une seule casserole à laver.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Pâtes",
+      "Bœuf",
+      "Une casserole",
+      "Rapide",
+      "Sans noix",
+      "Sans oeufs"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "15 min",
+    "tempsTotal": "30 min",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "huile d'olive",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml"
+      },
+      {
+        "nom": "bœuf haché mi-maigre",
+        "quantite": 450,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "oignon haché",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "gousses d'ail hachées",
+        "quantite": 3,
+        "unite": ""
+      },
+      {
+        "nom": "pâte de tomate",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "equivalent": "15 ml"
+      },
+      {
+        "nom": "paprika fumé",
+        "quantite": 2.5,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "origan séché",
+        "quantite": 1,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "bouillon de bœuf",
+        "quantite": 1,
+        "unite": "l",
+        "equivalent": "4 tasses"
+      },
+      {
+        "nom": "pâtes courtes",
+        "quantite": 340,
+        "unite": "g",
+        "equivalent": "3 ½ tasses",
+        "note": "rotini, penne ou coquilles"
+      },
+      {
+        "nom": "brocoli en petits bouquets",
+        "quantite": 350,
+        "unite": "g",
+        "equivalent": "4 tasses",
+        "note": "environ 1 tête"
+      },
+      {
+        "nom": "crème 15 % ou lait",
+        "quantite": 125,
+        "unite": "ml",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "parmesan râpé",
+        "quantite": 50,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "sel et poivre, au goût"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Dorer le bœuf",
+        "texte": "Dans une grande casserole ou une sauteuse profonde, chauffer l'huile à feu moyen-vif. Faire dorer le bœuf en l'émiettant. Retirer l'excès de gras au besoin.",
+        "minuterie": 360
+      },
+      {
+        "titre": "Ajouter l'oignon",
+        "texte": "Ajouter l'oignon et cuire en remuant.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Aromates",
+        "texte": "Ajouter l'ail, la pâte de tomate, le paprika et l'origan. Cuire en remuant.",
+        "minuterie": 60
+      },
+      {
+        "titre": "Cuire les pâtes dans le bouillon",
+        "texte": "Verser le bouillon et gratter le fond de la casserole. Porter à ébullition, ajouter les pâtes, couvrir et laisser mijoter à feu moyen en remuant toutes les 2 minutes pour éviter qu'elles collent.",
+        "minuterie": 360
+      },
+      {
+        "titre": "Ajouter le brocoli",
+        "texte": "Déposer le brocoli sur les pâtes, couvrir et cuire jusqu'à ce que les pâtes soient al dente, le brocoli tendre mais encore vert, et le liquide presque entièrement absorbé.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Finir",
+        "texte": "Retirer du feu. Incorporer la crème et le parmesan, puis saler et poivrer au goût. Si c'est trop épais, ajouter un peu de bouillon ou d'eau."
+      }
+    ],
+    "astuces": [
+      "Le bouillon est déjà salé : goûter avant de saler.",
+      "Les pâtes continuent d'absorber le liquide en refroidissant ; pour les restes, ajouter un peu d'eau ou de bouillon au réchauffage.",
+      "Pour une version plus relevée, ajouter une pincée de flocons de piment avec les épices."
+    ]
   }
 ];
