@@ -4422,18 +4422,17 @@ window.RECETTES = [
   {
     "id": "muffins-anglais",
     "titre": "Muffins anglais",
-    "description": "Muffins anglais maison bien alvéolés, pâte pétrie par la machine à pain (programme 11, Dough) puis cuits à la poêle.",
+    "description": "Muffins anglais maison bien alvéolés, pâte pétrie au batteur sur socle puis cuits à la poêle.",
     "categorie": "Pains",
     "etiquettes": [
-      "Machine à pain",
-      "Zojirushi",
+      "Batteur sur socle",
       "Déjeuner",
       "Poêle"
     ],
     "portions": 10,
     "unitePortion": "muffins",
-    "tempsActif": "40 min",
-    "tempsTotal": "≈ 3 h 30",
+    "tempsActif": "45 min",
+    "tempsTotal": "≈ 3 h 15",
     "ajoutee": "2026-11-23",
     "ingredients": [
       {
@@ -4480,13 +4479,24 @@ window.RECETTES = [
     ],
     "etapes": [
       {
-        "titre": "Remplir la cuve",
-        "texte": "Verser le lait dans la cuve, ajouter le beurre, puis la farine. Mettre le sucre et le sel dans deux coins, et la levure dans un petit puits au centre."
+        "titre": "Mélanger",
+        "texte": "Dans le bol du batteur muni du crochet pétrisseur, mélanger la farine, le sucre et la levure. Ajouter le lait tiède et mélanger à basse vitesse (1) environ 2 minutes, jusqu'à ce qu'il ne reste plus de farine sèche.",
+        "minuterie": 120
       },
       {
-        "titre": "Programme Dough",
-        "texte": "Choisir le programme 11 (Dough) et appuyer sur START. Après 5 minutes de pétrissage, la pâte doit être souple et un peu collante : c'est ce qui donne les alvéoles. Trop liquide, ajouter 1 c. à soupe de farine.",
-        "minuterie": 300
+        "titre": "Pétrir",
+        "texte": "Ajouter le sel et pétrir à vitesse 2 pendant 6 minutes.",
+        "minuterie": 360
+      },
+      {
+        "titre": "Ajouter le beurre",
+        "texte": "Ajouter le beurre mou, un morceau à la fois, et pétrir encore 3 à 4 minutes à vitesse 2, jusqu'à ce que la pâte soit lisse, élastique et se décolle presque des parois. Elle reste un peu collante au fond du bol : c'est ce qui donne les alvéoles. Ne pas dépasser la vitesse 2.",
+        "minuterie": 210
+      },
+      {
+        "titre": "Première levée",
+        "texte": "Former une boule, la mettre dans un bol légèrement huilé, couvrir et laisser lever 1 h à 1 h 30 à température ambiante, jusqu'à ce qu'elle double de volume.",
+        "minuterie": 4500
       },
       {
         "titre": "Diviser",
@@ -4519,9 +4529,9 @@ window.RECETTES = [
     ],
     "astuces": [
       "Le feu doux est la clé : trop chaud, l'extérieur brûle avant que le centre cuise.",
-      "Sans machine à pain : pétrir 8 minutes au batteur (crochet, vitesse 2), puis laisser lever 1 h dans un bol couvert avant de diviser.",
+      "Avec la machine à pain Zojirushi : mettre le lait, le beurre, puis la farine dans la cuve, le sucre et le sel dans les coins et la levure au centre, lancer le programme 11 (Dough), puis passer directement à l'étape « Diviser ».",
       "Se congèlent très bien tranchés en deux ; les griller directement sortis du congélateur.",
-      "Pour une version plus goûteuse, mettre la pâte au frigo une nuit après le programme Dough, puis façonner le lendemain (compter 1 h 15 de levée)."
+      "Pour une version plus goûteuse, mettre la pâte au frigo une nuit après la première levée, puis façonner le lendemain (compter 1 h 15 de levée)."
     ]
   }
 ];
