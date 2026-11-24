@@ -4533,5 +4533,91 @@ window.RECETTES = [
       "Se congèlent très bien tranchés en deux ; les griller directement sortis du congélateur.",
       "Pour une version plus goûteuse, mettre la pâte au frigo une nuit après la première levée, puis façonner le lendemain (compter 1 h 15 de levée)."
     ]
+  },
+  {
+    "id": "tortillas-de-ble",
+    "titre": "Tortillas de blé maison",
+    "description": "Tortillas souples d'environ 20 cm, avec cinq ingrédients de base. La pâte se fait en 5 minutes.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Végétarien",
+      "Sans noix",
+      "Se congèle"
+    ],
+    "portions": 8,
+    "unitePortion": "tortillas de 20 cm",
+    "tempsActif": "25 min",
+    "tempsTotal": "≈ 45 min",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "farine tout usage",
+        "quantite": 250,
+        "unite": "g",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "poudre à pâte",
+        "quantite": 4,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "sel",
+        "quantite": 4,
+        "unite": "g",
+        "equivalent": "¾ c. à thé"
+      },
+      {
+        "nom": "huile végétale ou beurre fondu",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "eau tiède",
+        "quantite": 160,
+        "unite": "ml",
+        "equivalent": "⅔ tasse"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Ingrédients secs",
+        "texte": "Dans un grand bol, mélanger la farine, la poudre à pâte et le sel."
+      },
+      {
+        "titre": "Former la pâte",
+        "texte": "Ajouter l'huile et l'eau, puis mélanger jusqu'à ce que la pâte se tienne. Ajouter un peu d'eau si elle est trop sèche, un peu de farine si elle colle."
+      },
+      {
+        "titre": "Pétrir",
+        "texte": "Pétrir sur un plan de travail légèrement fariné jusqu'à ce que la pâte soit lisse et souple.",
+        "minuterie": 120
+      },
+      {
+        "titre": "Diviser et reposer",
+        "texte": "Diviser en 8 boules égales, couvrir d'un linge et laisser reposer. Ce repos rend la pâte beaucoup plus facile à abaisser.",
+        "minuterie": 1200
+      },
+      {
+        "titre": "Abaisser",
+        "texte": "Abaisser chaque boule au rouleau en un disque mince d'environ 20 cm de diamètre."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Cuire à sec dans une poêle très chaude (sans huile), de 30 à 45 secondes par côté, jusqu'à l'apparition de bulles et de taches dorées.",
+        "minuterie": 90
+      },
+      {
+        "titre": "Garder au chaud",
+        "texte": "Empiler les tortillas cuites dans un linge propre : la vapeur les garde souples."
+      }
+    ],
+    "astuces": [
+      "Le lard ou le shortening donne la texture la plus tendre ; l'huile est la plus simple.",
+      "Se conservent 3 jours au réfrigérateur dans un sac, ou se congèlent séparées par du papier parchemin.",
+      "Réchauffer 10 secondes par côté dans une poêle chaude."
+    ]
   }
 ];
