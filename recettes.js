@@ -4619,5 +4619,148 @@ window.RECETTES = [
       "Se conservent 3 jours au réfrigérateur dans un sac, ou se congèlent séparées par du papier parchemin.",
       "Réchauffer 10 secondes par côté dans une poêle chaude."
     ]
+  },
+  {
+    "id": "ramens-sautes-porc-hache-legumes",
+    "titre": "Ramens sautés au porc haché et légumes",
+    "description": "Un sauté de nouilles style asiatique, prêt en 25 minutes dans une seule poêle.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Porc",
+      "Nouilles",
+      "Asiatique",
+      "Rapide"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "25 min",
+    "tempsTotal": "25 min",
+    "ajoutee": "2026-11-24",
+    "ingredients": [
+      {
+        "nom": "porc haché",
+        "quantite": 450,
+        "unite": "g",
+        "equivalent": "1 lb"
+      },
+      {
+        "nom": "paquets de ramens",
+        "quantite": 3,
+        "unite": "",
+        "note": "sans les sachets d'assaisonnement"
+      },
+      {
+        "nom": "champignons, tranchés",
+        "quantite": 227,
+        "unite": "g",
+        "equivalent": "8 oz"
+      },
+      {
+        "nom": "oignon, émincé",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "poivron, en lanières",
+        "quantite": 0.5,
+        "unite": ""
+      },
+      {
+        "nom": "carottes, en fines demi-rondelles",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "gousses d'ail, hachées",
+        "quantite": 3,
+        "unite": ""
+      },
+      {
+        "nom": "gingembre frais râpé",
+        "quantite": 1,
+        "unite": "c_soupe",
+        "note": "ou 2 g (1 c. à thé) de gingembre moulu"
+      },
+      {
+        "nom": "sauce soya",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "sauce aux huîtres ou hoisin",
+        "quantite": 2,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "vinaigre de riz",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "cassonade",
+        "quantite": 12,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "huile de sésame grillé",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "fécule de maïs",
+        "quantite": 6,
+        "unite": "g",
+        "equivalent": "2 c. à thé"
+      },
+      {
+        "nom": "eau",
+        "quantite": 60,
+        "unite": "ml",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "sriracha ou sambal oelek",
+        "quantite": 1,
+        "unite": "c_the",
+        "note": "au goût"
+      },
+      {
+        "nom": "huile végétale",
+        "quantite": 1,
+        "unite": "c_soupe"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préparer la sauce",
+        "texte": "Dans un bol, fouetter la sauce soya, la sauce aux huîtres, le vinaigre de riz, la cassonade, l'huile de sésame, la fécule de maïs, l'eau et la sriracha. Réserver."
+      },
+      {
+        "titre": "Cuire les ramens",
+        "texte": "Cuire les ramens dans l'eau bouillante 1 minute de moins que le temps indiqué sur l'emballage. Égoutter et rincer à l'eau froide pour arrêter la cuisson.",
+        "minuterie": 120
+      },
+      {
+        "titre": "Dorer le porc",
+        "texte": "Dans une grande poêle ou un wok à feu vif, chauffer l'huile végétale. Ajouter le porc et cuire en l'émiettant, sans trop remuer, jusqu'à ce qu'il soit bien doré et croustillant par endroits.",
+        "minuterie": 360
+      },
+      {
+        "titre": "Sauter les légumes",
+        "texte": "Ajouter l'oignon, les carottes et les champignons. Cuire jusqu'à ce que les champignons aient rendu leur eau et commencent à dorer. Ajouter le poivron, l'ail et le gingembre, puis cuire 1 minute de plus.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Assembler",
+        "texte": "Ajouter les nouilles et la sauce (la fouetter de nouveau avant de verser). Mélanger à feu vif jusqu'à ce que la sauce épaississe et enrobe les nouilles.",
+        "minuterie": 120
+      }
+    ],
+    "astuces": [
+      "Sans ail ni gingembre, la recette fonctionne quand même : ajouter alors un peu plus de sriracha.",
+      "Garnir d'oignons verts, de graines de sésame ou d'arachides."
+    ]
   }
 ];
