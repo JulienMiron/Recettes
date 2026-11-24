@@ -4418,5 +4418,110 @@ window.RECETTES = [
       "Pour en faire un repas : avec des croustilles de maïs, dans des tortillas ou avec du fromage râpé.",
       "Sans lime : vinaigre de cidre ou jus de citron. Sans poivron ni tomates : concombre ou pomme en dés."
     ]
+  },
+  {
+    "id": "muffins-anglais",
+    "titre": "Muffins anglais",
+    "description": "Muffins anglais maison bien alvéolés, pâte pétrie par la machine à pain (programme 11, Dough) puis cuits à la poêle.",
+    "categorie": "Pains",
+    "etiquettes": [
+      "Machine à pain",
+      "Zojirushi",
+      "Déjeuner",
+      "Poêle"
+    ],
+    "portions": 10,
+    "unitePortion": "muffins",
+    "tempsActif": "40 min",
+    "tempsTotal": "≈ 3 h 30",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "lait tiède",
+        "quantite": 330,
+        "unite": "ml"
+      },
+      {
+        "nom": "beurre mou, en morceaux",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "farine panifiable",
+        "quantite": 450,
+        "unite": "g",
+        "equivalent": "3 ⅔ tasses"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 15,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "sel fin",
+        "quantite": 8,
+        "unite": "g",
+        "equivalent": "1 ⅓ c. à thé"
+      },
+      {
+        "nom": "levure instantanée",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "1 ½ c. à thé"
+      },
+      {
+        "nom": "semoule de maïs, pour enrober",
+        "quantite": 30,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Remplir la cuve",
+        "texte": "Verser le lait dans la cuve, ajouter le beurre, puis la farine. Mettre le sucre et le sel dans deux coins, et la levure dans un petit puits au centre."
+      },
+      {
+        "titre": "Programme Dough",
+        "texte": "Choisir le programme 11 (Dough) et appuyer sur START. Après 5 minutes de pétrissage, la pâte doit être souple et un peu collante : c'est ce qui donne les alvéoles. Trop liquide, ajouter 1 c. à soupe de farine.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Diviser",
+        "texte": "À la fin du programme, déposer la pâte sur un comptoir légèrement fariné et la diviser en 10 morceaux d'environ 80 g."
+      },
+      {
+        "titre": "Façonner",
+        "texte": "Bouler chaque morceau, puis l'aplatir en un disque d'environ 9 cm (3 ½ po) et 2 cm d'épaisseur. Enrober les deux faces de semoule de maïs."
+      },
+      {
+        "titre": "Lever",
+        "texte": "Déposer les disques sur une plaque saupoudrée de semoule, couvrir d'un linge et laisser lever 45 à 60 minutes, jusqu'à ce qu'ils soient gonflés.",
+        "minuterie": 3000
+      },
+      {
+        "titre": "Cuire à la poêle",
+        "texte": "Chauffer une poêle épaisse (idéalement en fonte) à feu moyen-doux, sans gras. Cuire les muffins en plusieurs fois, sans les tasser, 7 à 8 minutes par côté, jusqu'à ce qu'ils soient bien dorés et sonnent creux. Le centre doit atteindre 93 °C (200 °F).",
+        "minuterie": 900
+      },
+      {
+        "titre": "Finir au four au besoin",
+        "texte": "Si les côtés restent pâteux ou si le dessus a doré trop vite, terminer 5 à 8 minutes au four à 175 °C (350 °F).",
+        "minuterie": 420
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser refroidir au moins 30 minutes sur une grille. Ouvrir à la fourchette (piquer tout le tour, puis séparer) plutôt qu'au couteau pour garder les alvéoles.",
+        "minuterie": 1800
+      }
+    ],
+    "astuces": [
+      "Le feu doux est la clé : trop chaud, l'extérieur brûle avant que le centre cuise.",
+      "Sans machine à pain : pétrir 8 minutes au batteur (crochet, vitesse 2), puis laisser lever 1 h dans un bol couvert avant de diviser.",
+      "Se congèlent très bien tranchés en deux ; les griller directement sortis du congélateur.",
+      "Pour une version plus goûteuse, mettre la pâte au frigo une nuit après le programme Dough, puis façonner le lendemain (compter 1 h 15 de levée)."
+    ]
   }
 ];
