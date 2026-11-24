@@ -4300,5 +4300,123 @@ window.RECETTES = [
       "Les pâtes continuent d'absorber le liquide en refroidissant ; pour les restes, ajouter un peu d'eau ou de bouillon au réchauffage.",
       "Pour une version plus relevée, ajouter une pincée de flocons de piment avec les épices."
     ]
+  },
+  {
+    "id": "salade-haricots-noirs-mais-lime",
+    "titre": "Salade de haricots noirs et maïs à la lime",
+    "description": "Salade tex-mex sans cuisson, prête en 10 minutes avec un couteau et un bol. Aucun appareil électrique nécessaire.",
+    "categorie": "Salades",
+    "etiquettes": [
+      "Sans cuisson",
+      "Végétarien",
+      "Restes",
+      "Panne de courant"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "10 min",
+    "tempsTotal": "≈ 20 min",
+    "ajoutee": "2026-11-23",
+    "ingredients": [
+      {
+        "nom": "haricots noirs cuits, rincés et égouttés",
+        "quantite": 300,
+        "unite": "g",
+        "equivalent": "1 ¾ tasse, ≈ 1 boîte de 540 ml"
+      },
+      {
+        "nom": "maïs en grains, égoutté",
+        "quantite": 170,
+        "unite": "g",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "poivron rouge, en petits dés",
+        "quantite": 1,
+        "unite": ""
+      },
+      {
+        "nom": "oignon rouge, haché finement",
+        "quantite": 0.25,
+        "unite": ""
+      },
+      {
+        "nom": "tomates ou tomates cerises, en dés",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "avocat, en dés",
+        "quantite": 1,
+        "unite": "",
+        "note": "facultatif"
+      },
+      {
+        "nom": "coriandre hachée",
+        "quantite": 10,
+        "unite": "g",
+        "equivalent": "¼ tasse",
+        "note": "facultatif"
+      },
+      {
+        "nom": "huile d'olive",
+        "quantite": 45,
+        "unite": "ml",
+        "equivalent": "3 c. à soupe"
+      },
+      {
+        "nom": "jus de lime",
+        "quantite": 30,
+        "unite": "ml",
+        "equivalent": "2 c. à soupe, ≈ 1 lime"
+      },
+      {
+        "nom": "cumin moulu",
+        "quantite": 1,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "poivre noir moulu",
+        "quantite": 0.5,
+        "unite": "g",
+        "equivalent": "¼ c. à thé"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Faire la vinaigrette",
+        "texte": "Dans un grand bol, fouetter à la fourchette l'huile, le jus de lime, le cumin, le sel et le poivre."
+      },
+      {
+        "titre": "Ajouter les légumineuses",
+        "texte": "Ajouter les haricots noirs et le maïs et bien mélanger."
+      },
+      {
+        "titre": "Couper les légumes",
+        "texte": "Ajouter le poivron, l'oignon et les tomates. Mélanger."
+      },
+      {
+        "titre": "Laisser mariner",
+        "texte": "Laisser reposer 10 minutes pour que les saveurs se mélangent et que l'oignon s'adoucisse.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Finir et servir",
+        "texte": "Juste avant de servir, ajouter délicatement l'avocat et la coriandre. Goûter et rectifier le sel ou la lime."
+      }
+    ],
+    "astuces": [
+      "Adapter les quantités aux restes : la vinaigrette convient à n'importe quelle proportion de haricots et de maïs.",
+      "Sans électricité, le frigo reste froid environ 4 heures porte fermée : tout sortir d'un coup et refermer vite. Si les restes sont restés plusieurs heures sans courant, prendre plutôt des conserves.",
+      "Pour en faire un repas : avec des croustilles de maïs, dans des tortillas ou avec du fromage râpé.",
+      "Sans lime : vinaigre de cidre ou jus de citron. Sans poivron ni tomates : concombre ou pomme en dés."
+    ]
   }
 ];
