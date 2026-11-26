@@ -4763,5 +4763,174 @@ window.RECETTES = [
       "Sans ail ni gingembre, la recette fonctionne quand même : ajouter alors un peu plus de sriracha.",
       "Garnir d'oignons verts, de graines de sésame ou d'arachides."
     ]
+  },
+  {
+    "id": "curry-japonais-poulet",
+    "titre": "Curry japonais au poulet (roux maison)",
+    "description": "Curry doux, épais et légèrement sucré, servi sur du riz japonais.",
+    "categorie": "Plats principaux",
+    "etiquettes": [
+      "Poulet",
+      "Japonais",
+      "Curry",
+      "Comfort food",
+      "Se congèle"
+    ],
+    "portions": 4,
+    "unitePortion": "portions",
+    "tempsActif": "25 min",
+    "tempsTotal": "1 h",
+    "ajoutee": "2026-11-25",
+    "ingredients": [
+      {
+        "nom": "hauts de cuisse de poulet désossés",
+        "quantite": 600,
+        "unite": "g",
+        "equivalent": "1 ⅓ lb",
+        "note": "en bouchées"
+      },
+      {
+        "nom": "huile neutre",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "oignons moyens",
+        "quantite": 2,
+        "unite": "",
+        "note": "émincés"
+      },
+      {
+        "nom": "carottes",
+        "quantite": 2,
+        "unite": "",
+        "note": "en rondelles épaisses"
+      },
+      {
+        "nom": "pommes de terre",
+        "quantite": 400,
+        "unite": "g",
+        "equivalent": "env. 2 moyennes",
+        "note": "en cubes"
+      },
+      {
+        "nom": "gousses d'ail",
+        "quantite": 2,
+        "unite": "",
+        "note": "hachées"
+      },
+      {
+        "nom": "gingembre frais râpé",
+        "quantite": 6,
+        "unite": "g",
+        "equivalent": "1 c. à soupe"
+      },
+      {
+        "nom": "bouillon de poulet",
+        "quantite": 900,
+        "unite": "ml",
+        "equivalent": "3 ¾ tasses"
+      },
+      {
+        "nom": "pomme",
+        "quantite": 1,
+        "unite": "",
+        "note": "râpée"
+      },
+      {
+        "nom": "beurre",
+        "quantite": 60,
+        "unite": "g",
+        "equivalent": "¼ tasse"
+      },
+      {
+        "nom": "farine tout usage",
+        "quantite": 40,
+        "unite": "g",
+        "equivalent": "⅓ tasse"
+      },
+      {
+        "nom": "poudre de cari",
+        "quantite": 14,
+        "unite": "g",
+        "equivalent": "2 c. à soupe"
+      },
+      {
+        "nom": "garam masala",
+        "quantite": 2,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "sauce soya",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "ketchup",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "sauce Worcestershire",
+        "quantite": 1,
+        "unite": "c_soupe"
+      },
+      {
+        "nom": "miel",
+        "quantite": 1,
+        "unite": "c_the"
+      },
+      {
+        "nom": "sel",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "1 c. à thé",
+        "note": "au goût"
+      },
+      {
+        "nom": "riz japonais",
+        "quantite": 400,
+        "unite": "g",
+        "equivalent": "2 tasses",
+        "note": "non cuit, cuit pour servir"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Dorer le poulet",
+        "texte": "Chauffer l'huile dans une grande casserole à feu moyen-vif. Saler légèrement le poulet et le faire dorer. Réserver.",
+        "minuterie": 300
+      },
+      {
+        "titre": "Caraméliser les oignons",
+        "texte": "Dans la même casserole, cuire les oignons à feu moyen en remuant, jusqu'à ce qu'ils soient bien dorés. Ajouter l'ail et le gingembre la dernière minute.",
+        "minuterie": 900
+      },
+      {
+        "titre": "Mijoter",
+        "texte": "Remettre le poulet. Ajouter les carottes, les pommes de terre, le bouillon et la pomme râpée. Porter à ébullition, écumer, puis laisser mijoter à couvert jusqu'à ce que les légumes soient tendres.",
+        "minuterie": 1200
+      },
+      {
+        "titre": "Faire le roux",
+        "texte": "Pendant ce temps, faire fondre le beurre dans une petite poêle à feu doux. Ajouter la farine et cuire en remuant jusqu'à une couleur caramel clair. Hors du feu, incorporer la poudre de cari et le garam masala.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Épaissir",
+        "texte": "Prélever une louche de bouillon et la fouetter dans le roux pour obtenir une pâte lisse. Verser dans la casserole en remuant. Ajouter la sauce soya, le ketchup, la sauce Worcestershire et le miel. Mijoter à feu doux en remuant souvent jusqu'à ce que la sauce épaississe.",
+        "minuterie": 600
+      },
+      {
+        "titre": "Servir",
+        "texte": "Goûter et ajuster le sel. Servir sur le riz."
+      }
+    ],
+    "astuces": [
+      "Raccourci : remplacer le roux maison (beurre, farine, épices) par une demi-boîte de cubes de curry (Golden Curry ou Vermont Curry, env. 100 g) ajoutée hors du feu à l'étape « Épaissir ».",
+      "Pour plus de piquant, ajouter une pincée de cayenne au roux.",
+      "Le curry est encore meilleur le lendemain."
+    ]
   }
 ];
