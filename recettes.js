@@ -4508,7 +4508,7 @@ window.RECETTES = [
       },
       {
         "titre": "Lever",
-        "texte": "Déposer les disques sur une plaque saupoudrée de semoule, couvrir d'un linge et laisser lever 45 à 60 minutes, jusqu'à ce qu'ils soient gonflés.",
+        "texte": "Déposer les disques sur une plaque saupoudrée de semoule, couvrir d'une pellicule plastique posée sans serrer (ou d'un linge propre et sec, pas humide, car il collerait à la pâte) et laisser lever 45 à 60 minutes, jusqu'à ce qu'ils soient gonflés.",
         "minuterie": 3000
       },
       {
