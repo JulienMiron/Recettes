@@ -4592,7 +4592,7 @@ window.RECETTES = [
       },
       {
         "titre": "Pétrir",
-        "texte": "Pétrir sur un plan de travail légèrement fariné jusqu'à ce que la pâte soit lisse et souple.",
+        "texte": "Pétrir sur un plan de travail propre, sans farine (la pâte est huilée et ne colle presque pas), jusqu'à ce qu'elle soit lisse et souple.",
         "minuterie": 120
       },
       {
@@ -4602,12 +4602,12 @@ window.RECETTES = [
       },
       {
         "titre": "Abaisser",
-        "texte": "Abaisser chaque boule au rouleau en un disque mince d'environ 20 cm de diamètre."
+        "texte": "Abaisser chaque boule au rouleau en un disque mince d'environ 20 cm de diamètre, sans farine ou avec très peu. Si la pâte colle, l'abaisser entre deux feuilles de papier parchemin. Secouer et brosser l'excédent de farine avant la cuisson : la farine brûle dans la poêle et fait de la fumée."
       },
       {
         "titre": "Cuire",
-        "texte": "Cuire à sec dans une poêle très chaude (sans huile), de 30 à 45 secondes par côté, jusqu'à l'apparition de bulles et de taches dorées.",
-        "minuterie": 90
+        "texte": "Chauffer une poêle en fonte ou antiadhésive à feu moyen-vif (pas au maximum), sans huile. Cuire de 45 à 60 secondes par côté, jusqu'à l'apparition de bulles et de taches dorées. Si la poêle fume, baisser le feu et essuyer la farine brûlée avec un papier essuie-tout sec entre deux tortillas.",
+        "minuterie": 120
       },
       {
         "titre": "Garder au chaud",
