@@ -4850,7 +4850,7 @@ window.RECETTES = [
         "equivalent": "⅓ tasse"
       },
       {
-        "nom": "poudre de cari",
+        "nom": "poudre de cari S&B Oriental",
         "quantite": 14,
         "unite": "g",
         "equivalent": "2 c. à soupe"
@@ -4914,12 +4914,12 @@ window.RECETTES = [
       },
       {
         "titre": "Faire le roux",
-        "texte": "Pendant ce temps, faire fondre le beurre dans une petite poêle à feu doux. Ajouter la farine et cuire en remuant jusqu'à une couleur caramel clair. Hors du feu, incorporer la poudre de cari et le garam masala.",
+        "texte": "Avec du roux congelé : sauter cette étape et sortir environ 115 g de blocs. Sinon, faire fondre le beurre dans une petite poêle à feu doux. Ajouter la farine et cuire en remuant jusqu'à une couleur caramel clair. Hors du feu, incorporer la poudre de cari et le garam masala.",
         "minuterie": 600
       },
       {
         "titre": "Épaissir",
-        "texte": "Prélever une louche de bouillon et la fouetter dans le roux pour obtenir une pâte lisse. Verser dans la casserole en remuant. Ajouter la sauce soya, le ketchup, la sauce Worcestershire et le miel. Mijoter à feu doux en remuant souvent jusqu'à ce que la sauce épaississe.",
+        "texte": "Retirer la casserole du feu. Ajouter le roux (les blocs congelés vont directement dans la casserole) et remuer jusqu'à ce qu'il soit complètement dissous. Si les blocs ne contiennent pas d'épices, ajouter la poudre de cari et le garam masala en même temps. Ajouter la sauce soya, le ketchup, la sauce Worcestershire et le miel. Remettre à feu doux et mijoter en remuant souvent jusqu'à ce que la sauce épaississe.",
         "minuterie": 600
       },
       {
@@ -4928,6 +4928,7 @@ window.RECETTES = [
       }
     ],
     "astuces": [
+      "Le roux se congèle très bien : en faire une grande quantité, l'étaler en plaque, le couper en blocs et les garder au congélateur. Compter environ 115 g de roux pour cette recette. Ajuster selon l'épaisseur voulue.",
       "Raccourci : remplacer le roux maison (beurre, farine, épices) par une demi-boîte de cubes de curry (Golden Curry ou Vermont Curry, env. 100 g) ajoutée hors du feu à l'étape « Épaissir ».",
       "Pour plus de piquant, ajouter une pincée de cayenne au roux.",
       "Le curry est encore meilleur le lendemain."
