@@ -4576,9 +4576,10 @@ window.RECETTES = [
       },
       {
         "nom": "eau tiède",
-        "quantite": 160,
+        "quantite": 125,
         "unite": "ml",
-        "equivalent": "⅔ tasse"
+        "equivalent": "½ tasse",
+        "note": "plus 1 à 2 c. à soupe au besoin"
       }
     ],
     "etapes": [
@@ -4588,7 +4589,7 @@ window.RECETTES = [
       },
       {
         "titre": "Former la pâte",
-        "texte": "Ajouter l'huile et l'eau, puis mélanger jusqu'à ce que la pâte se tienne. Ajouter un peu d'eau si elle est trop sèche, un peu de farine si elle colle."
+        "texte": "Ajouter l'huile et l'eau, puis mélanger. Si la pâte reste sèche et friable, ajouter de l'eau 1 c. à soupe à la fois. Elle doit être souple et à peine collante au toucher, comme de la pâte à modeler : si elle colle aux doigts, incorporer 1 c. à soupe de farine à la fois dans la pâte (pas sur le comptoir)."
       },
       {
         "titre": "Pétrir",
@@ -4602,7 +4603,7 @@ window.RECETTES = [
       },
       {
         "titre": "Abaisser",
-        "texte": "Abaisser chaque boule au rouleau en un disque mince d'environ 20 cm de diamètre, sans farine ou avec très peu. Si la pâte colle, l'abaisser entre deux feuilles de papier parchemin. Secouer et brosser l'excédent de farine avant la cuisson : la farine brûle dans la poêle et fait de la fumée."
+        "texte": "Abaisser chaque boule au rouleau en un disque mince d'environ 20 cm de diamètre, sur un comptoir très légèrement huilé plutôt que fariné. Si la pâte colle encore, c'est qu'elle manque de farine ou de repos : la repétrir avec un peu de farine, puis la laisser reposer 10 minutes de plus. S'il a fallu fariner, secouer et brosser l'excédent de farine avant la cuisson : la farine brûle dans la poêle et fait de la fumée."
       },
       {
         "titre": "Cuire",
