@@ -4934,5 +4934,130 @@ window.RECETTES = [
       "Pour plus de piquant, ajouter une pincée de cayenne au roux.",
       "Le curry est encore meilleur le lendemain."
     ]
+  },
+  {
+    "id": "biscuits-cacao-chocolat-blanc",
+    "titre": "Biscuits au cacao et pépites de chocolat blanc",
+    "description": "Biscuits double chocolat moelleux au centre et croustillants sur le bord, parsemés de pépites de chocolat blanc. Préparés au batteur sur socle.",
+    "categorie": "Desserts",
+    "etiquettes": [
+      "Biscuits",
+      "Chocolat",
+      "Batteur sur socle"
+    ],
+    "portions": 24,
+    "unitePortion": "biscuits",
+    "tempsActif": "20 min",
+    "tempsTotal": "≈ 1 h 15",
+    "ajoutee": "2026-11-27",
+    "ingredients": [
+      {
+        "nom": "beurre non salé, ramolli",
+        "quantite": 225,
+        "unite": "g",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "cassonade tassée",
+        "quantite": 200,
+        "unite": "g",
+        "equivalent": "1 tasse"
+      },
+      {
+        "nom": "sucre",
+        "quantite": 100,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "gros œufs, température ambiante",
+        "quantite": 2,
+        "unite": ""
+      },
+      {
+        "nom": "vanille",
+        "quantite": 10,
+        "unite": "ml",
+        "equivalent": "2 c. à thé"
+      },
+      {
+        "nom": "farine tout usage",
+        "quantite": 250,
+        "unite": "g",
+        "equivalent": "2 tasses"
+      },
+      {
+        "nom": "cacao non sucré",
+        "quantite": 45,
+        "unite": "g",
+        "equivalent": "½ tasse"
+      },
+      {
+        "nom": "bicarbonate de soude",
+        "quantite": 5,
+        "unite": "g",
+        "equivalent": "1 c. à thé"
+      },
+      {
+        "nom": "sel",
+        "quantite": 3,
+        "unite": "g",
+        "equivalent": "½ c. à thé"
+      },
+      {
+        "nom": "pépites de chocolat blanc",
+        "quantite": 255,
+        "unite": "g",
+        "equivalent": "1 ½ tasse"
+      }
+    ],
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "texte": "Préchauffer le four à 180 °C (350 °F), grille au centre. Tapisser deux plaques de papier parchemin."
+      },
+      {
+        "titre": "Crémer le beurre",
+        "texte": "Dans le bol du batteur muni du fouet plat, battre le beurre, la cassonade et le sucre à vitesse moyenne environ 3 minutes, jusqu'à ce que le mélange soit pâle et crémeux.",
+        "minuterie": 180
+      },
+      {
+        "titre": "Œufs et vanille",
+        "texte": "Ajouter les œufs un à la fois, puis la vanille, en battant bien après chaque ajout. Racler les parois."
+      },
+      {
+        "titre": "Ingrédients secs",
+        "texte": "Dans un autre bol, tamiser la farine, le cacao, le bicarbonate et le sel. Les ajouter au mélange à basse vitesse, juste assez pour qu'il ne reste plus de farine visible."
+      },
+      {
+        "titre": "Pépites",
+        "texte": "Incorporer les pépites à la spatule, en en gardant une poignée pour le dessus."
+      },
+      {
+        "titre": "Refroidir la pâte",
+        "texte": "Couvrir et réfrigérer la pâte 30 minutes : les biscuits s'étaleront moins et seront plus épais.",
+        "minuterie": 1800
+      },
+      {
+        "titre": "Façonner",
+        "texte": "Former des boules d'environ 45 g (3 c. à soupe) et les déposer sur les plaques en les espaçant de 5 cm. Enfoncer quelques pépites réservées sur le dessus."
+      },
+      {
+        "titre": "Cuire",
+        "texte": "Cuire une plaque à la fois 10 à 11 minutes : les bords doivent être pris et le centre encore mou. Ils paraîtront pas assez cuits ; c'est normal, ils finissent de cuire sur la plaque.",
+        "minuterie": 630
+      },
+      {
+        "titre": "Refroidir",
+        "texte": "Laisser reposer 5 minutes sur la plaque, puis transférer sur une grille.",
+        "minuterie": 300
+      }
+    ],
+    "astuces": [
+      "Avec le cacao, on ne voit pas quand les biscuits brunissent : se fier au temps et à l'aspect des bords.",
+      "Pour plus de goût, la pâte peut rester au frigo jusqu'à 48 h ; ajouter alors 1 minute de cuisson.",
+      "Les boules de pâte se congèlent très bien : les cuire directement congelées, en ajoutant 2 minutes.",
+      "Se gardent 5 jours dans un contenant hermétique."
+    ]
   }
 ];
